@@ -8,7 +8,7 @@ public class DataGetter : MonoBehaviour
 {
     public TextAsset jsonFile;
     private Buildings campus;
-    void Start()
+    void Awake()
     {
         campus = JsonUtility.FromJson<Buildings>(jsonFile.text);
         Building oth = GetBuilding("OTH");
@@ -18,6 +18,9 @@ public class DataGetter : MonoBehaviour
 
     public Building GetBuilding(string buildingName)
     {
+        if(campus == null){
+            return null;
+        }
         foreach(Building building in campus.buildings)
         {
             if(building.name == buildingName)
