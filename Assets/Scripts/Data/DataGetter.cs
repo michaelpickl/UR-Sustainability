@@ -42,6 +42,7 @@ public class Buildings
 public class Building
 {
     public string name;
+    public string abbreviation;
     public Consumer[] consumers;
     public Measure[] measures;
 }
