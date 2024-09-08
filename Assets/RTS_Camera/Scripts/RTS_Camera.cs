@@ -195,8 +195,7 @@ namespace RTS_Cam
                 FollowTarget();
             else
                 Move();
-
-            HeightCalculation();
+                HeightCalculation();
             Rotation();
             LimitPosition();
         }
@@ -291,7 +290,10 @@ namespace RTS_Cam
         /// </summary>
         private void FollowTarget()
         {
-            Vector3 targetPos = new Vector3(targetFollow.position.x, m_Transform.position.y, targetFollow.position.z) + targetOffset;
+            //Vector3 targetPos = new Vector3(targetFollow.position.x, m_Transform.position.y, targetFollow.position.z) + targetOffset;
+            //print(targetPos + " TARGET POS" + targetFollow.transform.position);
+            Vector3 targetPos = targetFollow.transform.position;
+            print(targetPos + " TARGET POS2" + targetFollow.transform.position);
             m_Transform.position = Vector3.MoveTowards(m_Transform.position, targetPos, Time.deltaTime * followingSpeed);
         }
 
@@ -315,6 +317,11 @@ namespace RTS_Cam
         public void SetTarget(Transform target)
         {
             targetFollow = target;
+        }
+
+        public void SetTargetOffset(Vector3 offset)
+        {
+            targetOffset = offset;
         }
 
         /// <summary>
