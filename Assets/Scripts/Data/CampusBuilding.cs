@@ -51,53 +51,32 @@ public class CampusBuilding : MonoBehaviour
 
     public Vector3 CalculateTargetPosition(float distanceFactor = 1.5f)
     {
-        // Zugriff auf alle Renderer in diesem GameObject und seinen untergeordneten Objekten
         Renderer[] renderers = gameObject.GetComponentsInChildren<Renderer>();
 
         if (renderers.Length > 0)
         {
-            // Initialisiere die Bounds mit den ersten Renderer-Bounds
             Bounds combinedBounds = renderers[0].bounds;
-
-            // Kombiniere die Bounds aller Renderer
             foreach (Renderer rend in renderers)
             {
                 combinedBounds.Encapsulate(rend.bounds);
             }
-
-            // Mittelpunkt des kombinierten Bounds (in Weltkoordinaten)
             Vector3 boundsCenter = combinedBounds.center;
-
-            // Die größte Ausdehnung des kombinierten Bounds
             float boundsMaxSize = combinedBounds.extents.magnitude;
 
-            // Berechne den Abstand basierend auf dem Field of View (FOV) der Kamera
             float fov = rts_camera.fieldOfView;
             float aspectRatio = rts_camera.aspect;
 
-            // Berechnung des Abstands zur Kamera, um das Objekt vollständig anzuzeigen
             float distance = boundsMaxSize / Mathf.Sin(Mathf.Deg2Rad * fov / 2.0f);
-
-            // Multipliziere den Abstand mit dem distanceFactor (für zusätzlichen Abstand)
             distance *= distanceFactor;
 
-            // Neu: Die Kamera-Rotation berücksichtigen
-            Vector3 cameraForward = rts_camera.transform.forward;
-            Vector3 cameraRight = rts_camera.transform.right;
-            Vector3 cameraUp = rts_camera.transform.up;
-
-            print(cameraForward + " CAMERA FORWARD");
-            print(boundsCenter + " BOUNDS CENTER");
-            // Berechne die Zielposition, indem die Kamera entlang ihrer Vorwärtsachse zurückversetzt wird
-            //Vector3 direction = rts_camera.transform.forward;
-            //Vector3 targetPosition = boundsCenter - direction * distance;
-            Vector3 targetPosition = boundsCenter - (cameraForward * distance);// - (cameraRight * distance);
+            Vector3 direction = rts_camera.transform.forward;
+            Vector3 targetPosition = boundsCenter - (direction * distance);
             print(targetPosition + " TARGET POSITION");
             return targetPosition;
         }
 
         print("NO RENDERER FOUND");
-        return rts_camera.transform.position; // Falls kein Renderer gefunden wurde, keine Änderung der Position
+        return rts_camera.transform.position; 
     }
 
 }
