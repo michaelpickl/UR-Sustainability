@@ -58,7 +58,11 @@ public class Consumer
 public class Measure
 {
     public string name;
+    public string description;
     public int cost;
     public string duration;
     public int co2_savings;
+    public int cost_savings;
+    public string type;
+    public bool done;
 }

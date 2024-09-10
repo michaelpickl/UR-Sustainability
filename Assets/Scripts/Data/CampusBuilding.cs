@@ -24,8 +24,6 @@ public class CampusBuilding : MonoBehaviour
         if(building != null){
             print(building.consumers[0].type);
         }
-        Vector3 targetPosition = CalculateTargetPosition();
-        print(gameObject.name + " " + targetPosition.x);
     }
 
     void Update()

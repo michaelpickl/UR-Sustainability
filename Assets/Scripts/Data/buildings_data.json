@@ -4,7 +4,7 @@
       "name": "Chemie",
       "consumers": [
         {
-          "type": " Wärme",
+          "type": "Wärme",
           "monthly_values": [
             "2731326,59412382",
             "2238908,49144079",
@@ -21,7 +21,7 @@
           ]
         },
         {
-          "type": " Kälte",
+          "type": "Kälte",
           "monthly_values": [
             "15603,800069032",
             "14153,0997587242",
@@ -38,7 +38,7 @@
           ]
         },
         {
-          "type": " Strom",
+          "type": "Strom",
           "monthly_values": [
             "735973,43",
             "704600,30",
@@ -55,14 +55,45 @@
           ]
         }
       ],
-      "measures": [],
+      "measures": [
+        {
+          "name": "PV-Anlage Installation",
+          "description": "Installation einer Photovoltaik-Anlage auf dem Dach",
+          "cost": "5656512",
+          "duration": "35",
+          "co2_savings": "39,08",
+          "cost_savings": "0",
+          "type": "Strom",
+          "done": false
+        },
+        {
+          "name": "Energetische Gebäudesarnierung",
+          "description": "Das Dach und die Fassaden werden gedämmt, die Fenster werden ausgetauscht und die Heizungsanlage wird erneuert.",
+          "cost": "5612818,483",
+          "duration": "58",
+          "co2_savings": "1816,692",
+          "cost_savings": "719986,3493",
+          "type": "Wärme",
+          "done": false
+        },
+        {
+          "name": "LED-Lampen",
+          "description": "Alle alten Lampen werden mit LED-Lampen ausgetauscht.",
+          "cost": "268934,1857",
+          "duration": "3,8",
+          "co2_savings": "97,82675",
+          "cost_savings": "143996,1307",
+          "type": "Strom",
+          "done": false
+        }
+      ],
       "abbreviation": "CHE"
     },
     {
       "name": "Mathematik",
       "consumers": [
         {
-          "type": " Wärme",
+          "type": "Wärme",
           "monthly_values": [
             "93102,4555888556",
             "46345,3412509266",
@@ -77,16 +108,64 @@
             "40842,4944949601",
             "30301,9434815458"
           ]
+        },
+        {
+          "type": "Strom",
+          "monthly_values": [
+            "16813,45",
+            "14298,71",
+            "13451,32",
+            "12731,69",
+            "14319,29",
+            "13513,77",
+            "14923,36",
+            "12057,71",
+            "12685,42",
+            "16142,62",
+            "16665,78",
+            "14453,61"
+          ]
         }
       ],
-      "measures": [],
+      "measures": [
+        {
+          "name": "PV-Anlage Installation",
+          "description": "Installation einer Photovoltaik-Anlage auf dem Dach",
+          "cost": "635120",
+          "duration": "4",
+          "co2_savings": "4,39",
+          "cost_savings": "11236,72",
+          "type": "Strom",
+          "done": false
+        },
+        {
+          "name": "Energetische Gebäudesarnierung",
+          "description": "Das Dach und die Fassaden werden gedämmt, die Fenster werden ausgetauscht und die Heizungsanlage wird erneuert.",
+          "cost": "832313,0931",
+          "duration": "8",
+          "co2_savings": "35,214",
+          "cost_savings": "13956,4119",
+          "type": "Wärme",
+          "done": false
+        },
+        {
+          "name": "LED-Lampen",
+          "description": "Alle alten Lampen werden mit LED-Lampen ausgetauscht.",
+          "cost": "15098,12761",
+          "duration": "0,2",
+          "co2_savings": "1,96875",
+          "cost_savings": "2902,597035",
+          "type": "Strom",
+          "done": false
+        }
+      ],
       "abbreviation": "Mathe"
     },
     {
       "name": "OTH",
       "consumers": [
         {
-          "type": " Wärme",
+          "type": "Wärme",
           "monthly_values": [
             "756,307117286876",
             "646,87645623158",
@@ -103,7 +182,7 @@
           ]
         },
         {
-          "type": " Strom",
+          "type": "Strom",
           "monthly_values": [
             "355722,50",
             "322543,77",
@@ -120,26 +199,13 @@
           ]
         }
       ],
-      "measures": [
-        {
-          "name": " Installation von Solarzellen",
-          "cost": 15000,
-          "duration": " 6 Monate",
-          "co2_savings": 1200
-        },
-        {
-          "name": " Dämmung der Außenwände",
-          "cost": 25000,
-          "duration": " 3 Monate",
-          "co2_savings": 2000
-        }
-      ]
+      "measures": []
     },
     {
-      "name": " Philosophie und Theologie",
+      "name": "Philosophie und Theologie",
       "consumers": [
         {
-          "type": " Wärme",
+          "type": "Wärme",
           "monthly_values": [
             "692557,962142102",
             "518474,832970252",
@@ -156,7 +222,24 @@
           ]
         },
         {
-          "type": " Strom",
+          "type": "Kälte",
+          "monthly_values": [
+            "46,2219167763477",
+            "232,963001883845",
+            "91,1665912577134",
+            "54,4487064678535",
+            "29,2280645863255",
+            "22328",
+            "54802",
+            "46688",
+            "37079",
+            "9664,6758113796",
+            "1,22887139107612",
+            "25,3311850032416"
+          ]
+        },
+        {
+          "type": "Strom",
           "monthly_values": [
             "221718,75",
             "213276,98",
@@ -173,13 +256,45 @@
           ]
         }
       ],
-      "measures": []
+      "measures": [
+        {
+          "name": "PV-Anlage Installation",
+          "description": "Installation einer Photovoltaik-Anlage auf dem Dach",
+          "cost": "3654864",
+          "duration": "22",
+          "co2_savings": "25,24",
+          "cost_savings": "64662,87",
+          "type": "Strom",
+          "done": false
+        },
+        {
+          "name": "Energetische Gebäudesarnierung",
+          "description": "Das Dach und die Fassaden werden gedämmt, die Fenster werden ausgetauscht und die Heizungsanlage wird erneuert.",
+          "cost": "3855854",
+          "duration": "40",
+          "co2_savings": "470,292",
+          "cost_savings": "186383,9",
+          "type": "Wärme",
+          "done": false
+        },
+        {
+          "name": "LED-Lampen",
+          "description": "Alle alten Lampen werden mit LED-Lampen ausgetauscht.",
+          "cost": "108604,6792",
+          "duration": "1,5",
+          "co2_savings": "28,8995",
+          "cost_savings": "42537,01029",
+          "type": "Strom",
+          "done": false
+        }
+      ],
+      "abbreviation": "PT"
     },
     {
       "name": "Physik",
       "consumers": [
         {
-          "type": " Wärme",
+          "type": "Wärme",
           "monthly_values": [
             "592809,808778401",
             "495676,746574741",
@@ -196,7 +311,7 @@
           ]
         },
         {
-          "type": " Kälte",
+          "type": "Kälte",
           "monthly_values": [
             "178328,60289819",
             "174996,145564361",
@@ -211,16 +326,64 @@
             "179347,885740538",
             "181359,990342745"
           ]
+        },
+        {
+          "type": "Strom",
+          "monthly_values": [
+            "288494,83",
+            "289587,5",
+            "315567,92",
+            "302772,61",
+            "329340,45",
+            "325923,71",
+            "342683,34",
+            "330824",
+            "327387,34",
+            "327408,92",
+            "321878,17",
+            "305068,38"
+          ]
         }
       ],
-      "measures": [],
+      "measures": [
+        {
+          "name": "PV-Anlage Installation",
+          "description": "Installation einer Photovoltaik-Anlage auf dem Dach",
+          "cost": "2870416",
+          "duration": "18",
+          "co2_savings": "19,82",
+          "cost_savings": "50784,2",
+          "type": "Strom",
+          "done": false
+        },
+        {
+          "name": "Energetische Gebäudesarnierung",
+          "description": "Das Dach und die Fassaden werden gedämmt, die Fenster werden ausgetauscht und die Heizungsanlage wird erneuert.",
+          "cost": "2628348",
+          "duration": "27",
+          "co2_savings": "470,292",
+          "cost_savings": "186383,9",
+          "type": "Wärme",
+          "done": false
+        },
+        {
+          "name": "LED-Lampen",
+          "description": "Alle alten Lampen werden mit LED-Lampen ausgetauscht.",
+          "cost": "85294,722",
+          "duration": "1,2",
+          "co2_savings": "43,6275",
+          "cost_savings": "64223,03006",
+          "type": "Strom",
+          "done": false
+        }
+      ],
       "abbreviation": "PHY"
     },
     {
-      "name": " Recht und Wirtschaft",
+      "name": "Recht und Wirtschaft",
       "consumers": [
         {
-          "type": " Wärme",
+          "type": "Wärme",
           "monthly_values": [
             "166053996,146433",
             "135919371,610077",
@@ -237,7 +400,7 @@
           ]
         },
         {
-          "type": " Strom",
+          "type": "Strom",
           "monthly_values": [
             "119710,94",
             "118163,50",
@@ -254,13 +417,45 @@
           ]
         }
       ],
-      "measures": []
+      "measures": [
+        {
+          "name": "PV-Anlage Installation",
+          "description": "Installation einer Photovoltaik-Anlage auf dem Dach",
+          "cost": "2251888",
+          "duration": "14",
+          "co2_savings": "15,55",
+          "cost_savings": "39841,03",
+          "type": "Strom",
+          "done": false
+        },
+        {
+          "name": "Energetische Gebäudesarnierung",
+          "description": "Das Dach und die Fassaden werden gedämmt, die Fenster werden ausgetauscht und die Heizungsanlage wird erneuert.",
+          "cost": "2572969",
+          "duration": "26",
+          "co2_savings": "114402",
+          "cost_savings": "45339586",
+          "type": "Wärme",
+          "done": false
+        },
+        {
+          "name": "LED-Lampen",
+          "description": "Alle alten Lampen werden mit LED-Lampen ausgetauscht.",
+          "cost": "107064,1529",
+          "duration": "1,5",
+          "co2_savings": "14,951125",
+          "cost_savings": "22007,79713",
+          "type": "Strom",
+          "done": false
+        }
+      ],
+      "abbreviation": "RWLG + RWS"
     },
     {
       "name": "Sammelgebäude",
       "consumers": [
         {
-          "type": " Wärme",
+          "type": "Wärme",
           "monthly_values": [
             "305350,989707633",
             "260602,825773001",
@@ -277,7 +472,7 @@
           ]
         },
         {
-          "type": " Strom",
+          "type": "Strom",
           "monthly_values": [
             "31628,203",
             "30007,103",
@@ -294,14 +489,45 @@
           ]
         }
       ],
-      "measures": [],
+      "measures": [
+        {
+          "name": "PV-Anlage Installation",
+          "description": "Installation einer Photovoltaik-Anlage auf dem Dach",
+          "cost": "1278128",
+          "duration": "8",
+          "co2_savings": "8,87",
+          "cost_savings": "22612,99",
+          "type": "Strom",
+          "done": false
+        },
+        {
+          "name": "Energetische Gebäudesarnierung",
+          "description": "Das Dach und die Fassaden werden gedämmt, die Fenster werden ausgetauscht und die Heizungsanlage wird erneuert.",
+          "cost": "1976265",
+          "duration": "20",
+          "co2_savings": "232,56",
+          "cost_savings": "92167,05",
+          "type": "Wärme",
+          "done": false
+        },
+        {
+          "name": "LED-Lampen",
+          "description": "Alle alten Lampen werden mit LED-Lampen ausgetauscht.",
+          "cost": "60767,53889",
+          "duration": "0,8",
+          "co2_savings": "4,32425",
+          "cost_savings": "6366,692822",
+          "type": "Strom",
+          "done": false
+        }
+      ],
       "abbreviation": "SG"
     },
     {
-      "name": " Sportzentrum",
+      "name": "Sportzentrum",
       "consumers": [
         {
-          "type": " Wärme",
+          "type": "Wärme",
           "monthly_values": [
             "53745,7687515997",
             "27169,5857918775",
@@ -318,7 +544,7 @@
           ]
         },
         {
-          "type": " Strom",
+          "type": "Strom",
           "monthly_values": [
             "44080,51",
             "39398,69",
@@ -335,13 +561,55 @@
           ]
         }
       ],
-      "measures": []
+      "measures": [
+        {
+          "name": "PV-Anlage Installation",
+          "description": "Installation einer Photovoltaik-Anlage auf dem Dach",
+          "cost": "1879248",
+          "duration": "12",
+          "co2_savings": "3,99",
+          "cost_savings": "33248,12",
+          "type": "Strom",
+          "done": false
+        },
+        {
+          "name": "Energetische Gebäudesarnierung",
+          "description": "Das Dach und die Fassaden werden gedämmt, die Fenster werden ausgetauscht und die Heizungsanlage wird erneuert.",
+          "cost": "1800726,789",
+          "duration": "19",
+          "co2_savings": "66,342",
+          "cost_savings": "26291,32044",
+          "type": "Wärme",
+          "done": false
+        },
+        {
+          "name": "Solarthermie für Warmwasser",
+          "description": "Das Schwimmbecken wird mit Solarthermie erwärmt statt mit Gas.",
+          "cost": "254320",
+          "duration": "1",
+          "co2_savings": "0,697",
+          "cost_savings": "36748,8",
+          "type": "Wärme",
+          "done": false
+        },
+        {
+          "name": "LED-Lampen",
+          "description": "Alle alten Lampen werden mit LED-Lampen ausgetauscht.",
+          "cost": "33505,23459",
+          "duration": "0,5",
+          "co2_savings": "5,266625",
+          "cost_savings": "7752,641228",
+          "type": "Strom",
+          "done": false
+        }
+      ],
+      "abbreviation": "Sport"
     },
     {
-      "name": " Studentenhaus",
+      "name": "Studentenhaus",
       "consumers": [
         {
-          "type": " Wärme",
+          "type": "Wärme",
           "monthly_values": [
             "70554,412865078",
             "59457,3848699974",
@@ -358,7 +626,24 @@
           ]
         },
         {
-          "type": " Strom",
+          "type": "Kälte",
+          "monthly_values": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        {
+          "type": "Strom",
           "monthly_values": [
             "18156,63",
             "18916,57",
@@ -375,13 +660,45 @@
           ]
         }
       ],
-      "measures": []
+      "measures": [
+        {
+          "name": "PV-Anlage Installation",
+          "description": "Installation einer Photovoltaik-Anlage auf dem Dach",
+          "cost": "614720",
+          "duration": "4",
+          "co2_savings": "4,26",
+          "cost_savings": "10875,8",
+          "type": "Strom",
+          "done": false
+        },
+        {
+          "name": "Energetische Gebäudesarnierung",
+          "description": "Das Dach und die Fassaden werden gedämmt, die Fenster werden ausgetauscht und die Heizungsanlage wird erneuert.",
+          "cost": "931197,7295",
+          "duration": "9",
+          "co2_savings": "51,816",
+          "cost_savings": "20535,21677",
+          "type": "Wärme",
+          "done": false
+        },
+        {
+          "name": "LED-Lampen",
+          "description": "Alle alten Lampen werden mit LED-Lampen ausgetauscht.",
+          "cost": "25573,05983",
+          "duration": "0,4",
+          "co2_savings": "2,45875",
+          "cost_savings": "3628,623465",
+          "type": "Strom",
+          "done": false
+        }
+      ],
+      "abbreviation": "SH"
     },
     {
-      "name": " Verwaltungsgebäude und Ladengeschäfte",
+      "name": "Verwaltungsgebäude und Ladengeschäfte",
       "consumers": [
         {
-          "type": " Wärme",
+          "type": "Wärme",
           "monthly_values": [
             "137706,718324089",
             "114399,561955814",
@@ -398,7 +715,7 @@
           ]
         },
         {
-          "type": " Strom",
+          "type": "Strom",
           "monthly_values": [
             "14583,62",
             "12565,86",
@@ -415,13 +732,54 @@
           ]
         }
       ],
-      "measures": []
+      "measures": [
+        {
+          "name": "PV-Anlage Installation",
+          "description": "Installation einer Photovoltaik-Anlage auf dem Dach",
+          "cost": "0",
+          "duration": "0",
+          "co2_savings": "0",
+          "cost_savings": "0",
+          "type": "Strom",
+          "done": true
+        },
+        {
+          "name": "Energetische Gebäudesarnierung",
+          "description": "Das Dach und die Fassaden werden gedämmt, die Fenster werden ausgetauscht und die Heizungsanlage wird erneuert.",
+          "cost": "968665,0884",
+          "duration": "10",
+          "co2_savings": "100,086",
+          "cost_savings": "39666,8335",
+          "type": "Wärme",
+          "done": false
+        },
+        {
+          "name": "Papierkonzept verbessern",
+          "description": "Alle Prüfungen und Papierverbrauch in Büros werden digitalisiert.",
+          "cost": "0",
+          "duration": "0",
+          "co2_savings": "23,91",
+          "cost_savings": "0",
+          "type": "Waren",
+          "done": false
+        },
+        {
+          "name": "LED-Lampen",
+          "description": "Alle alten Lampen werden mit LED-Lampen ausgetauscht.",
+          "cost": "19260,43541",
+          "duration": "0,3",
+          "co2_savings": "1,442",
+          "cost_savings": "2583,632065",
+          "type": "Strom",
+          "done": false
+        }
+      ]
     },
     {
-      "name": " Vielberthgebäude",
+      "name": "Vielberthgebäude",
       "consumers": [
         {
-          "type": " Wärme",
+          "type": "Wärme",
           "monthly_values": [
             "65043,5092250261",
             "56414,4945375206",
@@ -438,7 +796,24 @@
           ]
         },
         {
-          "type": " Strom",
+          "type": "Kälte",
+          "monthly_values": [
+            "4651,76651354158",
+            "3873,87345600337",
+            "4572,14348759613",
+            "3753,98538047356",
+            "4156,6888285884",
+            "9049",
+            "14222",
+            "15087",
+            "8190",
+            "6163,65402417574",
+            "4454,92216288141",
+            "4336,67230097207"
+          ]
+        },
+        {
+          "type": "Strom",
           "monthly_values": [
             "33769,71",
             "27112,04",
@@ -455,13 +830,35 @@
           ]
         }
       ],
-      "measures": []
+      "measures": [
+        {
+          "name": "PV-Anlage Installation",
+          "description": "Installation einer Photovoltaik-Anlage auf dem Dach",
+          "cost": "0",
+          "duration": "0",
+          "co2_savings": "0",
+          "cost_savings": "10781,38",
+          "type": "Strom",
+          "done": true
+        },
+        {
+          "name": "LED-Lampen",
+          "description": "Alle alten Lampen werden mit LED-Lampen ausgetauscht.",
+          "cost": "13332,90755",
+          "duration": "0,2",
+          "co2_savings": "3,91125",
+          "cost_savings": "5756,042482",
+          "type": "Strom",
+          "done": false
+        }
+      ],
+      "abbreviation": "NHGB"
     },
     {
-      "name": " Vorklinikum",
+      "name": "Vorklinikum",
       "consumers": [
         {
-          "type": " Wärme",
+          "type": "Wärme",
           "monthly_values": [
             "1223594,37022523",
             "1058606,932122510",
@@ -478,7 +875,7 @@
           ]
         },
         {
-          "type": " Strom",
+          "type": "Strom",
           "monthly_values": [
             "259024,53",
             "237267,92",
@@ -495,13 +892,35 @@
           ]
         }
       ],
-      "measures": []
+      "measures": [
+        {
+          "name": "PV-Anlage Installation",
+          "description": "Installation einer Photovoltaik-Anlage auf dem Dach",
+          "cost": "2371568",
+          "duration": "15",
+          "co2_savings": "16,39",
+          "cost_savings": "41958,43984",
+          "type": "Strom",
+          "done": false
+        },
+        {
+          "name": "LED-Lampen",
+          "description": "Alle alten Lampen werden mit LED-Lampen ausgetauscht.",
+          "cost": "56377,11977",
+          "duration": "0,8",
+          "co2_savings": "31,01875",
+          "cost_savings": "45655,62582",
+          "type": "Strom",
+          "done": false
+        }
+      ],
+      "abbreviation": "VKL"
     },
     {
       "name": "Westliche Naturwissenschaften",
       "consumers": [
         {
-          "type": " Wärme",
+          "type": "Wärme",
           "monthly_values": [
             "382440,577014592",
             "312269,616545558",
@@ -518,7 +937,7 @@
           ]
         },
         {
-          "type": " Kälte",
+          "type": "Kälte",
           "monthly_values": [
             "229098,174141559",
             "202118,435205694",
@@ -535,14 +954,25 @@
           ]
         }
       ],
-      "measures": [],
+      "measures": [
+        {
+          "name": "PV-Anlage Installation",
+          "description": "Installation einer Photovoltaik-Anlage auf dem Dach",
+          "cost": "0",
+          "duration": "0",
+          "co2_savings": "0",
+          "cost_savings": "0",
+          "type": "Strom",
+          "done": true
+        }
+      ],
       "abbreviation": "WNDE"
     },
     {
-      "name": " Zentrales Bibiliotheksgebäude",
+      "name": "Zentrales Bibiliotheksgebäude",
       "consumers": [
         {
-          "type": " Wärme",
+          "type": "Wärme",
           "monthly_values": [
             "380400,588294072",
             "294157,615881485",
@@ -559,7 +989,7 @@
           ]
         },
         {
-          "type": " Strom",
+          "type": "Strom",
           "monthly_values": [
             "96687,0773453192",
             "90454,9218753875",
@@ -579,10 +1009,10 @@
       "measures": []
     },
     {
-      "name": " Zentrales Hörsaalgebäude",
+      "name": "Zentrales Hörsaalgebäude",
       "consumers": [
         {
-          "type": " Wärme",
+          "type": "Wärme",
           "monthly_values": [
             "336886,586672316",
             "292861,507314399",
@@ -599,7 +1029,24 @@
           ]
         },
         {
-          "type": " Strom",
+          "type": "Kälte",
+          "monthly_values": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "2",
+            "7",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        {
+          "type": "Strom",
           "monthly_values": [
             "59667,31",
             "57439,88",
@@ -616,37 +1063,44 @@
           ]
         }
       ],
-      "measures": []
-    },
-    {
-      "name": "Philosophie und Theologie",
-      "consumers": [
+      "measures": [
         {
-          "type": " Kälte",
-          "monthly_values": [
-            "46,2219167763477",
-            "232,963001883845",
-            "91,1665912577134",
-            "54,4487064678535",
-            "29,2280645863255",
-            "22328",
-            "54802",
-            "46688",
-            "37079",
-            "9664,6758113796",
-            "1,22887139107612",
-            "25,3311850032416"
-          ]
+          "name": "PV-Anlage Installation",
+          "description": "Installation einer Photovoltaik-Anlage auf dem Dach",
+          "cost": "2227952",
+          "duration": "14",
+          "co2_savings": "15,39",
+          "cost_savings": "39417,55",
+          "type": "Strom",
+          "done": false
+        },
+        {
+          "name": "Energetische Gebäudesarnierung",
+          "description": "Das Dach und die Fassaden werden gedämmt, die Fenster werden ausgetauscht und die Heizungsanlage wird erneuert.",
+          "cost": "2550481,767",
+          "duration": "26",
+          "co2_savings": "231,426",
+          "cost_savings": "91718,41114",
+          "type": "Wärme",
+          "done": false
+        },
+        {
+          "name": "LED-Lampen",
+          "description": "Alle alten Lampen werden mit LED-Lampen ausgetauscht.",
+          "cost": "79444,60168",
+          "duration": "1,1",
+          "co2_savings": "8,25125",
+          "cost_savings": "12144,17012",
+          "type": "Strom",
+          "done": false
         }
-      ],
-      "measures": [],
-      "abbreviation": "PT"
+      ]
     },
     {
       "name": "Rechenzentrum",
       "consumers": [
         {
-          "type": " Kälte",
+          "type": "Kälte",
           "monthly_values": [
             "8751,48830009791",
             "15740,6084654632",
@@ -661,203 +1115,9 @@
             "21316,0518267931",
             "22618,4069230129"
           ]
-        }
-      ],
-      "measures": [],
-      "abbreviation": "RZ"
-    },
-    {
-      "name": "Studentenhaus",
-      "consumers": [
+        },
         {
-          "type": " Kälte",
-          "monthly_values": [
-            "0",
-            "0",
-            "0",
-            "0",
-            "0",
-            "0",
-            "0",
-            "0",
-            "0",
-            "0",
-            "0",
-            "0"
-          ]
-        }
-      ],
-      "measures": [],
-      "abbreviation": "SH"
-    },
-    {
-      "name": "Vielberthgebäude",
-      "consumers": [
-        {
-          "type": " Kälte",
-          "monthly_values": [
-            "4651,76651354158",
-            "3873,87345600337",
-            "4572,14348759613",
-            "3753,98538047356",
-            "4156,6888285884",
-            "9049",
-            "14222",
-            "15087",
-            "8190",
-            "6163,65402417574",
-            "4454,92216288141",
-            "4336,67230097207"
-          ]
-        }
-      ],
-      "measures": [],
-      "abbreviation": "NHGB"
-    },
-    {
-      "name": "Zentrales Hörsaalgebäude",
-      "consumers": [
-        {
-          "type": " Kälte",
-          "monthly_values": [
-            "0",
-            "0",
-            "0",
-            "0",
-            "0",
-            "2",
-            "7",
-            "0",
-            "0",
-            "0",
-            "0",
-            "0"
-          ]
-        }
-      ],
-      "measures": []
-    },
-    {
-      "name": " Bauamt",
-      "consumers": [
-        {
-          "type": " Strom",
-          "monthly_values": [
-            "4697,47",
-            "4012,99",
-            "4573,78",
-            "3597,03",
-            "3668,21",
-            "3563,54",
-            "3656,99",
-            "3923,16",
-            "3853,21",
-            "4517,66",
-            "4765,36",
-            "4618,59"
-          ]
-        }
-      ],
-      "measures": []
-    },
-    {
-      "name": " Mathematik",
-      "consumers": [
-        {
-          "type": " Strom",
-          "monthly_values": [
-            "16813,45",
-            "14298,71",
-            "13451,32",
-            "12731,69",
-            "14319,29",
-            "13513,77",
-            "14923,36",
-            "12057,71",
-            "12685,42",
-            "16142,62",
-            "16665,78",
-            "14453,61"
-          ]
-        }
-      ],
-      "measures": []
-    },
-    {
-      "name": " Mensa",
-      "consumers": [
-        {
-          "type": " Strom",
-          "monthly_values": [
-            "161058,3",
-            "157207,76",
-            "146039,57",
-            "150224,91",
-            "165273,72",
-            "167955,86",
-            "177907,84",
-            "151184,92",
-            "152976,52",
-            "174476,93",
-            "170446,97",
-            "148666,44"
-          ]
-        }
-      ],
-      "measures": []
-    },
-    {
-      "name": "Parkhaus 1 + 2 Süd",
-      "consumers": [
-        {
-          "type": " Strom",
-          "monthly_values": [
-            "13953,11",
-            "12600,01",
-            "12543,46",
-            "11227,68",
-            "8223,73",
-            "7002,92",
-            "6005,30",
-            "5290,12",
-            "5188,41",
-            "9273,73",
-            "14622,02",
-            "14551,01"
-          ]
-        }
-      ],
-      "measures": [],
-      "abbreviation": "Parkhäuser"
-    },
-    {
-      "name": " Physik",
-      "consumers": [
-        {
-          "type": " Strom",
-          "monthly_values": [
-            "288494,83",
-            "289587,5",
-            "315567,92",
-            "302772,61",
-            "329340,45",
-            "325923,71",
-            "342683,34",
-            "330824",
-            "327387,34",
-            "327408,92",
-            "321878,17",
-            "305068,38"
-          ]
-        }
-      ],
-      "measures": []
-    },
-    {
-      "name": " Rechenzentrum",
-      "consumers": [
-        {
-          "type": " Strom",
+          "type": "Strom",
           "monthly_values": [
             "224971,8",
             "213281,96",
@@ -874,13 +1134,169 @@
           ]
         }
       ],
-      "measures": []
+      "measures": [
+        {
+          "name": "PV-Anlage Installation",
+          "description": "Installation einer Photovoltaik-Anlage auf dem Dach",
+          "cost": "672112",
+          "duration": "4",
+          "co2_savings": "4,64",
+          "cost_savings": "11891,19",
+          "type": "Strom",
+          "done": false
+        },
+        {
+          "name": "Energetische Gebäudesarnierung",
+          "description": "Das Dach und die Fassaden werden gedämmt, die Fenster werden ausgetauscht und die Heizungsanlage wird erneuert.",
+          "cost": "744734,1366",
+          "duration": "8",
+          "co2_savings": "177,39",
+          "cost_savings": "70301,02041",
+          "type": "Wärme",
+          "done": false
+        },
+        {
+          "name": "LED-Lampen",
+          "description": "Alle alten Lampen werden mit LED-Lampen ausgetauscht.",
+          "cost": "15977,50464",
+          "duration": "0,2",
+          "co2_savings": "31,3775",
+          "cost_savings": "46186,97161",
+          "type": "Strom",
+          "done": false
+        }
+      ],
+      "abbreviation": "RZ"
     },
     {
-      "name": " Technische Zentrale",
+      "name": "Bauamt",
       "consumers": [
         {
-          "type": " Strom",
+          "type": "Strom",
+          "monthly_values": [
+            "4697,47",
+            "4012,99",
+            "4573,78",
+            "3597,03",
+            "3668,21",
+            "3563,54",
+            "3656,99",
+            "3923,16",
+            "3853,21",
+            "4517,66",
+            "4765,36",
+            "4618,59"
+          ]
+        }
+      ],
+      "measures": [],
+      "abbreviation": "SG"
+    },
+    {
+      "name": "Mensa",
+      "consumers": [
+        {
+          "type": "Strom",
+          "monthly_values": [
+            "161058,3",
+            "157207,76",
+            "146039,57",
+            "150224,91",
+            "165273,72",
+            "167955,86",
+            "177907,84",
+            "151184,92",
+            "152976,52",
+            "174476,93",
+            "170446,97",
+            "148666,44"
+          ]
+        }
+      ],
+      "measures": [
+        {
+          "name": "PV-Anlage Installation",
+          "description": "Installation einer Photovoltaik-Anlage auf dem Dach",
+          "cost": "1156000",
+          "duration": "7",
+          "co2_savings": "7,99",
+          "cost_savings": "20452,27",
+          "type": "Strom",
+          "done": false
+        },
+        {
+          "name": "Energetische Gebäudesarnierung",
+          "description": "Das Dach und die Fassaden werden gedämmt, die Fenster werden ausgetauscht und die Heizungsanlage wird erneuert.",
+          "cost": "1069045,201",
+          "duration": "11",
+          "co2_savings": "152,55",
+          "cost_savings": "60457,17053",
+          "type": "Wärme",
+          "done": false
+        },
+        {
+          "name": "LED-Lampen",
+          "description": "Alle alten Lampen werden mit LED-Lampen ausgetauscht.",
+          "cost": "13740,26603",
+          "duration": "0,2",
+          "co2_savings": "22,045625",
+          "cost_savings": "32448,09101",
+          "type": "Strom",
+          "done": false
+        }
+      ],
+      "abbreviation": "Mensa"
+    },
+    {
+      "name": "Parkhaus 1 + 2 Süd",
+      "consumers": [
+        {
+          "type": "Strom",
+          "monthly_values": [
+            "13953,11",
+            "12600,01",
+            "12543,46",
+            "11227,68",
+            "8223,73",
+            "7002,92",
+            "6005,30",
+            "5290,12",
+            "5188,41",
+            "9273,73",
+            "14622,02",
+            "14551,01"
+          ]
+        }
+      ],
+      "measures": [
+        {
+          "name": "PV-Anlage Installation",
+          "description": "Installation einer Photovoltaik-Anlage auf dem Dach",
+          "cost": "1138048",
+          "duration": "7",
+          "co2_savings": "7,85",
+          "cost_savings": "20134,66",
+          "type": "Strom",
+          "done": false
+        },
+        {
+          "name": "LED-Lampen",
+          "description": "Alle alten Lampen werden mit LED-Lampen ausgetauscht.",
+          "cost": "20290,33167",
+          "duration": "0,3",
+          "co2_savings": "1,381625",
+          "cost_savings": "2032,522905",
+          "type": "Strom",
+          "done": false
+        }
+      ],
+      "abbreviation": "Parkhäuser"
+    },
+    {
+      "name": "Technische Zentrale",
+      "consumers": [
+        {
+          "type": "Strom",
           "monthly_values": [
             "215122,58",
             "203564,17",
@@ -897,7 +1313,39 @@
           ]
         }
       ],
-      "measures": []
+      "measures": [
+        {
+          "name": "PV-Anlage Installation",
+          "description": "Installation einer Photovoltaik-Anlage auf dem Dach",
+          "cost": "161840",
+          "duration": "1",
+          "co2_savings": "1,11",
+          "cost_savings": "2863,32",
+          "type": "Strom",
+          "done": false
+        },
+        {
+          "name": "Energetische Gebäudesarnierung",
+          "description": "Das Dach und die Fassaden werden gedämmt, die Fenster werden ausgetauscht und die Heizungsanlage wird erneuert.",
+          "cost": "241938,814",
+          "duration": "2",
+          "co2_savings": "25,626",
+          "cost_savings": "10156,80465",
+          "type": "Wärme",
+          "done": false
+        },
+        {
+          "name": "LED-Lampen",
+          "description": "Alle alten Lampen werden mit LED-Lampen ausgetauscht.",
+          "cost": "2885,455866",
+          "duration": "0,04",
+          "co2_savings": "38,429125",
+          "cost_savings": "56565,47895",
+          "type": "Strom",
+          "done": false
+        }
+      ],
+      "abbreviation": "TZ"
     }
   ]
 }
