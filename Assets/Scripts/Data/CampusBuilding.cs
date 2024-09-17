@@ -77,4 +77,30 @@ public class CampusBuilding : MonoBehaviour
         return rts_camera.transform.position; 
     }
 
+    public void ShowMeasure(string measureName)
+    {
+        Transform child = transform.Find(measureName);
+        if (child != null)
+        {
+            child.gameObject.SetActive(true);
+        }
+        else
+        {
+            Debug.LogWarning($"{measureName} konnte nicht gefunden werden.");
+        }
+    }
+
+    public void HideMeasure(string measureName)
+    {
+        Transform child = transform.Find(measureName);
+        if (child != null)
+        {
+            child.gameObject.SetActive(false);
+        }
+        else
+        {
+            Debug.LogWarning($"{measureName} konnte nicht gefunden werden.");
+        }
+    }
+
 }

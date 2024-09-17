@@ -17,7 +17,7 @@ public class Co2Manager : MonoBehaviour
         
         //OnMeasureCompleted wird aufgerufen, wenn das Ereignis in der CampusBuilding Klasse ausgelöst wird
         //muss noch angepasst werden auf das SideMenu
-        CampusBuilding.OnMeasureCompleted += OnMeasureCompleted;
+        //CampusBuilding.OnMeasureCompleted += OnMeasureCompleted;
     }
 
     private void OnMeasureCompleted(Measure measure)
