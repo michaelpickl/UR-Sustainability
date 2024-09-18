@@ -30,6 +30,14 @@ public class DataGetter : MonoBehaviour
         }
         return null;
     }
+
+    public Building[] GetBuildings()
+    {
+        if(campus == null){
+            return null;
+        }
+        return campus.buildings;
+    }
 }
 
 [System.Serializable]
@@ -51,7 +59,7 @@ public class Building
 public class Consumer
 {
     public string type;
-    public int[] monthly_values;
+    public float[] monthly_values;
 }
 
 [System.Serializable]

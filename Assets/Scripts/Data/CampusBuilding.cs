@@ -13,12 +13,14 @@ public class CampusBuilding : MonoBehaviour
     private Camera rts_camera;
     private RTS_Camera camManager;
     private GameObject cameraTarget;
+    private Converter converter;
 
     void Start()
     {
         dataGetter = GameObject.Find("DataGetter").GetComponent<DataGetter>();
         rts_camera = GameObject.Find("RTS_Camera").GetComponent<Camera>();
         camManager = GameObject.Find("RTS_Camera").GetComponent<RTS_Camera>();
+        converter = GameObject.Find("Converter").GetComponent<Converter>();
         cameraTarget = GameObject.Find("CameraTarget");
         building = dataGetter.GetBuilding(buildingName);
         if(building != null){
