@@ -820,6 +820,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buildingName: Physik
+  sideMenuController: {fileID: 0}
 --- !u!65 &98927517
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1714,6 +1715,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buildingName: Technische Zentrale
+  sideMenuController: {fileID: 0}
 --- !u!65 &248392810
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2229,6 +2231,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buildingName: Recht und Wirtschaft
+  sideMenuController: {fileID: 0}
 --- !u!65 &294808557
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3099,6 +3102,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buildingName: Fahrzeughalle
+  sideMenuController: {fileID: 0}
 --- !u!65 &443199544
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3642,15 +3646,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 459968, guid: 407bd5cbe8c43334bb1b25c0f3826974, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1190
+      value: -1058
       objectReference: {fileID: 0}
     - target: {fileID: 459968, guid: 407bd5cbe8c43334bb1b25c0f3826974, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 200
+      value: 192
       objectReference: {fileID: 0}
     - target: {fileID: 459968, guid: 407bd5cbe8c43334bb1b25c0f3826974, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 500
+      value: 74
       objectReference: {fileID: 0}
     - target: {fileID: 459968, guid: 407bd5cbe8c43334bb1b25c0f3826974, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4132,6 +4136,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buildingName: Studentenhaus
+  sideMenuController: {fileID: 0}
 --- !u!65 &558993347
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8071,6 +8076,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buildingName: "Vielberthgeb\xE4ude"
+  sideMenuController: {fileID: 0}
 --- !u!65 &697847702
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9001,6 +9007,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buildingName: Mensa
+  sideMenuController: {fileID: 0}
 --- !u!1 &744742993
 GameObject:
   m_ObjectHideFlags: 0
@@ -10400,6 +10407,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buildingName: Biologie
+  sideMenuController: {fileID: 0}
 --- !u!65 &835479663
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10491,6 +10499,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buildingName: "Zentrales H\xF6rsaalgeb\xE4ude"
+  sideMenuController: {fileID: 0}
 --- !u!65 &845773456
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10580,6 +10589,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buildingName: Rechenzentrum
+  sideMenuController: {fileID: 0}
 --- !u!65 &853243582
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12165,7 +12175,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 648081089}
   m_Direction: 2
   m_Value: 1.0000002
-  m_Size: 0.26316333
+  m_Size: 0.26316336
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -12583,6 +12593,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buildingName: "Sammelgeb\xE4ude"
+  sideMenuController: {fileID: 0}
 --- !u!65 &991750146
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12997,6 +13008,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buildingName: "\xD6PNV"
+  sideMenuController: {fileID: 0}
 --- !u!65 &1032987473
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13088,6 +13100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buildingName: OTH
+  sideMenuController: {fileID: 0}
 --- !u!65 &1051340629
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13706,6 +13719,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buildingName: Mathematik
+  sideMenuController: {fileID: 0}
 --- !u!65 &1139074351
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13809,6 +13823,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buildingName: Philosophie und Theologie
+  sideMenuController: {fileID: 0}
 --- !u!65 &1187096228
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13878,6 +13893,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buildingName: "Parkhaus S\xFCd"
+  sideMenuController: {fileID: 0}
 --- !u!65 &1189235871
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15814,6 +15830,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buildingName: Sportzentrum
+  sideMenuController: {fileID: 0}
 --- !u!65 &1401556025
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16573,6 +16590,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buildingName: Verwaltung
+  sideMenuController: {fileID: 0}
 --- !u!65 &1531752111
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16641,6 +16659,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buildingName: Entsorgungszentrum
+  sideMenuController: {fileID: 0}
 --- !u!65 &1535575956
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16951,6 +16970,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buildingName: Vorklinikum
+  sideMenuController: {fileID: 0}
 --- !u!65 &1577418269
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19426,6 +19446,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buildingName: Zentralbibliothek
+  sideMenuController: {fileID: 0}
 --- !u!65 &1883941039
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21530,6 +21551,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buildingName: Chemie
+  sideMenuController: {fileID: 0}
 --- !u!65 &2086713630
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22152,7 +22174,7 @@ Transform:
   m_GameObject: {fileID: 4092285820565706568}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 110.00391, y: -2.02, z: 432.6741}
+  m_LocalPosition: {x: 110.00391, y: -2.01, z: 432.6741}
   m_LocalScale: {x: 100, y: 99.99999, z: 99.99999}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -23398,7 +23420,7 @@ Transform:
   m_GameObject: {fileID: 9206975900533028273}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 110.00391, y: -2.02, z: 432.6741}
+  m_LocalPosition: {x: 110.00391, y: -2.01, z: 432.6741}
   m_LocalScale: {x: 100, y: 99.99999, z: 99.99999}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -23447,7 +23469,7 @@ Transform:
   m_GameObject: {fileID: 6149204539945061864}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 110.00391, y: -2.02, z: 432.6741}
+  m_LocalPosition: {x: 110.00391, y: -2.01, z: 432.6741}
   m_LocalScale: {x: 100, y: 99.99999, z: 99.99999}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -24819,7 +24841,7 @@ Transform:
   m_GameObject: {fileID: 2164164320908816244}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 110.00391, y: -2.02, z: 432.6741}
+  m_LocalPosition: {x: 110.00391, y: -2.01, z: 432.6741}
   m_LocalScale: {x: 100, y: 99.99999, z: 99.99999}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -24834,7 +24856,7 @@ Transform:
   m_GameObject: {fileID: 1474455328093328493}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 110.00391, y: -2.02, z: 432.6741}
+  m_LocalPosition: {x: 110.00391, y: -2.01, z: 432.6741}
   m_LocalScale: {x: 100, y: 99.99999, z: 99.99999}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -27175,7 +27197,7 @@ Transform:
   m_GameObject: {fileID: 7198279374243247290}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 110.00391, y: -2.02, z: 432.6741}
+  m_LocalPosition: {x: 110.00391, y: -2.01, z: 432.6741}
   m_LocalScale: {x: 100, y: 99.99999, z: 99.99999}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -27409,7 +27431,7 @@ Transform:
   m_GameObject: {fileID: 7838224764726990191}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 110.00391, y: -2.02, z: 432.6741}
+  m_LocalPosition: {x: 110.00391, y: -2.01, z: 432.6741}
   m_LocalScale: {x: 100, y: 99.99999, z: 99.99999}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -28302,7 +28324,7 @@ Transform:
   m_GameObject: {fileID: 1919186834096574653}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 110.00391, y: -2.02, z: 432.6741}
+  m_LocalPosition: {x: 110.00391, y: -2.01, z: 432.6741}
   m_LocalScale: {x: 100, y: 99.99999, z: 99.99999}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -28538,7 +28560,7 @@ Transform:
   m_GameObject: {fileID: 6324084912026487684}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 110.00391, y: -2.02, z: 432.6741}
+  m_LocalPosition: {x: 110.00391, y: -2.01, z: 432.6741}
   m_LocalScale: {x: 100, y: 99.99999, z: 99.99999}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -29070,7 +29092,7 @@ Transform:
   m_GameObject: {fileID: 6315253804047505419}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 110.00391, y: -2.02, z: 432.6741}
+  m_LocalPosition: {x: 110.00391, y: -2.01, z: 432.6741}
   m_LocalScale: {x: 100, y: 99.99999, z: 99.99999}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -29932,7 +29954,7 @@ Transform:
   m_GameObject: {fileID: 3483207354097446304}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 110.00391, y: -2.02, z: 432.6741}
+  m_LocalPosition: {x: 110.00391, y: -2.01, z: 432.6741}
   m_LocalScale: {x: 100, y: 99.99999, z: 99.99999}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -30390,7 +30412,7 @@ Transform:
   m_GameObject: {fileID: 4448188656368664311}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 110.00391, y: -2.02, z: 432.6741}
+  m_LocalPosition: {x: 110.00391, y: -2.01, z: 432.6741}
   m_LocalScale: {x: 100, y: 99.99999, z: 99.99999}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -31319,7 +31341,7 @@ Transform:
   m_GameObject: {fileID: 5353429719859320899}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 110.00391, y: -2.02, z: 432.6741}
+  m_LocalPosition: {x: 110.00391, y: -2.01, z: 432.6741}
   m_LocalScale: {x: 100, y: 99.99999, z: 99.99999}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -33643,7 +33665,7 @@ Transform:
   m_GameObject: {fileID: 2488488912520993541}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 110.00391, y: -2.02, z: 432.6741}
+  m_LocalPosition: {x: 110.00391, y: -2.01, z: 432.6741}
   m_LocalScale: {x: 100, y: 99.99999, z: 99.99999}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -33658,7 +33680,7 @@ Transform:
   m_GameObject: {fileID: 1464494947974829806}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 110.00391, y: -2.02, z: 432.6741}
+  m_LocalPosition: {x: 110.00391, y: -2.01, z: 432.6741}
   m_LocalScale: {x: 100, y: 99.99999, z: 99.99999}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -34407,7 +34429,7 @@ Transform:
   m_GameObject: {fileID: 6005392176723226330}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 110.00391, y: -2.02, z: 432.6741}
+  m_LocalPosition: {x: 110.00391, y: -2.01, z: 432.6741}
   m_LocalScale: {x: 100, y: 99.99999, z: 99.99999}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -35665,7 +35687,7 @@ Transform:
   m_GameObject: {fileID: 1804826533218383459}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 110.00391, y: -2.02, z: 432.6741}
+  m_LocalPosition: {x: 110.00391, y: -2.01, z: 432.6741}
   m_LocalScale: {x: 100, y: 99.99999, z: 99.99999}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -35877,6 +35899,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buildingName: Zentral Bibliothek
+  sideMenuController: {fileID: 0}
 --- !u!65 &2059537705793457120
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -36156,8 +36179,8 @@ Transform:
   m_GameObject: {fileID: 7881415353184849398}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7069848, y: 0, z: -0, w: 0.7072287}
-  m_LocalPosition: {x: 217.83461, y: 5.7621098, z: 148.6357}
-  m_LocalScale: {x: 100, y: 99.99999, z: 99.99999}
+  m_LocalPosition: {x: 217.83461, y: 12.2, z: 148.6}
+  m_LocalScale: {x: 100, y: 99.99999, z: 30.99999}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3038731832763074124}
@@ -36859,7 +36882,7 @@ Transform:
   m_GameObject: {fileID: 1611268345311957040}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 110.00391, y: -2.02, z: 432.6741}
+  m_LocalPosition: {x: 110.00391, y: -2.01, z: 432.6741}
   m_LocalScale: {x: 100, y: 99.99999, z: 99.99999}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -37228,7 +37251,7 @@ Transform:
   m_GameObject: {fileID: 2436166906433083610}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 110.00391, y: -2.02, z: 432.6741}
+  m_LocalPosition: {x: 110.00391, y: -2.01, z: 432.6741}
   m_LocalScale: {x: 100, y: 99.99999, z: 99.99999}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -37649,7 +37672,7 @@ Transform:
   m_GameObject: {fileID: 5778180755863492383}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 110.00391, y: -2.02, z: 432.6741}
+  m_LocalPosition: {x: 110.00391, y: -2.01, z: 432.6741}
   m_LocalScale: {x: 100, y: 99.99999, z: 99.99999}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -38154,7 +38177,7 @@ Transform:
   m_GameObject: {fileID: 1544817577807400974}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 110.00391, y: -2.02, z: 432.6741}
+  m_LocalPosition: {x: 110.00391, y: -2.01, z: 432.6741}
   m_LocalScale: {x: 100, y: 99.99999, z: 99.99999}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -38958,6 +38981,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buildingName: Mensa
+  sideMenuController: {fileID: 0}
 --- !u!65 &2504427607660899204
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -39138,6 +39162,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buildingName: PT
+  sideMenuController: {fileID: 0}
 --- !u!65 &2525063425744218710
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -39290,7 +39315,7 @@ Transform:
   m_GameObject: {fileID: 2107887045537058501}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 110.00391, y: -2.02, z: 432.6741}
+  m_LocalPosition: {x: 110.00391, y: -2.01, z: 432.6741}
   m_LocalScale: {x: 100, y: 99.99999, z: 99.99999}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -39792,7 +39817,7 @@ Transform:
   m_GameObject: {fileID: 2219462716027141234}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 172.0039, y: -2.02, z: 432.6741}
+  m_LocalPosition: {x: 172.0039, y: -2.01, z: 432.6741}
   m_LocalScale: {x: 100, y: 99.99999, z: 99.99999}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -42048,6 +42073,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buildingName: "Mobilit\xE4t"
+  sideMenuController: {fileID: 0}
 --- !u!65 &3038731832763074126
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -43169,7 +43195,7 @@ Transform:
   m_GameObject: {fileID: 2327283592895685505}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 110.00391, y: -2.02, z: 432.6741}
+  m_LocalPosition: {x: 110.00391, y: -2.01, z: 432.6741}
   m_LocalScale: {x: 100, y: 99.99999, z: 99.99999}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -43306,7 +43332,7 @@ Transform:
   m_GameObject: {fileID: 2200423646837840433}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 110.00391, y: -2.02, z: 432.6741}
+  m_LocalPosition: {x: 110.00391, y: -2.01, z: 432.6741}
   m_LocalScale: {x: 100, y: 99.99999, z: 99.99999}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -43532,7 +43558,7 @@ Transform:
   m_GameObject: {fileID: 3254732451111672993}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 110.00391, y: -2.02, z: 432.6741}
+  m_LocalPosition: {x: 110.00391, y: -2.01, z: 432.6741}
   m_LocalScale: {x: 100, y: 99.99999, z: 99.99999}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -43602,6 +43628,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buildingName: Vorklinikum
+  sideMenuController: {fileID: 0}
 --- !u!65 &3246502103238711760
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -43782,6 +43809,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buildingName: Entsorgungszentrum
+  sideMenuController: {fileID: 0}
 --- !u!65 &3273757607011995294
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -44183,7 +44211,7 @@ Transform:
   m_GameObject: {fileID: 4636082209376568473}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 110.00391, y: -2.02, z: 432.6741}
+  m_LocalPosition: {x: 110.00391, y: -2.01, z: 432.6741}
   m_LocalScale: {x: 100, y: 99.99999, z: 99.99999}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -44259,7 +44287,7 @@ Transform:
   m_GameObject: {fileID: 9187470501697255953}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 110.00391, y: -2.02, z: 432.6741}
+  m_LocalPosition: {x: 110.00391, y: -2.01, z: 432.6741}
   m_LocalScale: {x: 100, y: 99.99999, z: 99.99999}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -45128,7 +45156,7 @@ Transform:
   m_GameObject: {fileID: 1585591765033968973}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 110.00391, y: -2.02, z: 432.6741}
+  m_LocalPosition: {x: 110.00391, y: -2.01, z: 432.6741}
   m_LocalScale: {x: 100, y: 99.99999, z: 99.99999}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -45821,6 +45849,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buildingName: Verwaltung
+  sideMenuController: {fileID: 0}
 --- !u!65 &3599736840982918269
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -46689,7 +46718,7 @@ Transform:
   m_GameObject: {fileID: 5562112143108832545}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 110.00391, y: -2.02, z: 432.6741}
+  m_LocalPosition: {x: 110.00391, y: -2.01, z: 432.6741}
   m_LocalScale: {x: 100, y: 99.99999, z: 99.99999}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -47094,6 +47123,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buildingName: "Zentrales H\xF6rsaalgeb\xE4ude"
+  sideMenuController: {fileID: 0}
 --- !u!65 &3755963147220606089
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -47668,7 +47698,7 @@ Transform:
   m_GameObject: {fileID: 30613435542626008}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 110.00391, y: -2.02, z: 432.6741}
+  m_LocalPosition: {x: 110.00391, y: -2.01, z: 432.6741}
   m_LocalScale: {x: 100, y: 99.99999, z: 99.99999}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -50285,6 +50315,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buildingName: RW
+  sideMenuController: {fileID: 0}
 --- !u!65 &4233216278450951640
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -50989,7 +51020,7 @@ Transform:
   m_GameObject: {fileID: 8812142239992506922}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 110.00391, y: -2.02, z: 432.6741}
+  m_LocalPosition: {x: 110.00391, y: -2.01, z: 432.6741}
   m_LocalScale: {x: 100, y: 99.99999, z: 99.99999}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -52259,6 +52290,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buildingName: Technische Zentrale
+  sideMenuController: {fileID: 0}
 --- !u!65 &4601241532687049584
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -52293,6 +52325,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buildingName: Technische Zentrale
+  sideMenuController: {fileID: 0}
 --- !u!4 &4602232383899195300
 Transform:
   m_ObjectHideFlags: 0
@@ -52985,6 +53018,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buildingName: Physik
+  sideMenuController: {fileID: 0}
 --- !u!65 &4694907866420191388
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -54814,6 +54848,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buildingName: OTH
+  sideMenuController: {fileID: 0}
 --- !u!65 &5003468326546749392
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -54844,7 +54879,7 @@ Transform:
   m_GameObject: {fileID: 6811840962513876231}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 110.00391, y: -2.02, z: 432.6741}
+  m_LocalPosition: {x: 110.00391, y: -2.01, z: 432.6741}
   m_LocalScale: {x: 100, y: 99.99999, z: 99.99999}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -55455,7 +55490,7 @@ Transform:
   m_GameObject: {fileID: 2219150251445153547}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 110.00391, y: -2.02, z: 432.6741}
+  m_LocalPosition: {x: 110.00391, y: -2.01, z: 432.6741}
   m_LocalScale: {x: 100, y: 99.99999, z: 99.99999}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -55831,7 +55866,7 @@ Transform:
   m_GameObject: {fileID: 315299241672802185}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 110.00391, y: -2.02, z: 432.6741}
+  m_LocalPosition: {x: 110.00391, y: -2.01, z: 432.6741}
   m_LocalScale: {x: 100, y: 99.99999, z: 99.99999}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -55892,7 +55927,7 @@ Transform:
   m_GameObject: {fileID: 1251149132506588850}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 110.00391, y: -2.02, z: 432.6741}
+  m_LocalPosition: {x: 110.00391, y: -2.01, z: 432.6741}
   m_LocalScale: {x: 100, y: 99.99999, z: 99.99999}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -56097,7 +56132,7 @@ Transform:
   m_GameObject: {fileID: 7616753242703469842}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 110.00391, y: -2.02, z: 432.6741}
+  m_LocalPosition: {x: 110.00391, y: -2.01, z: 432.6741}
   m_LocalScale: {x: 100, y: 99.99999, z: 99.99999}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -57354,7 +57389,7 @@ Transform:
   m_GameObject: {fileID: 5282100939668160868}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 110.00391, y: -2.02, z: 432.6741}
+  m_LocalPosition: {x: 110.00391, y: -2.01, z: 432.6741}
   m_LocalScale: {x: 100, y: 99.99999, z: 99.99999}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -58068,7 +58103,7 @@ Transform:
   m_GameObject: {fileID: 6985665803278788453}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 110.00391, y: -2.02, z: 432.6741}
+  m_LocalPosition: {x: 110.00391, y: -2.01, z: 432.6741}
   m_LocalScale: {x: 100, y: 99.99999, z: 99.99999}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -58583,7 +58618,7 @@ Transform:
   m_GameObject: {fileID: 7469784128031316585}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 110.00391, y: -2.02, z: 432.6741}
+  m_LocalPosition: {x: 110.00391, y: -2.01, z: 432.6741}
   m_LocalScale: {x: 100, y: 99.99999, z: 99.99999}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -58954,7 +58989,7 @@ Transform:
   m_GameObject: {fileID: 8156204010656772372}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 110.00391, y: -2.02, z: 432.6741}
+  m_LocalPosition: {x: 110.00391, y: -2.01, z: 432.6741}
   m_LocalScale: {x: 100, y: 99.99999, z: 99.99999}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -59431,7 +59466,7 @@ Transform:
   m_GameObject: {fileID: 8225628344867275731}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 110.00391, y: -2.02, z: 432.6741}
+  m_LocalPosition: {x: 110.00391, y: -2.01, z: 432.6741}
   m_LocalScale: {x: 100, y: 99.99999, z: 99.99999}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -59469,7 +59504,7 @@ Transform:
   m_GameObject: {fileID: 2006824661689056307}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 110.00391, y: -2.02, z: 432.6741}
+  m_LocalPosition: {x: 110.00391, y: -2.01, z: 432.6741}
   m_LocalScale: {x: 100, y: 99.99999, z: 99.99999}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -59527,6 +59562,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buildingName: Rechenzentrum
+  sideMenuController: {fileID: 0}
 --- !u!65 &5722305256725043506
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -60372,7 +60408,7 @@ Transform:
   m_GameObject: {fileID: 5817453952510498463}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 110.00391, y: -2.02, z: 432.6741}
+  m_LocalPosition: {x: 110.00391, y: -2.01, z: 432.6741}
   m_LocalScale: {x: 100, y: 99.99999, z: 99.99999}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -60882,7 +60918,7 @@ Transform:
   m_GameObject: {fileID: 2176977494940593020}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 110.00391, y: -2.02, z: 432.6741}
+  m_LocalPosition: {x: 110.00391, y: -2.01, z: 432.6741}
   m_LocalScale: {x: 100, y: 99.99999, z: 99.99999}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -61340,6 +61376,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buildingName: "Vielberthgeb\xE4ude"
+  sideMenuController: {fileID: 0}
 --- !u!65 &6043096963336855944
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -61402,7 +61439,7 @@ Transform:
   m_GameObject: {fileID: 3779300512095109711}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 110.00391, y: -2.02, z: 432.6741}
+  m_LocalPosition: {x: 110.00391, y: -2.01, z: 432.6741}
   m_LocalScale: {x: 100, y: 99.99999, z: 99.99999}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -61771,6 +61808,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buildingName: Chemie
+  sideMenuController: {fileID: 0}
 --- !u!65 &6094527316520596222
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -63182,7 +63220,7 @@ Transform:
   m_GameObject: {fileID: 4731128136579830690}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 110.00391, y: -2.02, z: 432.6741}
+  m_LocalPosition: {x: 110.00391, y: -2.01, z: 432.6741}
   m_LocalScale: {x: 100, y: 99.99999, z: 99.99999}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -64047,6 +64085,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buildingName: Biologie
+  sideMenuController: {fileID: 0}
 --- !u!1 &6399459805481837211
 GameObject:
   m_ObjectHideFlags: 0
@@ -64229,6 +64268,7 @@ MonoBehaviour:
   menuPanel: {fileID: 5128947784934260570}
   menuWidth: 800
   animationSpeed: 5
+  buildingNameText: {fileID: 4779948052645479547}
 --- !u!1 &6426463027534517672
 GameObject:
   m_ObjectHideFlags: 0
@@ -64465,7 +64505,7 @@ Transform:
   m_GameObject: {fileID: 2397692182254313939}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 110.00391, y: -2.02, z: 432.6741}
+  m_LocalPosition: {x: 110.00391, y: -2.01, z: 432.6741}
   m_LocalScale: {x: 100, y: 99.99999, z: 99.99999}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -65626,7 +65666,7 @@ Transform:
   m_GameObject: {fileID: 8064971558798822204}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 110.00391, y: -2.02, z: 432.6741}
+  m_LocalPosition: {x: 110.00391, y: -2.01, z: 432.6741}
   m_LocalScale: {x: 100, y: 99.99999, z: 99.99999}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -65913,6 +65953,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buildingName: Fahrzeughalle
+  sideMenuController: {fileID: 0}
 --- !u!65 &6733891189469251657
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -66104,7 +66145,7 @@ Transform:
   m_GameObject: {fileID: 5514444130654577131}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 110.00391, y: -2.02, z: 432.6741}
+  m_LocalPosition: {x: 110.00391, y: -2.01, z: 432.6741}
   m_LocalScale: {x: 100, y: 99.99999, z: 99.99999}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -66272,6 +66313,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buildingName: Studentenhaus
+  sideMenuController: {fileID: 0}
 --- !u!65 &6803870060142891230
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -67143,7 +67185,7 @@ Transform:
   m_GameObject: {fileID: 3553925819504808948}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 110.00391, y: -2.02, z: 432.6741}
+  m_LocalPosition: {x: 110.00391, y: -2.01, z: 432.6741}
   m_LocalScale: {x: 100, y: 99.99999, z: 99.99999}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -67241,7 +67283,7 @@ Transform:
   m_GameObject: {fileID: 1517347082786643275}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 110.00391, y: -2.02, z: 432.6741}
+  m_LocalPosition: {x: 110.00391, y: -2.01, z: 432.6741}
   m_LocalScale: {x: 100, y: 99.99999, z: 99.99999}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -67333,7 +67375,7 @@ Transform:
   m_GameObject: {fileID: 3653744268247278482}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 110.00391, y: -2.02, z: 432.6741}
+  m_LocalPosition: {x: 110.00391, y: -2.01, z: 432.6741}
   m_LocalScale: {x: 100, y: 99.99999, z: 99.99999}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -68218,7 +68260,7 @@ Transform:
   m_GameObject: {fileID: 2008685607716910537}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 110.00391, y: -2.02, z: 432.6741}
+  m_LocalPosition: {x: 110.00391, y: -2.01, z: 432.6741}
   m_LocalScale: {x: 100, y: 99.99999, z: 99.99999}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -68608,7 +68650,7 @@ Transform:
   m_GameObject: {fileID: 4415644087462430756}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 110.00391, y: -2.02, z: 432.6741}
+  m_LocalPosition: {x: 110.00391, y: -2.01, z: 432.6741}
   m_LocalScale: {x: 100, y: 99.99999, z: 99.99999}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -68696,7 +68738,7 @@ Transform:
   m_GameObject: {fileID: 7280478647234483837}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 110.00391, y: -2.02, z: 432.6741}
+  m_LocalPosition: {x: 110.00391, y: -2.01, z: 432.6741}
   m_LocalScale: {x: 100, y: 99.99999, z: 99.99999}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -70697,6 +70739,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buildingName: Mathematik
+  sideMenuController: {fileID: 0}
 --- !u!65 &7497757228442998314
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -72316,6 +72359,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buildingName: Sportzentrum
+  sideMenuController: {fileID: 0}
 --- !u!114 &7798560337540655990
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -72329,6 +72373,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buildingName: Sportzentrum
+  sideMenuController: {fileID: 0}
 --- !u!65 &7798560337540655991
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -72742,7 +72787,7 @@ Transform:
   m_GameObject: {fileID: 7971317937625654763}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 110.00391, y: -2.02, z: 432.6741}
+  m_LocalPosition: {x: 110.00391, y: -2.01, z: 432.6741}
   m_LocalScale: {x: 100, y: 99.99999, z: 99.99999}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -74050,7 +74095,7 @@ Transform:
   m_GameObject: {fileID: 8917057732933780415}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 110.00391, y: -2.02, z: 432.6741}
+  m_LocalPosition: {x: 110.00391, y: -2.01, z: 432.6741}
   m_LocalScale: {x: 100, y: 99.99999, z: 99.99999}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -74914,7 +74959,7 @@ Transform:
   m_GameObject: {fileID: 480972704214631500}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 110.00391, y: -2.02, z: 432.6741}
+  m_LocalPosition: {x: 110.00391, y: -2.01, z: 432.6741}
   m_LocalScale: {x: 100, y: 99.99999, z: 99.99999}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -76375,7 +76420,7 @@ Transform:
   m_GameObject: {fileID: 1689219004035570360}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 110.00391, y: -2.02, z: 432.6741}
+  m_LocalPosition: {x: 110.00391, y: -2.01, z: 432.6741}
   m_LocalScale: {x: 100, y: 99.99999, z: 99.99999}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -77236,7 +77281,7 @@ Transform:
   m_GameObject: {fileID: 8516417516767484719}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 110.00391, y: -2.02, z: 432.6741}
+  m_LocalPosition: {x: 110.00391, y: -2.01, z: 432.6741}
   m_LocalScale: {x: 100, y: 99.99999, z: 99.99999}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -79638,7 +79683,7 @@ Transform:
   m_GameObject: {fileID: 5135701118951834138}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 110.00391, y: -2.02, z: 432.6741}
+  m_LocalPosition: {x: 110.00391, y: -2.01, z: 432.6741}
   m_LocalScale: {x: 100, y: 99.99999, z: 99.99999}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -80174,7 +80219,7 @@ Transform:
   m_GameObject: {fileID: 7244622078733077645}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 110.00391, y: -2.02, z: 432.6741}
+  m_LocalPosition: {x: 110.00391, y: -2.01, z: 432.6741}
   m_LocalScale: {x: 100, y: 99.99999, z: 99.99999}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -80402,6 +80447,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buildingName: "Sammelgeb\xE4ude"
+  sideMenuController: {fileID: 0}
 --- !u!65 &9152412933951910149
 BoxCollider:
   m_ObjectHideFlags: 0

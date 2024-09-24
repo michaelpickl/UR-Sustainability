@@ -1,10 +1,12 @@
 using UnityEngine;
+using TMPro;
 
 public class SideMenuController : MonoBehaviour
 {
     public RectTransform menuPanel;
     public float menuWidth = 800f;
     public float animationSpeed = 3f;
+    public TextMeshProUGUI  buildingNameText;
 
     private bool isMenuOpen = false;
     private Vector2 closedPosition;
@@ -38,5 +40,17 @@ public class SideMenuController : MonoBehaviour
     public void ToggleMenu()
     {
         isMenuOpen = !isMenuOpen;
+    }
+
+    public void OpenMenuWithBuildingName(string buildingName)
+    {
+        if(buildingNameText != null)
+        {
+            buildingNameText.text = buildingName;
+        }
+        if (!isMenuOpen)
+        {
+            ToggleMenu();
+        }
     }
 }

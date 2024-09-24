@@ -15,6 +15,9 @@ public class CampusBuilding : MonoBehaviour
     private GameObject cameraTarget;
     private Converter converter;
 
+    public SideMenuController sideMenuController; 
+    
+
     void Start()
     {
         dataGetter = GameObject.Find("DataGetter").GetComponent<DataGetter>();
@@ -25,6 +28,11 @@ public class CampusBuilding : MonoBehaviour
         building = dataGetter.GetBuilding(buildingName);
         if(building != null){
             print(building.consumers[0].type);
+        }
+
+        if(sideMenuController == null)
+        {
+            sideMenuController = GameObject.FindObjectOfType<SideMenuController>();
         }
     }
 
@@ -44,6 +52,9 @@ public class CampusBuilding : MonoBehaviour
                     cameraTarget.transform.position = targetPosition;
                     camManager.SetTarget(cameraTarget.transform);
                     Debug.Log("Clicked on: " + clickedObject.name);
+
+                    if(sideMenuController != null)
+                    sideMenuController.OpenMenuWithBuildingName(buildingName);
                 }
             }
         }
