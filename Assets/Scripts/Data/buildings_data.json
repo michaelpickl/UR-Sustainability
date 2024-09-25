@@ -162,7 +162,7 @@
       "abbreviation": "Mathe"
     },
     {
-      "name": "OTH",
+      "name": "Ostbayerische Technische Hochschule Regensburg",
       "consumers": [
         {
           "type": "Wärme",
@@ -199,7 +199,39 @@
           ]
         }
       ],
-      "measures": []
+      "measures": [
+        {
+          "name": "PV-Anlage Installation",
+          "description": "Installation einer Photovoltaik-Anlage auf dem Dach",
+          "cost": "9182176",
+          "duration": "51",
+          "co2_savings": "63,39",
+          "cost_savings": "0",
+          "type": "Strom",
+          "done": false
+        },
+        {
+          "name": "Energetische Gebäudesarnierung",
+          "description": "Bei Gebäudeteilen, die in den 70er Jahren gebaut wurden, werden das Dach und die Fassaden gedämmt, die Fenster ausgetauscht und die Heizungsanlage wird erneuert.",
+          "cost": "5012781,991",
+          "duration": "31",
+          "co2_savings": "0,31",
+          "cost_savings": "123,4003629",
+          "type": "Wärme",
+          "done": false
+        },
+        {
+          "name": "LED-Lampen",
+          "description": "Alle alten Lampen werden mit LED-Lampen ausgetauscht.",
+          "cost": "163709,612",
+          "duration": "2,3",
+          "co2_savings": "61,01",
+          "cost_savings": "89807,26365",
+          "type": "Strom",
+          "done": false
+        }
+      ],
+      "abbreviation": "OTH"
     },
     {
       "name": "Philosophie und Theologie",
@@ -1346,6 +1378,108 @@
         }
       ],
       "abbreviation": "TZ"
+    },
+    {
+      "name": "Zentrales Bibliotheksgebäude",
+      "consumers": [],
+      "measures": [
+        {
+          "name": "PV-Anlage Installation",
+          "description": "Installation einer Photovoltaik-Anlage auf dem Dach",
+          "cost": "2334032",
+          "duration": "14",
+          "co2_savings": "16,12",
+          "cost_savings": "41294,34",
+          "type": "Strom",
+          "done": false
+        },
+        {
+          "name": "Energetische Gebäudesarnierung",
+          "description": "Das Dach und die Fassaden werden gedämmt, die Fenster werden ausgetauscht und die Heizungsanlage wird erneuert.",
+          "cost": "2183073,783",
+          "duration": "23",
+          "co2_savings": "253,542",
+          "cost_savings": "100484,6631",
+          "type": "Wärme",
+          "done": false
+        },
+        {
+          "name": "LED-Lampen",
+          "description": "Alle alten Lampen werden mit LED-Lampen ausgetauscht.",
+          "cost": "110969,6215",
+          "duration": "1,5",
+          "co2_savings": "12,418875",
+          "cost_savings": "18279,75262",
+          "type": "Strom",
+          "done": false
+        }
+      ]
+    },
+    {
+      "name": "Fahrzeughalle",
+      "consumers": [],
+      "measures": [
+        {
+          "name": "PV-Anlage Installation",
+          "description": "Installation einer Photovoltaik-Anlage auf dem Dach",
+          "cost": "0",
+          "duration": "0",
+          "co2_savings": "0",
+          "cost_savings": "0",
+          "type": "Strom",
+          "done": true
+        },
+        {
+          "name": "E-Dienstfahrzeuge",
+          "description": "Alle Verbrenner-Dienstfahrzeuge werden durch E-Dienstfahrzeuge ersetzt.",
+          "cost": "12000000",
+          "duration": "3",
+          "co2_savings": "31,8",
+          "cost_savings": "7386,15",
+          "type": "Mobilität",
+          "done": false
+        }
+      ],
+      "abbreviation": "FZHG"
+    },
+    {
+      "name": "Entsorgungszentrum",
+      "consumers": [],
+      "measures": [
+        {
+          "name": "PV-Anlage Installation",
+          "description": "Installation einer Photovoltaik-Anlage auf dem Dach",
+          "cost": "0",
+          "duration": "0",
+          "co2_savings": "0",
+          "cost_savings": "0",
+          "type": "Strom",
+          "done": true
+        },
+        {
+          "name": "Energetische Gebäudesarnierung",
+          "description": "Das Dach und die Fassaden werden gedämmt, die Fenster werden ausgetauscht und die Heizungsanlage wird erneuert.",
+          "cost": "238901,3372",
+          "duration": "2",
+          "co2_savings": "20,994",
+          "cost_savings": "8321,751708",
+          "type": "Wärme",
+          "done": false
+        }
+      ],
+      "abbreviation": "ENZE"
+    },
+    {
+      "name": "Zentrtales Bibliotheksgebäude",
+      "consumers": [],
+      "measures": [],
+      "abbreviation": "ZB"
+    },
+    {
+      "name": "Biologie",
+      "consumers": [],
+      "measures": [],
+      "abbreviation": "Biologie"
     }
   ]
 }

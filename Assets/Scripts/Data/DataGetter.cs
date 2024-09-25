@@ -11,9 +11,9 @@ public class DataGetter : MonoBehaviour
     void Awake()
     {
         campus = JsonUtility.FromJson<Buildings>(jsonFile.text);
-        Building oth = GetBuilding("OTH");
-        print("IMPORT TEST");
-        print(oth.consumers[0].monthly_values[2]);
+        foreach(Building building in GetBuildings()){
+            print(building.name);
+        }
     }
 
     public Building GetBuilding(string buildingName)

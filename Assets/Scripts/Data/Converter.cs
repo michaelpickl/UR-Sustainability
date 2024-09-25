@@ -15,8 +15,7 @@ public class Converter : MonoBehaviour
         else if(type == "Wärme" || type == "Kälte")
         {
             return value * tCO2e_PER_kWh_GAS;
-        } 
-        print("------------HI------------");
+        }
         return value;
     }
 

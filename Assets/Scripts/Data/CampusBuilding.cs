@@ -82,7 +82,7 @@ public class CampusBuilding : MonoBehaviour
 
             Vector3 direction = rts_camera.transform.forward;
             Vector3 targetPosition = boundsCenter - (direction * distance);
-            print(targetPosition + " TARGET POSITION");
+            //print(targetPosition + " TARGET POSITION");
             return targetPosition;
         }
 
