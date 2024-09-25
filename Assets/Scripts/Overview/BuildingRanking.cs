@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using TMPro;
+using Unity.VectorGraphics;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,12 +12,6 @@ public class BuildingRanking : MonoBehaviour
     public GameObject rankTemplate;
     public Transform contentPanel;
     public Sprite defaultIcon; 
-
-    // Öffentliche Felder für die Icons
-    public Sprite iconBuildingChemie;
-    public Sprite iconBuildingRWS;
-    public Sprite iconBuildingSport;
-
 
     private DataGetter dataGetter;
     private Converter converter;
@@ -29,11 +24,6 @@ public class BuildingRanking : MonoBehaviour
     {
         Debug.Log("Initializing Building Ranking...");
 
-        buildingIcons["Chemie"] = iconBuildingChemie;
-        buildingIcons["Recht und Wirtschaft"] = iconBuildingRWS;
-        buildingIcons["Sportzentrum"] = iconBuildingSport;
-
-
         dataGetter = GameObject.Find("DataGetter").GetComponent<DataGetter>();
         converter = GameObject.Find("Converter").GetComponent<Converter>();
         buildings = dataGetter.GetBuildings();
@@ -43,8 +33,8 @@ public class BuildingRanking : MonoBehaviour
             float co2Value = converter.getBuildingYearlytCO2e(building);
             int rank = buildings.Length - i;
             
-            Sprite icon = buildingIcons.ContainsKey(building.name) ? buildingIcons[building.name] : defaultIcon;
-            Debug.Log($"Creating rank {i + 1} for building: {building.name}, CO2: {co2Value}");
+            Sprite icon = building.icon != null ? building.icon : defaultIcon;
+            Debug.Log($"Creating rank {i + 1} for building: {building.name}, CO2: {co2Value}, iconPath: {building.icon}");
             CreateRank(rank, building.name, co2Value, icon);
         }
     }
@@ -62,7 +52,7 @@ public class BuildingRanking : MonoBehaviour
         TMP_Text rankText = rankingTextTransform.GetComponent<TMP_Text>();
         TMP_Text buildingText = buildingTextTransform.GetComponent<TMP_Text>();
         TMP_Text co2Text = co2TextTransform.GetComponent<TMP_Text>();
-        Image iconImage = iconTransform.GetComponent<Image>();
+        SVGImage iconImage = iconTransform.GetComponent<SVGImage>();
 
         if (rankText == null) 
         {

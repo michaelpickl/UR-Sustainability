@@ -805,7 +805,8 @@
           "type": "Strom",
           "done": false
         }
-      ]
+      ],
+      "abbreviation": "VW"
     },
     {
       "name": "Vielberthgebäude",
@@ -1038,7 +1039,8 @@
           ]
         }
       ],
-      "measures": []
+      "measures": [],
+      "abbreviation": "ZB"
     },
     {
       "name": "Zentrales Hörsaalgebäude",
@@ -1126,7 +1128,8 @@
           "type": "Strom",
           "done": false
         }
-      ]
+      ],
+      "abbreviation": "ZH"
     },
     {
       "name": "Rechenzentrum",
@@ -1222,7 +1225,7 @@
         }
       ],
       "measures": [],
-      "abbreviation": "SG"
+      "abbreviation": "SG1"
     },
     {
       "name": "Mensa",
@@ -1413,7 +1416,8 @@
           "type": "Strom",
           "done": false
         }
-      ]
+      ],
+      "abbreviation": "ZB"
     },
     {
       "name": "Fahrzeughalle",

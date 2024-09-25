@@ -14,6 +14,40 @@ public class DataGetter : MonoBehaviour
         foreach(Building building in GetBuildings()){
             print(building.name);
         }
+        LoadIconsForBuildings();
+        LoadIconsForMeasures();
+    }
+
+    private void LoadIconsForBuildings()
+    {
+        foreach (Building building in campus.buildings)
+        {
+            string iconPath = "icons/gebäude/" + building.abbreviation;
+            building.icon = LoadIcon(iconPath);
+        }
+    }
+
+    private void LoadIconsForMeasures()
+    {
+        foreach (Building building in campus.buildings)
+        {
+            foreach (Measure measure in building.measures)
+            {
+                string iconPath = "icons/maßnahmen/" + measure.name.ToLower().Replace(" ", "_"); // Beispiel: "icons/maßnahmen/solarpanel"
+                measure.icon = LoadIcon(iconPath);
+            }
+        }
+    }
+
+
+    public Sprite LoadIcon(string iconPath)
+    {
+        Sprite icon = Resources.Load<Sprite>(iconPath);
+        if (icon == null)
+        {
+            Debug.LogWarning("Kein Icon gefunden unter Pfad: " + iconPath);
+        }
+        return icon;
     }
 
     public Building GetBuilding(string buildingName)
@@ -53,6 +87,7 @@ public class Building
     public string abbreviation;
     public Consumer[] consumers;
     public Measure[] measures;
+    public Sprite icon;
 }
 
 [System.Serializable]
@@ -73,4 +108,5 @@ public class Measure
     public int cost_savings;
     public string type;
     public bool done;
+    public Sprite icon;
 }

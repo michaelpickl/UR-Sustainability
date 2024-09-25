@@ -4407,10 +4407,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rankTemplate: {fileID: 7168928510951699945, guid: 8888954cfae1139418e7708fd9846d28, type: 3}
   contentPanel: {fileID: 1084442678}
-  defaultIcon: {fileID: 21300000, guid: 40b20e0b1053aa54e8e1296a1dd69ee3, type: 3}
-  iconBuildingChemie: {fileID: 21300000, guid: 40b20e0b1053aa54e8e1296a1dd69ee3, type: 3}
-  iconBuildingRWS: {fileID: 21300000, guid: d04a876dab00bbc4b847a90774072f68, type: 3}
-  iconBuildingSport: {fileID: 21300000, guid: 9ff6712fdbe71d741b408b2008344b47, type: 3}
+  defaultIcon: {fileID: 3286163911610860551, guid: d9d4489934fd8e54797c65100c69d424, type: 3}
 --- !u!114 &501996262
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14020,7 +14017,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 648081089}
   m_Direction: 2
   m_Value: 1.0000002
-  m_Size: 0.26316333
+  m_Size: 0.209285
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -15463,8 +15460,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 3.4403152, y: -92.88855}
-  m_SizeDelta: {x: 6.8804, y: 910.4536}
+  m_AnchoredPosition: {x: 3.4403152, y: -125.34244}
+  m_SizeDelta: {x: 6.8804, y: 1228.5527}
   m_Pivot: {x: 0.50000006, y: 0.8979757}
 --- !u!114 &1084442679
 MonoBehaviour:
