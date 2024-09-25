@@ -26,9 +26,6 @@ public class CampusBuilding : MonoBehaviour
         converter = GameObject.Find("Converter").GetComponent<Converter>();
         cameraTarget = GameObject.Find("CameraTarget");
         building = dataGetter.GetBuilding(buildingName);
-        if(building != null){
-            print(building.consumers[0].type);
-        }
 
         if(sideMenuController == null)
         {

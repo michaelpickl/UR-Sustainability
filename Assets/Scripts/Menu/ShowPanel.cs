@@ -13,6 +13,8 @@ public class ButtonController : MonoBehaviour
     private Sprite originalIcon; 
     private Color originalColor; 
     private bool isClicked = false; 
+    private string currentBuildingName;
+    private string currentMeasureName;
 
     void Start()
     {
@@ -44,5 +46,45 @@ public class ButtonController : MonoBehaviour
             fill2.SetActive(false);
         }
         isClicked = !isClicked;
+        
+        showMeasurePreview(isClicked);
+    }
+
+    public void SetBuildingAndMeasure(string buildingName, string measureName)
+    {
+        currentBuildingName = buildingName;
+        currentMeasureName = measureName;
+    }
+
+    void showMeasurePreview(bool show = true){
+        // Suche das Gebäudeobjekt anhand des Namens
+        GameObject buildingObject = GameObject.Find(currentBuildingName);
+
+        if (buildingObject != null)
+        {
+            // Hole das Script "CampusBuilding" vom Gebäudeobjekt
+            CampusBuilding campusBuilding = buildingObject.GetComponent<CampusBuilding>();
+
+            if (campusBuilding != null)
+            {
+                // Rufe die ShowMeasure-Methode auf
+                if(show)
+                {
+                    campusBuilding.ShowMeasure(currentMeasureName);
+                }
+                else
+                {
+                    campusBuilding.HideMeasure(currentMeasureName);
+                }
+            }
+            else
+            {
+                Debug.LogError($"CampusBuilding-Skript auf dem Objekt '{currentBuildingName}' nicht gefunden.");
+            }
+        }
+        else
+        {
+            Debug.LogError($"Gebäude mit dem Namen '{currentBuildingName}' nicht gefunden.");
+        }
     }
 }

@@ -51,6 +51,8 @@ public class SideMenuController : MonoBehaviour
 
     public void OpenMenuWithBuildingName(string buildingName)
     {
+        HideAllPreviews();
+
         if(buildingNameText != null)
         {
             buildingNameText.text = buildingName;
@@ -69,19 +71,16 @@ public class SideMenuController : MonoBehaviour
 
     public void ShowMeasures()
     {
-        // Sucht das Objekt "UpgradesTable" in den Kindobjekten des aktuellen Objekts
         Transform upgradesTable = GameObject.Find("UpgradesTable").transform;
 
         if (upgradesTable != null)
         {
-            // Liste der Kindobjekte von "UpgradesTable"
             List<Transform> upgradeButtons = new List<Transform>();
             foreach (Transform child in upgradesTable)
             {
                 upgradeButtons.Add(child);
             }
 
-            // Befüllen der Buttons anhand der Measures-Liste
             for (int i = 0; i < upgradeButtons.Count; i++)
             {
                 if (i < currentBuilding.measures.Length)
@@ -90,17 +89,14 @@ public class SideMenuController : MonoBehaviour
                     Measure measure = currentBuilding.measures[i];
                     GameObject buttonObject = upgradeButtons[i].gameObject;
                     
-                    // Setze den Button aktiv
                     buttonObject.SetActive(true);
 
-                    // Setze die "interactable" Eigenschaft des Buttons
                     Button button = buttonObject.GetComponent<Button>();
                     if (button != null)
                     {
                         button.interactable = !measure.done;
                     }
 
-                    // Setze den Text von "UpgradeName"
                     Transform upgradeNameTransform = buttonObject.transform.Find("UpgradeName");
                     if (upgradeNameTransform != null)
                     {
@@ -111,13 +107,17 @@ public class SideMenuController : MonoBehaviour
                         }
                     }
 
-                    // Setze das Bild falls notwendig
+                    // SET IMAGE HERE
                     // Transform imageTransform = buttonObject.transform.Find("Image");
-                    // Hier könntest du das Image entsprechend setzen, falls notwendig
+
+                    ButtonController showPanelScript = buttonObject.GetComponent<ButtonController>();
+                    if (showPanelScript != null)
+                    {
+                        showPanelScript.SetBuildingAndMeasure(currentBuilding.name, measure.name);
+                    }
                 }
                 else
                 {
-                    // Verstecke den Button, wenn es mehr Buttons als Measures gibt
                     upgradeButtons[i].gameObject.SetActive(false);
                 }
             }
@@ -126,5 +126,30 @@ public class SideMenuController : MonoBehaviour
         {
             Debug.LogError("UpgradesTable nicht gefunden.");
         }
+    }
+
+    public void HideAllPreviews(){
+        Building[] buildings = dataGetter.GetBuildings();
+        foreach (Building building in buildings)
+        {
+            GameObject buildingObject = GameObject.Find(building.name);
+
+            if (buildingObject != null)
+            {
+                // Hole das Script "CampusBuilding" vom Gebäudeobjekt
+                CampusBuilding campusBuilding = buildingObject.GetComponent<CampusBuilding>();
+                if (campusBuilding != null)
+                {
+                    foreach(Measure measure in building.measures)
+                    campusBuilding.HideMeasure(measure.name);
+                }
+            }
+        }
+    }
+
+    //TODO: Don`t forget to Hide the Previews when closing the menu!
+    void CloseSideMenu()
+    {
+        HideAllPreviews();
     }
 }
