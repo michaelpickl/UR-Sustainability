@@ -6,7 +6,7 @@ public class RankingPanelController : MonoBehaviour
     public RectTransform rankingPanel;  
     public float panelWidth = 600f;     
     public float visibleWidth = 350f;
-     public float yOffset = -50f;
+     public float yOffset = 0f;
     public float animationSpeed = 3f;  
 
     private bool isPanelOpen = false;  
