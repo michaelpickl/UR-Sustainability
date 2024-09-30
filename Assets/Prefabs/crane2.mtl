@@ -1,0 +1,5 @@
+newmtl main-color-palette_mat
+map_Kd color-palette-2.png
+Kd 1 1 1
+d 1
+
