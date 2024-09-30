@@ -2,13 +2,14 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 using System.Collections.Generic;
+using Unity.VectorGraphics;
 
 public class SideMenuController : MonoBehaviour
 {
     public RectTransform menuPanel;
     public float menuWidth = 800f;
     public float animationSpeed = 3f;
-    public TextMeshProUGUI  buildingNameText;
+    public TextMeshProUGUI buildingNameText;
 
     private bool isMenuOpen = false;
     private Vector2 closedPosition;
@@ -53,7 +54,7 @@ public class SideMenuController : MonoBehaviour
     {
         HideAllPreviews();
 
-        if(buildingNameText != null)
+        if (buildingNameText != null)
         {
             buildingNameText.text = buildingName;
         }
@@ -62,7 +63,7 @@ public class SideMenuController : MonoBehaviour
             ToggleMenu();
         }
         currentBuilding = dataGetter.GetBuilding(buildingName);
-        if(currentBuilding != null)
+        if (currentBuilding != null)
         {
             //ShowData()
             ShowMeasures();
@@ -88,7 +89,7 @@ public class SideMenuController : MonoBehaviour
                     upgradeButtons[i].gameObject.SetActive(true);
                     Measure measure = currentBuilding.measures[i];
                     GameObject buttonObject = upgradeButtons[i].gameObject;
-                    
+
                     buttonObject.SetActive(true);
 
                     Button button = buttonObject.GetComponent<Button>();
@@ -107,8 +108,24 @@ public class SideMenuController : MonoBehaviour
                         }
                     }
 
+
                     // SET IMAGE HERE
-                    // Transform imageTransform = buttonObject.transform.Find("Image");
+                    Transform imageTransform = buttonObject.transform.Find("Image");
+                    if (imageTransform != null)
+                    {
+                        SVGImage upgradeImage = imageTransform.GetComponent<SVGImage>();
+                        if (upgradeImage != null && measure.icon != null)
+                        {
+                            Debug.Log("Icon gefunden "+ upgradeImage);
+
+                            upgradeImage.sprite = measure.icon;
+                        }
+                        else
+                        {
+                            Debug.LogWarning("Kein Icon für die Maßnahme " + measure.name + " gefunden.");
+                        }
+                    }
+
 
                     ButtonController showPanelScript = buttonObject.GetComponent<ButtonController>();
                     if (showPanelScript != null)
@@ -128,7 +145,8 @@ public class SideMenuController : MonoBehaviour
         }
     }
 
-    public void HideAllPreviews(){
+    public void HideAllPreviews()
+    {
         Building[] buildings = dataGetter.GetBuildings();
         foreach (Building building in buildings)
         {
@@ -140,8 +158,8 @@ public class SideMenuController : MonoBehaviour
                 CampusBuilding campusBuilding = buildingObject.GetComponent<CampusBuilding>();
                 if (campusBuilding != null)
                 {
-                    foreach(Measure measure in building.measures)
-                    campusBuilding.HideMeasure(measure.name);
+                    foreach (Measure measure in building.measures)
+                        campusBuilding.HideMeasure(measure.name);
                 }
             }
         }
