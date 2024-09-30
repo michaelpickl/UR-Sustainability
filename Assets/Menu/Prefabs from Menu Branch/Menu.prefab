@@ -653,7 +653,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: d04a876dab00bbc4b847a90774072f68, type: 3}
   m_PreserveAspect: 0
 --- !u!1 &661021013321671665
 GameObject:
@@ -2139,7 +2139,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: d04a876dab00bbc4b847a90774072f68, type: 3}
   m_PreserveAspect: 0
 --- !u!1 &1542214093145378146
 GameObject:
@@ -2998,8 +2998,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myButton: {fileID: 5473850670211055819}
-  buttonImage: {fileID: 0}
-  newIcon: {fileID: 21300000, guid: e084cae920de2774c8f72df945b8b957, type: 3}
+  buttonImage: {fileID: 2478087300714373372}
   clickedColor: {r: 1, g: 1, b: 1, a: 0}
   panel: {fileID: 4325720221295986634}
   fill1: {fileID: 3613591624794664969}
@@ -3503,7 +3502,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: d04a876dab00bbc4b847a90774072f68, type: 3}
   m_PreserveAspect: 0
 --- !u!1 &3332080367882358470
 GameObject:
@@ -4125,7 +4124,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: d04a876dab00bbc4b847a90774072f68, type: 3}
   m_PreserveAspect: 0
 --- !u!1 &3773893937862860518
 GameObject:
@@ -4746,7 +4745,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: d04a876dab00bbc4b847a90774072f68, type: 3}
   m_PreserveAspect: 0
 --- !u!1 &4325720221295986634
 GameObject:
@@ -7633,7 +7632,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: d04a876dab00bbc4b847a90774072f68, type: 3}
   m_PreserveAspect: 0
 --- !u!1 &8724478629890329488
 GameObject:

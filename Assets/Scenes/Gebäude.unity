@@ -1732,7 +1732,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: d04a876dab00bbc4b847a90774072f68, type: 3}
   m_PreserveAspect: 0
 --- !u!1 &209235376
 GameObject:
@@ -1950,9 +1950,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myButton: {fileID: 245984956}
-  buttonImage: {fileID: 0}
-  newIcon: {fileID: 21300000, guid: ec1a6c47831a21847a3aa3c56cee6a57, type: 3}
-  clickedColor: {r: 1, g: 1, b: 1, a: 0}
+  buttonImage: {fileID: 1015496945}
+  clickedColor: {r: 1, g: 0, b: 0, a: 0}
   panel: {fileID: 4325720220196968957}
   fill1: {fileID: 3613591623628533310}
   fill2: {fileID: 5776042855008843799}
@@ -2718,7 +2717,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: d04a876dab00bbc4b847a90774072f68, type: 3}
   m_PreserveAspect: 0
 --- !u!1 &317186723
 GameObject:
@@ -4326,7 +4325,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: d04a876dab00bbc4b847a90774072f68, type: 3}
   m_PreserveAspect: 0
 --- !u!1 &501996259
 GameObject:
@@ -4684,7 +4683,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: d04a876dab00bbc4b847a90774072f68, type: 3}
   m_PreserveAspect: 0
 --- !u!1 &546672637
 GameObject:
@@ -10518,9 +10517,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myButton: {fileID: 792484483}
-  buttonImage: {fileID: 0}
-  newIcon: {fileID: 21300000, guid: ec1a6c47831a21847a3aa3c56cee6a57, type: 3}
-  clickedColor: {r: 1, g: 1, b: 1, a: 0}
+  buttonImage: {fileID: 192363893}
+  clickedColor: {r: 1, g: 0, b: 0, a: 0}
   panel: {fileID: 4325720220196968957}
   fill1: {fileID: 3613591623628533310}
   fill2: {fileID: 5776042855008843799}
@@ -14751,7 +14749,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: d04a876dab00bbc4b847a90774072f68, type: 3}
   m_PreserveAspect: 0
 --- !u!1001 &1018676186
 PrefabInstance:
@@ -16359,9 +16357,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myButton: {fileID: 1236126314}
-  buttonImage: {fileID: 0}
-  newIcon: {fileID: 21300000, guid: ec1a6c47831a21847a3aa3c56cee6a57, type: 3}
-  clickedColor: {r: 1, g: 1, b: 1, a: 0}
+  buttonImage: {fileID: 528210763}
+  clickedColor: {r: 1, g: 0, b: 0, a: 0}
   panel: {fileID: 4325720220196968957}
   fill1: {fileID: 3613591623628533310}
   fill2: {fileID: 5776042855008843799}
@@ -17801,9 +17798,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myButton: {fileID: 1351440457}
-  buttonImage: {fileID: 0}
-  newIcon: {fileID: 21300000, guid: ec1a6c47831a21847a3aa3c56cee6a57, type: 3}
-  clickedColor: {r: 1, g: 1, b: 1, a: 0}
+  buttonImage: {fileID: 300746979}
+  clickedColor: {r: 1, g: 0, b: 0, a: 0}
   panel: {fileID: 4325720220196968957}
   fill1: {fileID: 3613591623628533310}
   fill2: {fileID: 5776042855008843799}
@@ -21500,9 +21496,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myButton: {fileID: 1685418400}
-  buttonImage: {fileID: 0}
-  newIcon: {fileID: 21300000, guid: ec1a6c47831a21847a3aa3c56cee6a57, type: 3}
-  clickedColor: {r: 1, g: 1, b: 1, a: 0}
+  buttonImage: {fileID: 489109786}
+  clickedColor: {r: 1, g: 0, b: 0, a: 0}
   panel: {fileID: 4325720220196968957}
   fill1: {fileID: 3613591623628533310}
   fill2: {fileID: 5776042855008843799}
@@ -31094,9 +31089,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myButton: {fileID: 5473850669044866812}
-  buttonImage: {fileID: 0}
-  newIcon: {fileID: 21300000, guid: ec1a6c47831a21847a3aa3c56cee6a57, type: 3}
-  clickedColor: {r: 1, g: 1, b: 1, a: 0}
+  buttonImage: {fileID: 6658366827446796531}
+  clickedColor: {r: 1, g: 0, b: 0, a: 0}
   panel: {fileID: 4325720220196968957}
   fill1: {fileID: 3613591623628533310}
   fill2: {fileID: 5776042855008843799}
@@ -68902,7 +68896,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: d04a876dab00bbc4b847a90774072f68, type: 3}
   m_PreserveAspect: 0
 --- !u!1 &6659356419511413754
 GameObject:

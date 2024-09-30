@@ -1,11 +1,11 @@
+using Unity.VectorGraphics;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class ButtonController : MonoBehaviour
 {
     public Button myButton; 
-    public Image buttonImage; 
-    public Sprite newIcon; 
+    public SVGImage buttonImage; 
     public Color clickedColor = Color.red; 
     public GameObject panel;
     public GameObject fill1;
@@ -19,9 +19,14 @@ public class ButtonController : MonoBehaviour
     void Start()
     {
         
-        originalIcon = buttonImage.sprite;
-        originalColor = myButton.image.color;
-
+        if (buttonImage != null)
+        {
+            originalColor = buttonImage.color;
+        }else
+        {
+            Debug.LogWarning("ButtonImage ist nicht zugewiesen!");
+        }
+      
         myButton.onClick.AddListener(OnButtonClick);
     }
 
@@ -29,18 +34,21 @@ public class ButtonController : MonoBehaviour
     {
         if (!isClicked)
         {
-            buttonImage.sprite = newIcon;
-            myButton.image.color = clickedColor;
-
+            if (buttonImage != null)
+            {
+                buttonImage.color = clickedColor;
+            }
             panel.SetActive(true);
             fill1.SetActive(true);
             fill2.SetActive(true);
+            Debug.Log("in OnButtonClick "+ myButton.name + " " + buttonImage.color);
         }
         else
         {
-            buttonImage.sprite = originalIcon;
-            myButton.image.color = originalColor;
-            
+              if (buttonImage != null)
+            {
+                buttonImage.color = originalColor;
+            }
             panel.SetActive(false);
             fill1.SetActive(false);
             fill2.SetActive(false);
@@ -50,10 +58,13 @@ public class ButtonController : MonoBehaviour
         showMeasurePreview(isClicked);
     }
 
+
+
     public void SetBuildingAndMeasure(string buildingName, string measureName)
     {
         currentBuildingName = buildingName;
         currentMeasureName = measureName;
+        Debug.Log("IN SETRBUILIODNG EASUR"+buildingName+ " " + measureName );
     }
 
     void showMeasurePreview(bool show = true){
