@@ -16,6 +16,7 @@ public class CampusBuilding : MonoBehaviour
     private Converter converter;
 
     public SideMenuController sideMenuController; 
+    private bool constructionMode;
     
 
     void Start()
@@ -35,7 +36,7 @@ public class CampusBuilding : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && !constructionMode) //Building not clickable when in construction mode!
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
@@ -111,6 +112,26 @@ public class CampusBuilding : MonoBehaviour
         {
             Debug.LogWarning($"{measureName} konnte nicht gefunden werden.");
         }
+    }
+
+    public void ActivateConstructionMode()
+    {
+        Transform child = transform.Find("Baumodus");
+        if (child != null)
+        {
+            child.gameObject.SetActive(true);
+        }
+        constructionMode = true;
+    }
+
+    public void DeactivateConstructionMode()
+    {
+        Transform child = transform.Find("Baumodus");
+        if (child != null)
+        {
+            child.gameObject.SetActive(false);
+        }
+        constructionMode = false;
     }
 
 }
