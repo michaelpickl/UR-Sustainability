@@ -3,6 +3,7 @@ using TMPro;
 using UnityEngine.UI;
 using System.Collections.Generic;
 using Unity.VectorGraphics;
+using System.Linq;
 
 public class SideMenuController : MonoBehaviour
 {
@@ -13,8 +14,8 @@ public class SideMenuController : MonoBehaviour
     public TextMeshProUGUI buildingLevel;
     public SVGImage buildingIcon;
     public Button buyButton;
-    
-    private ButtonController showPanelScript;
+
+    private ButtonController currentButtonController;
     private bool isMenuOpen = false;
     private Vector2 closedPosition;
     private Vector2 openPosition;
@@ -30,7 +31,6 @@ public class SideMenuController : MonoBehaviour
     {
         closedPosition = new Vector2(-menuWidth, 0);
         openPosition = new Vector2(100, 0);
-
         menuPanel.anchoredPosition = closedPosition;
 
         dataGetter = GameObject.Find("DataGetter").GetComponent<DataGetter>();
@@ -65,45 +65,44 @@ public class SideMenuController : MonoBehaviour
     public void OpenMenuWithBuildingName(string buildingName)
     {
         HideAllPreviews();
+        ResetAllButtonStates();
+        if (!isMenuOpen) ToggleMenu();
 
-        if (buildingNameText != null)
-        {
-            buildingNameText.text = buildingName;
-
-        }
-        if (!isMenuOpen)
-        {
-            ToggleMenu();
-        }
         currentBuilding = dataGetter.GetBuilding(buildingName);
         if (currentBuilding != null)
         {
-            ShowBuildingLevel();
-            SetBuildingIcon();
+            UpdateBuildingInfo(buildingName);
             ShowMeasures();
         }
     }
 
-     private void ShowBuildingLevel()
+    private void ResetAllButtonStates()
     {
-        int completedMeasures = 0;
-        foreach (Measure measure in currentBuilding.measures)
+        ButtonController[] allButtons = FindObjectsOfType<ButtonController>();
+        foreach (var button in allButtons)
         {
-            if (measure.done)
-            {
-                completedMeasures++;
-            }
+            button.ResetButtonState();
         }
-
-        int buildingLevelValue = completedMeasures;
-        buildingLevel.text = "Level " + buildingLevelValue;
     }
 
-     private void SetBuildingIcon()
+    private void UpdateBuildingInfo(string buildingName)
+    {
+        buildingNameText.text = buildingName;
+        ShowBuildingLevel();
+        SetBuildingIcon();
+    }
+
+    private void ShowBuildingLevel()
+    {
+        int completedMeasures = currentBuilding.measures.Count(m => m.done);
+        buildingLevel.text = "Level " + completedMeasures;
+    }
+
+    private void SetBuildingIcon()
     {
         if (buildingIcon != null && currentBuilding.icon != null)
         {
-            buildingIcon.sprite = currentBuilding.icon; 
+            buildingIcon.sprite = currentBuilding.icon;
         }
         else
         {
@@ -125,58 +124,15 @@ public class SideMenuController : MonoBehaviour
 
             for (int i = 0; i < upgradeButtons.Count; i++)
             {
+                GameObject buttonObject = upgradeButtons[i].gameObject;
                 if (i < currentBuilding.measures.Length)
                 {
-                    upgradeButtons[i].gameObject.SetActive(true);
-                    Measure measure = currentBuilding.measures[i];
-                    GameObject buttonObject = upgradeButtons[i].gameObject;
-
                     buttonObject.SetActive(true);
-
-                    Button button = buttonObject.GetComponent<Button>();
-                    if (button != null)
-                    {
-                        button.interactable = !measure.done;
-                    }
-
-                    Transform upgradeNameTransform = buttonObject.transform.Find("UpgradeName");
-                    if (upgradeNameTransform != null)
-                    {
-                        TextMeshProUGUI upgradeNameText = upgradeNameTransform.GetComponent<TextMeshProUGUI>();
-                        if (upgradeNameText != null)
-                        {
-                            upgradeNameText.text = measure.name;
-                        }
-                    }
-
-
-                    // SET IMAGE HERE
-                    Transform imageTransform = buttonObject.transform.Find("Image");
-                    if (imageTransform != null)
-                    {
-                        SVGImage upgradeImage = imageTransform.GetComponent<SVGImage>();
-                        if (upgradeImage != null && measure.icon != null)
-                        {
-                            Debug.Log("Icon gefunden "+ upgradeImage);
-
-                            upgradeImage.sprite = measure.icon;
-                        }
-                        else
-                        {
-                            Debug.LogWarning("Kein Icon für die Maßnahme " + measure.name + " gefunden.");
-                        }
-                    }
-
-
-                    showPanelScript = buttonObject.GetComponent<ButtonController>();
-                    if (showPanelScript != null)
-                    {
-                        showPanelScript.SetBuildingAndMeasure(currentBuilding.name, measure.name);
-                    }
+                    SetupMeasureButton(buttonObject, currentBuilding.measures[i]);
                 }
                 else
                 {
-                    upgradeButtons[i].gameObject.SetActive(false);
+                    buttonObject.SetActive(false);
                 }
             }
         }
@@ -186,6 +142,49 @@ public class SideMenuController : MonoBehaviour
         }
     }
 
+    private void SetupMeasureButton(GameObject buttonObject, Measure measure)
+    {
+        Button button = buttonObject.GetComponent<Button>();
+        if (button != null)
+        {
+            button.interactable = !measure.done;
+        }
+
+        // Setzt den Text
+        Transform upgradeNameTransform = buttonObject.transform.Find("UpgradeName");
+        if (upgradeNameTransform != null)
+        {
+            TextMeshProUGUI upgradeNameText = upgradeNameTransform.GetComponent<TextMeshProUGUI>();
+            if (upgradeNameText != null)
+            {
+                upgradeNameText.text = measure.name;
+            }
+        }
+
+        //Setzt das Icon
+        Transform imageTransform = buttonObject.transform.Find("Image");
+        if (imageTransform != null)
+        {
+            SVGImage upgradeImage = imageTransform.GetComponent<SVGImage>();
+            if (upgradeImage != null && measure.icon != null)
+            {
+                Debug.Log("Icon gefunden " + upgradeImage);
+                upgradeImage.sprite = measure.icon;
+            }
+            else
+            {
+                Debug.LogWarning("Kein Icon für die Maßnahme " + measure.name + " gefunden.");
+            }
+        }
+
+        currentButtonController = buttonObject.GetComponent<ButtonController>();
+        if (currentButtonController != null)
+        {
+            currentButtonController.SetBuildingAndMeasure(currentBuilding.name, measure.name);
+        }
+
+    }
+
     public void SetSelectedMeasure(Measure measure)
     {
         selectedMeasure = measure;
@@ -193,7 +192,6 @@ public class SideMenuController : MonoBehaviour
 
     public void OnBuyButtonClicked()
     {
-        Debug.Log("Auf Kaufen geklickt");
         if (selectedMeasure != null && !selectedMeasure.done)
         {
             if (moneyManager.GetCurrentMoney() >= selectedMeasure.cost)
@@ -201,33 +199,27 @@ public class SideMenuController : MonoBehaviour
 
                 moneyManager.SubtractMoney(selectedMeasure.cost);
                 co2Manager.ReduceCo2(selectedMeasure.co2_savings);
-
                 selectedMeasure.done = true;
+
                 CampusBuilding campusBuilding = GameObject.Find(currentBuilding.name).GetComponent<CampusBuilding>();
                 if (campusBuilding != null)
                 {
                     campusBuilding.HideMeasure(selectedMeasure.name);
                     StartCoroutine(campusBuilding.StartConstruction(selectedMeasure.duration, selectedMeasure.name)); // duration setzen
                 }
-                showPanelScript.HidePanel();
-                Debug.Log("Maßnahme " + selectedMeasure.name + " gekauft!");
+                currentButtonController.HidePanel();
                 ToggleMenu();
                 loggingSystem.addToLog(currentBuilding.name, selectedMeasure.name);
-            }
-            else
-            {
-                Debug.LogWarning("Nicht genug Geld für diese Maßnahme.");
+                Debug.Log($"Maßnahme {selectedMeasure.name} gekauft!");
             }
         }
     }
 
     public void HideAllPreviews()
     {
-        if(showPanelScript != null){
-            showPanelScript.HidePanel();
-        }
-        Building[] buildings = dataGetter.GetBuildings();
-        foreach (Building building in buildings)
+        if (currentButtonController != null) currentButtonController.HidePanel();
+       
+        foreach (Building building in dataGetter.GetBuildings())
         {
             GameObject buildingObject = GameObject.Find(building.name);
 
@@ -238,10 +230,11 @@ public class SideMenuController : MonoBehaviour
                 if (campusBuilding != null)
                 {
                     foreach (Measure measure in building.measures)
-                    if(!measure.done && !campusBuilding.inConstructionMode()){
-                        campusBuilding.HideMeasure(measure.name);
-                    }
-                        
+                        if (!measure.done && !campusBuilding.inConstructionMode())
+                        {
+                            campusBuilding.HideMeasure(measure.name);
+                        }
+
                 }
             }
         }

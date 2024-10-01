@@ -46,35 +46,11 @@ public class ButtonController : MonoBehaviour
 
     void OnButtonClick()
     {
-        foreach (var controller in allButtonControllers)
-        {
-            if (controller != this && controller.isClicked) // Wenn ein anderer Button bereits geklickt ist
-            {
-                controller.HidePanel(); // Blende das Panel des anderen Buttons aus
-                sideMenuController.HideAllPreviews();
-            }
-        }
+        ResetAllOtherButtons();
         if (!isClicked)
         {
-            if (buttonImage != null)
-            {
-                buttonImage.color = clickedColor;
-            }
-            panel.SetActive(true);
-            fill1.SetActive(true);
-            fill2.SetActive(true);
-
-            if(currentMeasure != null)
-            {
-                headingText.text = currentMeasure.name;
-                descriptionText.text = currentMeasure.description;
-                priceText.text = currentMeasure.cost + " €";
-                durationText.text = currentMeasure.duration + " Monate";
-                if (sideMenuController != null)
-                {
-                    sideMenuController.SetSelectedMeasure(currentMeasure);
-                }
-            }
+            buttonImage.color = clickedColor;
+            ShowPanel();
         }
         else
         {
@@ -84,6 +60,61 @@ public class ButtonController : MonoBehaviour
         
         showMeasurePreview(isClicked);
     }
+
+    private void ResetAllOtherButtons()
+    {
+        foreach (var controller in allButtonControllers)
+        {
+            if (controller != this && controller.isClicked)
+            {
+                controller.HidePanel(); // Verstecke das Panel
+                sideMenuController.HideAllPreviews(); // Verstecke alle Previews im SideMenu
+            }
+
+            // Setze die Farbe der anderen Buttons auf die Originalfarbe zurück
+            if (controller.buttonImage != null && controller.isClicked)
+            {
+                controller.buttonImage.color = controller.originalColor;
+            }
+
+            // Markiere andere Buttons als nicht geklickt
+            controller.isClicked = false;
+        }
+    }
+
+    public void ResetButtonState()
+{
+    // Setze die Farbe des Buttons zurück
+    if (buttonImage != null)
+    {
+        buttonImage.color = originalColor;
+    }
+
+    // Setze die UI-Elemente und den Zustand des Panels zurück
+    panel.SetActive(false);
+    fill1.SetActive(false);
+    fill2.SetActive(false);
+    
+    // Markiere den Button als nicht geklickt
+    isClicked = false;
+}
+
+    private void ShowPanel()
+    {
+        panel.SetActive(true);
+        fill1.SetActive(true);
+        fill2.SetActive(true);
+
+        if (currentMeasure != null)
+        {
+            headingText.text = currentMeasure.name;
+            descriptionText.text = currentMeasure.description;
+            priceText.text = currentMeasure.cost + " €";
+            durationText.text = currentMeasure.duration + " Monate";
+            sideMenuController.SetSelectedMeasure(currentMeasure);
+        }
+    }
+
 
       public void HidePanel()
     {
