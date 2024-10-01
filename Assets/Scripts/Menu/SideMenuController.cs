@@ -192,6 +192,9 @@ public class SideMenuController : MonoBehaviour
 
     public void HideAllPreviews()
     {
+        if(showPanelScript != null){
+            showPanelScript.HidePanel();
+        }
         Building[] buildings = dataGetter.GetBuildings();
         foreach (Building building in buildings)
         {

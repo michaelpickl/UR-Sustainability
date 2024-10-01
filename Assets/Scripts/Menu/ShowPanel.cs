@@ -51,6 +51,7 @@ public class ButtonController : MonoBehaviour
             if (controller != this && controller.isClicked) // Wenn ein anderer Button bereits geklickt ist
             {
                 controller.HidePanel(); // Blende das Panel des anderen Buttons aus
+                sideMenuController.HideAllPreviews();
             }
         }
         if (!isClicked)
