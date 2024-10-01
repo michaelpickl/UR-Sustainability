@@ -10,6 +10,8 @@ public class SideMenuController : MonoBehaviour
     public float menuWidth = 800f;
     public float animationSpeed = 3f;
     public TextMeshProUGUI buildingNameText;
+    public TextMeshProUGUI buildingLevel;
+    public SVGImage buildingIcon;
     public Button buyButton;
     
     private ButtonController showPanelScript;
@@ -67,6 +69,7 @@ public class SideMenuController : MonoBehaviour
         if (buildingNameText != null)
         {
             buildingNameText.text = buildingName;
+
         }
         if (!isMenuOpen)
         {
@@ -75,8 +78,36 @@ public class SideMenuController : MonoBehaviour
         currentBuilding = dataGetter.GetBuilding(buildingName);
         if (currentBuilding != null)
         {
-            //ShowData()
+            ShowBuildingLevel();
+            SetBuildingIcon();
             ShowMeasures();
+        }
+    }
+
+     private void ShowBuildingLevel()
+    {
+        int completedMeasures = 0;
+        foreach (Measure measure in currentBuilding.measures)
+        {
+            if (measure.done)
+            {
+                completedMeasures++;
+            }
+        }
+
+        int buildingLevelValue = completedMeasures;
+        buildingLevel.text = "Level " + buildingLevelValue;
+    }
+
+     private void SetBuildingIcon()
+    {
+        if (buildingIcon != null && currentBuilding.icon != null)
+        {
+            buildingIcon.sprite = currentBuilding.icon; 
+        }
+        else
+        {
+            Debug.LogWarning("Kein Icon für das Gebäude gefunden.");
         }
     }
 
