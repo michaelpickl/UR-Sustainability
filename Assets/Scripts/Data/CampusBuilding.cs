@@ -121,6 +121,9 @@ public class CampusBuilding : MonoBehaviour
         {
             child.gameObject.SetActive(true);
         }
+        else{
+            print("Baumodus NICHT GEFUNDEN");
+        }
         constructionMode = true;
     }
 
@@ -134,7 +137,7 @@ public class CampusBuilding : MonoBehaviour
         constructionMode = false;
     }
 
-     public IEnumerator StartConstruction(string duration)
+    public IEnumerator StartConstruction(string duration, string name)
     {
         ActivateConstructionMode();
         
@@ -150,6 +153,7 @@ public class CampusBuilding : MonoBehaviour
         }
 
         DeactivateConstructionMode();
+        ShowMeasure(name);
     }
 
     public bool inConstructionMode(){

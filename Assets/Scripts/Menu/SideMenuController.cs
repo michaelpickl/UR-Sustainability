@@ -164,6 +164,7 @@ public class SideMenuController : MonoBehaviour
         {
             if (moneyManager.GetCurrentMoney() >= selectedMeasure.cost)
             {
+
                 moneyManager.SubtractMoney(selectedMeasure.cost);
                 co2Manager.ReduceCo2(selectedMeasure.co2_savings);
 
@@ -171,7 +172,8 @@ public class SideMenuController : MonoBehaviour
                 CampusBuilding campusBuilding = GameObject.Find(currentBuilding.name).GetComponent<CampusBuilding>();
                 if (campusBuilding != null)
                 {
-                    campusBuilding.StartConstruction(selectedMeasure.duration); // duration setzen
+                    campusBuilding.HideMeasure(selectedMeasure.name);
+                    StartCoroutine(campusBuilding.StartConstruction(selectedMeasure.duration, selectedMeasure.name)); // duration setzen
                 }
                 showPanelScript.HidePanel();
                 Debug.Log("Maßnahme " + selectedMeasure.name + " gekauft!");
