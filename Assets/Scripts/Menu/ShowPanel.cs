@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using TMPro;
 using Unity.VectorGraphics;
 using UnityEngine;
@@ -25,6 +26,8 @@ public class ButtonController : MonoBehaviour
     private string currentMeasureName;
     private Measure currentMeasure;
     private SideMenuController sideMenuController;
+    private static List<ButtonController> allButtonControllers = new List<ButtonController>();
+
 
     void Start()
     {
@@ -37,12 +40,19 @@ public class ButtonController : MonoBehaviour
         {
             Debug.LogWarning("ButtonImage ist nicht zugewiesen!");
         }
-      
+        allButtonControllers.Add(this);
         myButton.onClick.AddListener(OnButtonClick);
     }
 
     void OnButtonClick()
     {
+        foreach (var controller in allButtonControllers)
+        {
+            if (controller != this && controller.isClicked) // Wenn ein anderer Button bereits geklickt ist
+            {
+                controller.HidePanel(); // Blende das Panel des anderen Buttons aus
+            }
+        }
         if (!isClicked)
         {
             if (buttonImage != null)

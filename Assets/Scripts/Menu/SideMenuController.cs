@@ -162,6 +162,7 @@ public class SideMenuController : MonoBehaviour
 
     public void OnBuyButtonClicked()
     {
+        Debug.Log("Auf Kaufen geklickt");
         if (selectedMeasure != null && !selectedMeasure.done)
         {
             if (moneyManager.GetCurrentMoney() >= selectedMeasure.cost)
