@@ -22,6 +22,7 @@ public class SideMenuController : MonoBehaviour
     private Measure selectedMeasure;
     private Co2Manager co2Manager;
     private MoneyManager moneyManager;
+    private LoggingSystem loggingSystem;
 
     void Start()
     {
@@ -33,6 +34,7 @@ public class SideMenuController : MonoBehaviour
         dataGetter = GameObject.Find("DataGetter").GetComponent<DataGetter>();
         co2Manager = GameObject.Find("Co2Manager").GetComponent<Co2Manager>();
         moneyManager = GameObject.Find("MoneyManager").GetComponent<MoneyManager>();
+        loggingSystem = GameObject.Find("LoggingSystem").GetComponent<LoggingSystem>();
         buyButton.onClick.AddListener(OnBuyButtonClicked);
     }
 
@@ -178,6 +180,7 @@ public class SideMenuController : MonoBehaviour
                 showPanelScript.HidePanel();
                 Debug.Log("Maßnahme " + selectedMeasure.name + " gekauft!");
                 ToggleMenu();
+                loggingSystem.addToLog(currentBuilding.name, selectedMeasure.name);
             }
             else
             {

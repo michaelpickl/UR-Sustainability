@@ -35,4 +35,16 @@ public class TimeProgress : MonoBehaviour
     {
         return currentTime;
     }
+
+    public string GetCurrentMonth()
+    {
+        //TODO: calculate Month
+        return "JAN";
+    }
+
+    public int GetCurrentYear()
+    {
+        //TODO: calculate year
+        return 2025;
+    }
 }
