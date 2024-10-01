@@ -3615,7 +3615,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myButton: {fileID: 245984956}
   buttonImage: {fileID: 1015496945}
-  clickedColor: {r: 1, g: 0, b: 0, a: 0}
+  clickedColor: {r: 1, g: 0, b: 0, a: 0.5137255}
   panel: {fileID: 4325720220196968957}
   fill1: {fileID: 3613591623628533310}
   fill2: {fileID: 5776042855008843799}
@@ -3663,7 +3663,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 245984957}
+  m_TargetGraphic: {fileID: 1015496945}
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
@@ -17262,7 +17262,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myButton: {fileID: 792484483}
   buttonImage: {fileID: 192363893}
-  clickedColor: {r: 1, g: 0, b: 0, a: 0}
+  clickedColor: {r: 1, g: 0, b: 0, a: 0.5137255}
   panel: {fileID: 4325720220196968957}
   fill1: {fileID: 3613591623628533310}
   fill2: {fileID: 5776042855008843799}
@@ -17310,7 +17310,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 792484484}
+  m_TargetGraphic: {fileID: 192363893}
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
@@ -26986,7 +26986,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myButton: {fileID: 1236126314}
   buttonImage: {fileID: 528210763}
-  clickedColor: {r: 1, g: 0, b: 0, a: 0}
+  clickedColor: {r: 1, g: 0, b: 0, a: 0.5137255}
   panel: {fileID: 4325720220196968957}
   fill1: {fileID: 3613591623628533310}
   fill2: {fileID: 5776042855008843799}
@@ -27034,7 +27034,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 1236126315}
+  m_TargetGraphic: {fileID: 528210763}
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
@@ -28926,7 +28926,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myButton: {fileID: 1351440457}
   buttonImage: {fileID: 300746979}
-  clickedColor: {r: 1, g: 0, b: 0, a: 0}
+  clickedColor: {r: 1, g: 0, b: 0, a: 0.5137255}
   panel: {fileID: 4325720220196968957}
   fill1: {fileID: 3613591623628533310}
   fill2: {fileID: 5776042855008843799}
@@ -28974,7 +28974,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 1351440458}
+  m_TargetGraphic: {fileID: 300746979}
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
@@ -36503,7 +36503,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myButton: {fileID: 1685418400}
   buttonImage: {fileID: 489109786}
-  clickedColor: {r: 1, g: 0, b: 0, a: 0}
+  clickedColor: {r: 1, g: 0, b: 0, a: 0.5137255}
   panel: {fileID: 4325720220196968957}
   fill1: {fileID: 3613591623628533310}
   fill2: {fileID: 5776042855008843799}
@@ -36551,7 +36551,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 1685418401}
+  m_TargetGraphic: {fileID: 489109786}
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
@@ -50875,7 +50875,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myButton: {fileID: 5473850669044866812}
   buttonImage: {fileID: 6658366827446796531}
-  clickedColor: {r: 1, g: 0, b: 0, a: 0}
+  clickedColor: {r: 1, g: 0, b: 0, a: 0.5137255}
   panel: {fileID: 4325720220196968957}
   fill1: {fileID: 3613591623628533310}
   fill2: {fileID: 5776042855008843799}
@@ -81138,9 +81138,9 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 1}
+    m_PressedColor: {r: 1, g: 1, b: 1, a: 0.57254905}
+    m_SelectedColor: {r: 1, g: 1, b: 1, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -81156,7 +81156,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 3300379119395736342}
+  m_TargetGraphic: {fileID: 6658366827446796531}
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []

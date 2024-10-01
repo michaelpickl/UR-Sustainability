@@ -168,9 +168,14 @@ public class SideMenuController : MonoBehaviour
                 co2Manager.ReduceCo2(selectedMeasure.co2_savings);
 
                 selectedMeasure.done = true;
+                CampusBuilding campusBuilding = GameObject.Find(currentBuilding.name).GetComponent<CampusBuilding>();
+                if (campusBuilding != null)
+                {
+                    campusBuilding.StartConstruction(selectedMeasure.duration); // duration setzen
+                }
                 showPanelScript.HidePanel();
-                ToggleMenu();
                 Debug.Log("Maßnahme " + selectedMeasure.name + " gekauft!");
+                ToggleMenu();
             }
             else
             {
@@ -193,7 +198,7 @@ public class SideMenuController : MonoBehaviour
                 if (campusBuilding != null)
                 {
                     foreach (Measure measure in building.measures)
-                    if(!measure.done){
+                    if(!measure.done && !campusBuilding.inConstructionMode()){
                         campusBuilding.HideMeasure(measure.name);
                     }
                         

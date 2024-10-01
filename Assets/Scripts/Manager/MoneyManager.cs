@@ -4,8 +4,8 @@ using UnityEngine;
 public class MoneyManager : MonoBehaviour
 {
     public TextMeshProUGUI moneyText;
-    private float currentMoney = 10000;
-    private float maxMoney = 100000; 
+    private float currentMoney = 10000000;
+    private float maxMoney = 1000000000; 
 
 
     void Start()

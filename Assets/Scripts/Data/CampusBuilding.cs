@@ -134,4 +134,26 @@ public class CampusBuilding : MonoBehaviour
         constructionMode = false;
     }
 
+     public IEnumerator StartConstruction(string duration)
+    {
+        ActivateConstructionMode();
+        
+        // Konvertiere die String-Dauer in einen float-Wert
+        float durationValue;
+        if (float.TryParse(duration, out durationValue))
+        {
+            yield return new WaitForSeconds(durationValue * 10);
+        }
+        else
+        {
+            Debug.LogError("Ungültige Dauer: " + duration);
+        }
+
+        DeactivateConstructionMode();
+    }
+
+    public bool inConstructionMode(){
+        return constructionMode;
+    }
+
 }
