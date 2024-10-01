@@ -41,7 +41,7 @@ public class MoneyManager : MonoBehaviour
     {
         if (moneyText != null)
         {
-            moneyText.text = $"{currentMoney}/{maxMoney}";
+            moneyText.text = $"{getMoneyString(currentMoney)}/{getMoneyString(maxMoney)}";
         }
         else
         {
@@ -49,7 +49,7 @@ public class MoneyManager : MonoBehaviour
         }
     }
 
-    public string getMoneyString(int value)
+    public string getMoneyString(float value)
     {
         if (value >= 1000000)
         {
