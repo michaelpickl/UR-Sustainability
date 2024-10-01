@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
 using RTS_Cam;
+using Palmmedia.ReportGenerator.Core.Parser.Analysis;
 
 public class CampusBuilding : MonoBehaviour
 {
@@ -99,6 +100,18 @@ public class CampusBuilding : MonoBehaviour
         {
             Debug.LogWarning($"{measureName} konnte nicht gefunden werden.");
         }
+        switch(measureName)
+        {
+            case "Papierkonzept verbessern":
+                Transform dumpster = transform.Find("Tonnen");
+                dumpster.gameObject.SetActive(false);
+                break;
+            case "E-Dienstfahrzeuge":
+                Transform cars = transform.Find("Autos");
+                cars.gameObject.SetActive(false);
+                break;
+            default: break;
+        }
     }
 
     public void HideMeasure(string measureName)
@@ -111,6 +124,18 @@ public class CampusBuilding : MonoBehaviour
         else
         {
             Debug.LogWarning($"{measureName} konnte nicht gefunden werden.");
+        }
+        switch(measureName)
+        {
+            case "Papierkonzept verbessern":
+                Transform dumpster = transform.Find("Tonnen");
+                dumpster.gameObject.SetActive(true);
+                break;
+            case "E-Dienstfahrzeuge":
+                Transform cars = transform.Find("Autos");
+                cars.gameObject.SetActive(true);
+                break;
+            default: break;
         }
     }
 
