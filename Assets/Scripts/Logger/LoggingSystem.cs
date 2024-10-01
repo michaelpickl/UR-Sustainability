@@ -30,6 +30,8 @@ public class LoggingSystem : MonoBehaviour {
 	public bool activeLogging;
 
 	private TimeProgress timeProgress;
+	private Co2Manager co2Manager;
+    private MoneyManager moneyManager;
 
 	private int playerID;
 
@@ -46,6 +48,8 @@ public class LoggingSystem : MonoBehaviour {
 		//playerID = PlayerPrefs.GetInt("PlayerID");
 		//LOGFILE_DIRECTORY = LOGFILE_DIRECTORY + playerID;
 		timeProgress = GameObject.Find("TimeSlider").GetComponent<TimeProgress>();
+        co2Manager = GameObject.Find("Co2Manager").GetComponent<Co2Manager>();
+        moneyManager = GameObject.Find("MoneyManager").GetComponent<MoneyManager>();
 
 		if(this.activeLogging)
 		{
@@ -63,7 +67,7 @@ public class LoggingSystem : MonoBehaviour {
 			if(File.Exists(this.logFile)) Debug.Log("[LoggingSystem] LogFile created at " + this.logFile);
 			else Debug.LogError("[LoggingSystem] Error creating LogFile");
 
-			writeMessageToLog("timestamp;game month;game year; building name; measure name");
+			writeMessageToLog("timestamp;game month;game year; building name; measure name; current money; current co2");
 		}
 	}
 
@@ -129,7 +133,7 @@ public class LoggingSystem : MonoBehaviour {
 	{
 		string gameMonth = timeProgress.GetCurrentMonth();
 		int gameYear = timeProgress.GetCurrentYear();
-		writeMessageToLog(Time.realtimeSinceStartup.ToString() + ";" + gameMonth + ";" + gameYear + ";" + buildingName + ";" + measureName);
+		writeMessageToLog(Time.realtimeSinceStartup.ToString() + ";" + gameMonth + ";" + gameYear + ";" + buildingName + ";" + measureName + ";" + moneyManager.GetCurrentMoney() + ";" + co2Manager.GetCurrentCo2());
 	}
 
 	#endregion
