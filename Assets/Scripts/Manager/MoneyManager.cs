@@ -1,12 +1,22 @@
+using TMPro;
 using UnityEngine;
 
 public class MoneyManager : MonoBehaviour
 {
-    private float currentMoney;
+    public TextMeshProUGUI moneyText;
+    private float currentMoney = 10000;
+    private float maxMoney = 100000; 
+
+
+    void Start()
+    {
+        UpdateMoneyText(); // Geldwert beim Start setzen
+    }
 
     public void AddMoney(float amount)
     {
         currentMoney += amount;
+        UpdateMoneyText();
     }
 
     public void SubtractMoney(float amount)
@@ -14,6 +24,7 @@ public class MoneyManager : MonoBehaviour
         if (currentMoney >= amount)
         {
             currentMoney -= amount;
+            UpdateMoneyText();
         }
         else
         {
@@ -24,6 +35,18 @@ public class MoneyManager : MonoBehaviour
     public float GetCurrentMoney()
     {
         return currentMoney;
+    }
+
+    private void UpdateMoneyText()
+    {
+        if (moneyText != null)
+        {
+            moneyText.text = $"{currentMoney}/{maxMoney}";
+        }
+        else
+        {
+            Debug.LogWarning("MoneyText ist nicht zugewiesen.");
+        }
     }
 
     public string getMoneyString(int value)

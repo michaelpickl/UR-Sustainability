@@ -10,13 +10,18 @@ public class SideMenuController : MonoBehaviour
     public float menuWidth = 800f;
     public float animationSpeed = 3f;
     public TextMeshProUGUI buildingNameText;
-
+    public Button buyButton;
+    
+    private ButtonController showPanelScript;
     private bool isMenuOpen = false;
     private Vector2 closedPosition;
     private Vector2 openPosition;
 
     private DataGetter dataGetter;
     private Building currentBuilding;
+    private Measure selectedMeasure;
+    private Co2Manager co2Manager;
+    private MoneyManager moneyManager;
 
     void Start()
     {
@@ -26,6 +31,9 @@ public class SideMenuController : MonoBehaviour
         menuPanel.anchoredPosition = closedPosition;
 
         dataGetter = GameObject.Find("DataGetter").GetComponent<DataGetter>();
+        co2Manager = GameObject.Find("Co2Manager").GetComponent<Co2Manager>();
+        moneyManager = GameObject.Find("MoneyManager").GetComponent<MoneyManager>();
+        buyButton.onClick.AddListener(OnBuyButtonClicked);
     }
 
     void Update()
@@ -127,7 +135,7 @@ public class SideMenuController : MonoBehaviour
                     }
 
 
-                    ButtonController showPanelScript = buttonObject.GetComponent<ButtonController>();
+                    showPanelScript = buttonObject.GetComponent<ButtonController>();
                     if (showPanelScript != null)
                     {
                         showPanelScript.SetBuildingAndMeasure(currentBuilding.name, measure.name);
@@ -145,6 +153,32 @@ public class SideMenuController : MonoBehaviour
         }
     }
 
+    public void SetSelectedMeasure(Measure measure)
+    {
+        selectedMeasure = measure;
+    }
+
+    public void OnBuyButtonClicked()
+    {
+        if (selectedMeasure != null && !selectedMeasure.done)
+        {
+            if (moneyManager.GetCurrentMoney() >= selectedMeasure.cost)
+            {
+                moneyManager.SubtractMoney(selectedMeasure.cost);
+                co2Manager.ReduceCo2(selectedMeasure.co2_savings);
+
+                selectedMeasure.done = true;
+                showPanelScript.HidePanel();
+                ToggleMenu();
+                Debug.Log("Maßnahme " + selectedMeasure.name + " gekauft!");
+            }
+            else
+            {
+                Debug.LogWarning("Nicht genug Geld für diese Maßnahme.");
+            }
+        }
+    }
+
     public void HideAllPreviews()
     {
         Building[] buildings = dataGetter.GetBuildings();
@@ -159,7 +193,10 @@ public class SideMenuController : MonoBehaviour
                 if (campusBuilding != null)
                 {
                     foreach (Measure measure in building.measures)
+                    if(!measure.done){
                         campusBuilding.HideMeasure(measure.name);
+                    }
+                        
                 }
             }
         }

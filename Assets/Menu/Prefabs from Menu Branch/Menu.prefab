@@ -1568,8 +1568,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -25, y: 0}
-  m_SizeDelta: {x: 25, y: 10}
+  m_AnchoredPosition: {x: -38.108574, y: 0}
+  m_SizeDelta: {x: 38.1086, y: 10}
   m_Pivot: {x: 0, y: 0}
 --- !u!222 &1684620397539137960
 CanvasRenderer:
@@ -1599,7 +1599,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 50 Gt
+  m_text: '337399.1
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2618,6 +2620,7 @@ MonoBehaviour:
   menuWidth: 800
   animationSpeed: 5
   buildingNameText: {fileID: 0}
+  buyButton: {fileID: 0}
 --- !u!1 &2427362609422394294
 GameObject:
   m_ObjectHideFlags: 0
@@ -2856,9 +2859,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 0}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
+  m_MaxValue: 337399.06
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 337399.06
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -3003,6 +3006,10 @@ MonoBehaviour:
   panel: {fileID: 4325720221295986634}
   fill1: {fileID: 3613591624794664969}
   fill2: {fileID: 5776042856057595424}
+  headingText: {fileID: 0}
+  descriptionText: {fileID: 0}
+  priceText: {fileID: 8723524797404823963}
+  durationText: {fileID: 803041698877955971}
 --- !u!1 &2749757473010052108
 GameObject:
   m_ObjectHideFlags: 0
@@ -4294,7 +4301,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 64.35, y: 0}
+  m_AnchoredPosition: {x: 0.40000153, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4912452532454739012
@@ -6519,7 +6526,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 20, y: 10}
+  m_SizeDelta: {x: 31.4792, y: 10}
   m_Pivot: {x: 0, y: 0}
 --- !u!222 &1438891652452795980
 CanvasRenderer:
@@ -6549,7 +6556,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: CO2
+  m_text: 'CO2e t
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -7857,7 +7866,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 10, y: 0}
+  m_AnchoredPosition: {x: -5.3, y: 0}
   m_SizeDelta: {x: 10, y: 10}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7241215843893702851
