@@ -48,4 +48,9 @@ public class Co2Manager : MonoBehaviour
         // Den Text mit dem aktuellen CO2-Wert aktualisieren
         co2Text.text = currentCo2.ToString("F2");
     }
+
+    public float GetCurrentCo2()
+    {
+        return currentCo2;
+    }
 }
