@@ -14,6 +14,7 @@ public class SideMenuController : MonoBehaviour
     public TextMeshProUGUI buildingLevel;
     public SVGImage buildingIcon;
     public Button buyButton;
+    public Button closeButton;
 
     private ButtonController currentButtonController;
     private bool isMenuOpen = false;
@@ -38,6 +39,7 @@ public class SideMenuController : MonoBehaviour
         moneyManager = GameObject.Find("MoneyManager").GetComponent<MoneyManager>();
         loggingSystem = GameObject.Find("LoggingSystem").GetComponent<LoggingSystem>();
         buyButton.onClick.AddListener(OnBuyButtonClicked);
+        closeButton.onClick.AddListener(CloseSideMenu);
     }
 
     void Update()
@@ -253,5 +255,6 @@ public class SideMenuController : MonoBehaviour
     void CloseSideMenu()
     {
         HideAllPreviews();
+        ToggleMenu();
     }
 }
