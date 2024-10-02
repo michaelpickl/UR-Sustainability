@@ -177,6 +177,15 @@ public class SideMenuController : MonoBehaviour
             }
         }
 
+        // Zeige den Haken, wenn die Maßnahme abgeschlossen ist
+        Transform checkmarkTransform = buttonObject.transform.Find("Checkmark"); // Name des Haken-Bildes im Prefab
+        if (checkmarkTransform != null)
+        {
+            SVGImage checkmarkImage = checkmarkTransform.GetComponent<SVGImage>();
+            checkmarkImage.enabled = measure.done;
+            Debug.Log("Checkmark is enabled:  " + checkmarkImage.enabled);
+        }
+
         currentButtonController = buttonObject.GetComponent<ButtonController>();
         if (currentButtonController != null)
         {
@@ -218,7 +227,7 @@ public class SideMenuController : MonoBehaviour
     public void HideAllPreviews()
     {
         if (currentButtonController != null) currentButtonController.HidePanel();
-       
+
         foreach (Building building in dataGetter.GetBuildings())
         {
             GameObject buildingObject = GameObject.Find(building.name);
