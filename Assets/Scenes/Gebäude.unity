@@ -2523,6 +2523,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buildingName: Physik
   sideMenuController: {fileID: 0}
+  renovationMaterial: {fileID: 0}
 --- !u!65 &98927517
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5294,6 +5295,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buildingName: Technische Zentrale
   sideMenuController: {fileID: 0}
+  renovationMaterial: {fileID: 0}
 --- !u!65 &248392810
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6794,6 +6796,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buildingName: Recht und Wirtschaft
   sideMenuController: {fileID: 0}
+  renovationMaterial: {fileID: 0}
 --- !u!65 &294808557
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10288,6 +10291,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buildingName: Fahrzeughalle
   sideMenuController: {fileID: 0}
+  renovationMaterial: {fileID: 0}
 --- !u!65 &443199544
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13743,6 +13747,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buildingName: Studentenhaus
   sideMenuController: {fileID: 0}
+  renovationMaterial: {fileID: 0}
 --- !u!65 &558993347
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20137,6 +20142,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buildingName: "Vielberthgeb\xE4ude"
   sideMenuController: {fileID: 0}
+  renovationMaterial: {fileID: 0}
 --- !u!65 &697847702
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21814,6 +21820,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buildingName: Mensa
   sideMenuController: {fileID: 0}
+  renovationMaterial: {fileID: 0}
 --- !u!1001 &740385096
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23717,6 +23724,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buildingName: Biologie
   sideMenuController: {fileID: 6425806307103796294}
+  renovationMaterial: {fileID: 2100000, guid: d9118644cf18d114abae307878884709, type: 2}
 --- !u!1001 &820656884
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24965,6 +24973,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buildingName: Biologie
   sideMenuController: {fileID: 0}
+  renovationMaterial: {fileID: 0}
 --- !u!65 &835479663
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25204,6 +25213,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buildingName: "Zentrales H\xF6rsaalgeb\xE4ude"
   sideMenuController: {fileID: 0}
+  renovationMaterial: {fileID: 0}
 --- !u!65 &845773456
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25367,6 +25377,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buildingName: Rechenzentrum
   sideMenuController: {fileID: 0}
+  renovationMaterial: {fileID: 0}
 --- !u!65 &853243582
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -28622,7 +28633,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 648081089}
   m_Direction: 2
   m_Value: 1.0000002
-  m_Size: 0.20928504
+  m_Size: 0.20928502
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -29496,6 +29507,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buildingName: "Sammelgeb\xE4ude"
   sideMenuController: {fileID: 0}
+  renovationMaterial: {fileID: 0}
 --- !u!65 &991750146
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -30537,6 +30549,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buildingName: "\xD6PNV"
   sideMenuController: {fileID: 0}
+  renovationMaterial: {fileID: 0}
 --- !u!65 &1032987473
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -31012,6 +31025,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buildingName: OTH
   sideMenuController: {fileID: 0}
+  renovationMaterial: {fileID: 0}
 --- !u!65 &1051340629
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -32956,6 +32970,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buildingName: Mathematik
   sideMenuController: {fileID: 0}
+  renovationMaterial: {fileID: 0}
 --- !u!65 &1139074351
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -33762,6 +33777,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buildingName: Philosophie und Theologie
   sideMenuController: {fileID: 0}
+  renovationMaterial: {fileID: 0}
 --- !u!65 &1187096228
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -33832,6 +33848,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buildingName: "Parkhaus S\xFCd"
   sideMenuController: {fileID: 0}
+  renovationMaterial: {fileID: 0}
 --- !u!65 &1189235871
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -39877,6 +39894,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buildingName: Sportzentrum
   sideMenuController: {fileID: 0}
+  renovationMaterial: {fileID: 0}
 --- !u!65 &1401556025
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -43125,6 +43143,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buildingName: Verwaltung
   sideMenuController: {fileID: 0}
+  renovationMaterial: {fileID: 0}
 --- !u!65 &1531752111
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -43194,6 +43213,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buildingName: Entsorgungszentrum
   sideMenuController: {fileID: 0}
+  renovationMaterial: {fileID: 0}
 --- !u!65 &1535575956
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -44662,6 +44682,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buildingName: Vorklinikum
   sideMenuController: {fileID: 0}
+  renovationMaterial: {fileID: 0}
 --- !u!65 &1577418269
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -53234,6 +53255,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buildingName: Zentralbibliothek
   sideMenuController: {fileID: 0}
+  renovationMaterial: {fileID: 0}
 --- !u!65 &1883941039
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -59320,6 +59342,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buildingName: Chemie
   sideMenuController: {fileID: 0}
+  renovationMaterial: {fileID: 0}
 --- !u!65 &2086713630
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -74065,6 +74088,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buildingName: "Zentrtales Bibliotheksgeb\xE4ude"
   sideMenuController: {fileID: 6425806307103796294}
+  renovationMaterial: {fileID: 2100000, guid: d9118644cf18d114abae307878884709, type: 2}
 --- !u!65 &2059537705793457120
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -77149,6 +77173,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buildingName: Mensa
   sideMenuController: {fileID: 6425806307103796294}
+  renovationMaterial: {fileID: 2100000, guid: d9118644cf18d114abae307878884709, type: 2}
 --- !u!65 &2504427607660899204
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -77310,6 +77335,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buildingName: Philosophie und Theologie
   sideMenuController: {fileID: 6425806307103796294}
+  renovationMaterial: {fileID: 2100000, guid: d9118644cf18d114abae307878884709, type: 2}
 --- !u!65 &2525063425744218710
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -80182,6 +80208,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buildingName: "Parkhaus 1 + 2 S\xFCd"
   sideMenuController: {fileID: 6425806307103796294}
+  renovationMaterial: {fileID: 2100000, guid: d9118644cf18d114abae307878884709, type: 2}
 --- !u!65 &3038731832763074126
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -81724,6 +81751,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buildingName: Vorklinikum
   sideMenuController: {fileID: 6425806307103796294}
+  renovationMaterial: {fileID: 2100000, guid: d9118644cf18d114abae307878884709, type: 2}
 --- !u!65 &3246502103238711760
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -81905,6 +81933,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buildingName: Entsorgungszentrum
   sideMenuController: {fileID: 6425806307103796294}
+  renovationMaterial: {fileID: 2100000, guid: d9118644cf18d114abae307878884709, type: 2}
 --- !u!65 &3273757607011995294
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -83827,6 +83856,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buildingName: "Verwaltungsgeb\xE4ude und Ladengesch\xE4fte"
   sideMenuController: {fileID: 6425806307103796294}
+  renovationMaterial: {fileID: 2100000, guid: d9118644cf18d114abae307878884709, type: 2}
 --- !u!65 &3599736840982918269
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -85065,6 +85095,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buildingName: "Zentrales H\xF6rsaalgeb\xE4ude"
   sideMenuController: {fileID: 6425806307103796294}
+  renovationMaterial: {fileID: 2100000, guid: d9118644cf18d114abae307878884709, type: 2}
 --- !u!65 &3755963147220606089
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -88137,6 +88168,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buildingName: Recht und Wirtschaft
   sideMenuController: {fileID: 6425806307103796294}
+  renovationMaterial: {fileID: 2100000, guid: d9118644cf18d114abae307878884709, type: 2}
 --- !u!65 &4233216278450951640
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -90078,6 +90110,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buildingName: Technische Zentrale
   sideMenuController: {fileID: 0}
+  renovationMaterial: {fileID: 2100000, guid: d9118644cf18d114abae307878884709, type: 2}
 --- !u!65 &4601241532687049584
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -90113,6 +90146,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buildingName: Technische Zentrale
   sideMenuController: {fileID: 6425806307103796294}
+  renovationMaterial: {fileID: 0}
 --- !u!4 &4602232383899195300
 Transform:
   m_ObjectHideFlags: 0
@@ -90806,6 +90840,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buildingName: Physik
   sideMenuController: {fileID: 6425806307103796294}
+  renovationMaterial: {fileID: 2100000, guid: d9118644cf18d114abae307878884709, type: 2}
 --- !u!65 &4694907866420191388
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -92599,6 +92634,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buildingName: Ostbayerische Technische Hochschule Regensburg
   sideMenuController: {fileID: 6425806307103796294}
+  renovationMaterial: {fileID: 2100000, guid: d9118644cf18d114abae307878884709, type: 2}
 --- !u!65 &5003468326546749392
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -97221,6 +97257,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buildingName: Rechenzentrum
   sideMenuController: {fileID: 6425806307103796294}
+  renovationMaterial: {fileID: 2100000, guid: d9118644cf18d114abae307878884709, type: 2}
 --- !u!65 &5722305256725043506
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -98973,6 +99010,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buildingName: "Vielberthgeb\xE4ude"
   sideMenuController: {fileID: 6425806307103796294}
+  renovationMaterial: {fileID: 2100000, guid: d9118644cf18d114abae307878884709, type: 2}
 --- !u!65 &6043096963336855944
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -99407,6 +99445,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buildingName: Chemie
   sideMenuController: {fileID: 6425806307103796294}
+  renovationMaterial: {fileID: 2100000, guid: d9118644cf18d114abae307878884709, type: 2}
 --- !u!65 &6094527316520596222
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -101635,6 +101674,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buildingName: Westliche Naturwissenschaften
   sideMenuController: {fileID: 6425806307103796294}
+  renovationMaterial: {fileID: 2100000, guid: d9118644cf18d114abae307878884709, type: 2}
 --- !u!1 &6399459805481837211
 GameObject:
   m_ObjectHideFlags: 0
@@ -103495,6 +103535,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buildingName: Fahrzeughalle
   sideMenuController: {fileID: 6425806307103796294}
+  renovationMaterial: {fileID: 2100000, guid: d9118644cf18d114abae307878884709, type: 2}
 --- !u!65 &6733891189469251657
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -103849,6 +103890,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buildingName: Studentenhaus
   sideMenuController: {fileID: 6425806307103796294}
+  renovationMaterial: {fileID: 2100000, guid: d9118644cf18d114abae307878884709, type: 2}
 --- !u!65 &6803870060142891230
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -107962,6 +108004,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buildingName: Mathematik
   sideMenuController: {fileID: 6425806307103796294}
+  renovationMaterial: {fileID: 2100000, guid: d9118644cf18d114abae307878884709, type: 2}
 --- !u!65 &7497757228442998314
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -109577,6 +109620,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buildingName: Sportzentrum
   sideMenuController: {fileID: 0}
+  renovationMaterial: {fileID: 2100000, guid: d9118644cf18d114abae307878884709, type: 2}
 --- !u!114 &7798560337540655990
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -109591,6 +109635,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buildingName: Sportzentrum
   sideMenuController: {fileID: 6425806307103796294}
+  renovationMaterial: {fileID: 0}
 --- !u!65 &7798560337540655991
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -117406,6 +117451,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buildingName: "Sammelgeb\xE4ude"
   sideMenuController: {fileID: 6425806307103796294}
+  renovationMaterial: {fileID: 2100000, guid: d9118644cf18d114abae307878884709, type: 2}
 --- !u!65 &9152412933951910149
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -17,6 +17,7 @@ public class CampusBuilding : MonoBehaviour
     private Converter converter;
 
     public SideMenuController sideMenuController; 
+    public Material renovationMaterial;  //renovationmaterial
     private bool constructionMode;
     
 
@@ -183,6 +184,28 @@ public class CampusBuilding : MonoBehaviour
 
     public bool inConstructionMode(){
         return constructionMode;
+    }
+
+    public void ApplyRenovationMaterial()
+    {
+        //all renderer for the buildings in the gameobject
+        Renderer[] allRenderers = GetComponentsInChildren<Renderer>();
+
+        //check if material is asigned
+        if (renovationMaterial != null)
+        {
+            //set material
+            foreach (Renderer renderer in allRenderers)
+            {
+                Debug.Log("Applying material to: " + renderer.gameObject.name);
+                renderer.sharedMaterial = renovationMaterial;
+            }
+            Debug.Log("Renovation material applied successfully to all buildings in the tract!");
+        }
+        else
+        {
+            Debug.LogError("Renovation material not assigned!");
+        }
     }
 
 }
