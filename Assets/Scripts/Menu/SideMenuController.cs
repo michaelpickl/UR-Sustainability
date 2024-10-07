@@ -4,6 +4,7 @@ using UnityEngine.UI;
 using System.Collections.Generic;
 using Unity.VectorGraphics;
 using System.Linq;
+using RTS_Cam;
 
 public class SideMenuController : MonoBehaviour
 {
@@ -15,6 +16,8 @@ public class SideMenuController : MonoBehaviour
     public SVGImage buildingIcon;
     public Button buyButton;
     public Button closeButton;
+
+    private RTS_Camera camManager;
 
     private ButtonController currentButtonController;
     private bool isMenuOpen = false;
@@ -38,6 +41,7 @@ public class SideMenuController : MonoBehaviour
         co2Manager = GameObject.Find("Co2Manager").GetComponent<Co2Manager>();
         moneyManager = GameObject.Find("MoneyManager").GetComponent<MoneyManager>();
         loggingSystem = GameObject.Find("LoggingSystem").GetComponent<LoggingSystem>();
+        camManager = GameObject.Find("RTS_Camera").GetComponent<RTS_Camera>();
         buyButton.onClick.AddListener(OnBuyButtonClicked);
         closeButton.onClick.AddListener(CloseSideMenu);
     }
@@ -261,5 +265,6 @@ public class SideMenuController : MonoBehaviour
     {
         HideAllPreviews();
         ToggleMenu();
+        camManager.ResetTarget();
     }   
 }

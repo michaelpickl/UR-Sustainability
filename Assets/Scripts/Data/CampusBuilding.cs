@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.UIElements;
 using RTS_Cam;
 using Palmmedia.ReportGenerator.Core.Parser.Analysis;
+using System;
 
 public class CampusBuilding : MonoBehaviour
 {
@@ -184,6 +185,12 @@ public class CampusBuilding : MonoBehaviour
 
     public bool inConstructionMode(){
         return constructionMode;
+    }
+
+    public IEnumerator StartCollectingMoney(String measureName)
+    {
+        yield return new WaitForSeconds(120); //1 year!
+        //showCollectionIcon
     }
 
     public void ApplyRenovationMaterial()
