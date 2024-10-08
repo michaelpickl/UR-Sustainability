@@ -228,7 +228,7 @@ public class SideMenuController : MonoBehaviour
                     }
                 }
                 currentButtonController.HidePanel();
-                ToggleMenu();
+                CloseSideMenu();
                 loggingSystem.addToLog(currentBuilding.name, selectedMeasure.name);
                 Debug.Log($"Maßnahme {selectedMeasure.name} gekauft!");
             }

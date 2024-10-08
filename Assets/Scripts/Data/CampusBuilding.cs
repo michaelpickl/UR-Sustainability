@@ -35,6 +35,13 @@ public class CampusBuilding : MonoBehaviour
         {
             sideMenuController = GameObject.FindObjectOfType<SideMenuController>();
         }
+        foreach(Measure measure in building.measures)
+        {
+            if(measure.done)
+            {
+                StartCoroutine(StartCollectingMoney(measure.name));
+            }
+        } 
     }
 
     void Update()
@@ -98,10 +105,6 @@ public class CampusBuilding : MonoBehaviour
         {
             child.gameObject.SetActive(true);
         }
-        else
-        {
-            Debug.LogWarning($"{measureName} konnte nicht gefunden werden.");
-        }
         switch(measureName)
         {
             case "Papierkonzept verbessern":
@@ -122,10 +125,6 @@ public class CampusBuilding : MonoBehaviour
         if (child != null)
         {
             child.gameObject.SetActive(false);
-        }
-        else
-        {
-            Debug.LogWarning($"{measureName} konnte nicht gefunden werden.");
         }
         switch(measureName)
         {
@@ -181,6 +180,7 @@ public class CampusBuilding : MonoBehaviour
 
         DeactivateConstructionMode();
         ShowMeasure(name);
+        StartCoroutine(StartCollectingMoney(name));
     }
 
     public bool inConstructionMode(){
@@ -190,7 +190,17 @@ public class CampusBuilding : MonoBehaviour
     public IEnumerator StartCollectingMoney(String measureName)
     {
         yield return new WaitForSeconds(120); //1 year!
-        //showCollectionIcon
+        Transform child = transform.Find("MoneyCollection");
+        if (child != null)
+        {
+            //child.gameObject.SetActive(true);
+            MoneyCollectionButton moneyCollectionButton = child.GetComponent<MoneyCollectionButton>();
+            moneyCollectionButton.ShowButton(buildingName, measureName);
+        }
+        else{
+            print("MoneyCollection nicht gefunden!");
+        }
+        StartCoroutine(StartCollectingMoney(name));
     }
 
     public void ApplyRenovationMaterial()

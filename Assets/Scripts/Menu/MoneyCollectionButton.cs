@@ -29,35 +29,47 @@ public class MoneyCollectionButton : MonoBehaviour
     void OnButtonClick()
     {
         moneyManager.AddMoney(moneyCount);
+        moneyCount = 0;
         HideButton();
     }
 
-    void showButton(string buildingNameNew, string measureNameNew)
+    public void ShowButton(string buildingNameNew, string measureNameNew)
     {
         buildingName = buildingNameNew;
         measureName = measureNameNew;
+        if(dataGetter == null)
+        {
+            dataGetter = GameObject.Find("DataGetter").GetComponent<DataGetter>();
+        }
         Building building = dataGetter.GetBuilding(buildingName);
-        int costSavings = 0;
-        foreach(Measure measure in building.measures)
+        if(building != null)
         {
-            if(measure.name == measureName)
+            int costSavings = 0;
+            foreach(Measure measure in building.measures)
             {
-                costSavings = measure.cost_savings;
+                if(measure.name == measureName)
+                {
+                    costSavings = measure.cost_savings;
+                }
             }
+            if(gameObject.activeSelf)
+            {
+                moneyCount += costSavings;
+            }
+            else{
+                moneyCount = costSavings;
+                if(moneyCount > 0)
+                {
+                    gameObject.SetActive(true);
+                }
+            }
+            UpdateCountView();
         }
-        if(gameObject.activeSelf)
-        {
-            moneyCount += costSavings;
-        }
-        else{
-            moneyCount = costSavings;
-            gameObject.SetActive(true);
-        }
-        UpdateCountView();
     }
 
     void UpdateCountView()
     {
+        print("CHANGE MONEY TEXT TO: " + moneyCount);
         moneyText.text = "" + moneyCount;
     }
 
