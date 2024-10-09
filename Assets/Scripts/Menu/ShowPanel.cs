@@ -27,11 +27,13 @@ public class ButtonController : MonoBehaviour
     private Measure currentMeasure;
     private SideMenuController sideMenuController;
     private static List<ButtonController> allButtonControllers = new List<ButtonController>();
+    private MoneyManager moneyManager;
 
 
     void Start()
     {
         sideMenuController = GameObject.FindObjectOfType<SideMenuController>();
+        moneyManager = GameObject.FindObjectOfType<MoneyManager>();
         
         if (buttonImage != null)
         {
@@ -109,7 +111,7 @@ public class ButtonController : MonoBehaviour
         {
             headingText.text = currentMeasure.name;
             descriptionText.text = currentMeasure.description;
-            priceText.text = currentMeasure.cost + " €";
+            priceText.text = moneyManager.getMoneyString(currentMeasure.cost) + " €";
             durationText.text = currentMeasure.duration + " Monate";
             sideMenuController.SetSelectedMeasure(currentMeasure);
         }
