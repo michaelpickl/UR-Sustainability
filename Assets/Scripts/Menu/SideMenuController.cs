@@ -221,11 +221,6 @@ public class SideMenuController : MonoBehaviour
                 {
                     campusBuilding.HideMeasure(selectedMeasure.name);
                     StartCoroutine(campusBuilding.StartConstruction(selectedMeasure.duration, selectedMeasure.name)); // duration setzen
-                     // Füge hier die Materialänderung hinzu, wenn die energetische Gebäudesanierung abgeschlossen ist
-                    if (selectedMeasure.name == "Energetische Gebäudesanierung")
-                    {
-                        campusBuilding.ApplyRenovationMaterial();
-                    }
                 }
                 currentButtonController.HidePanel();
                 CloseSideMenu();

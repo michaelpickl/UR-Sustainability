@@ -19,6 +19,7 @@ public class CampusBuilding : MonoBehaviour
 
     public SideMenuController sideMenuController; 
     public Material renovationMaterial;  //renovationmaterial
+    public Material oldMaterial;
     private bool constructionMode;
     
 
@@ -115,6 +116,9 @@ public class CampusBuilding : MonoBehaviour
                 Transform cars = transform.Find("Autos");
                 cars.gameObject.SetActive(false);
                 break;
+            case "Energetische Gebäudesanierung":
+                ApplyRenovationMaterial(renovationMaterial);
+                break;
             default: break;
         }
     }
@@ -135,6 +139,9 @@ public class CampusBuilding : MonoBehaviour
             case "E-Dienstfahrzeuge":
                 Transform cars = transform.Find("Autos");
                 cars.gameObject.SetActive(true);
+                break;
+            case "Energetische Gebäudesanierung":
+                ApplyRenovationMaterial(oldMaterial);
                 break;
             default: break;
         }
@@ -203,19 +210,22 @@ public class CampusBuilding : MonoBehaviour
         StartCoroutine(StartCollectingMoney(name));
     }
 
-    public void ApplyRenovationMaterial()
+    public void ApplyRenovationMaterial(Material material)
     {
         //all renderer for the buildings in the gameobject
         Renderer[] allRenderers = GetComponentsInChildren<Renderer>();
 
         //check if material is asigned
-        if (renovationMaterial != null)
+        if (material != null)
         {
             //set material
             foreach (Renderer renderer in allRenderers)
             {
-                Debug.Log("Applying material to: " + renderer.gameObject.name);
-                renderer.sharedMaterial = renovationMaterial;
+                if (renderer.gameObject.CompareTag("beton"))  // object must be tagged as "beton"
+                {
+                    Debug.Log("Applying material to: " + renderer.gameObject.name);
+                    renderer.sharedMaterial = material;
+                }
             }
             Debug.Log("Renovation material applied successfully to all buildings in the tract!");
         }
