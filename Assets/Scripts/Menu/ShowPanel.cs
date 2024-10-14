@@ -111,7 +111,7 @@ public class ButtonController : MonoBehaviour
         {
             headingText.text = currentMeasure.name;
             descriptionText.text = currentMeasure.description;
-            priceText.text = moneyManager.getMoneyString(currentMeasure.cost) + " €";
+            priceText.text = moneyManager.getMoneyString(currentMeasure.cost);
             durationText.text = currentMeasure.duration + " Monate";
             sideMenuController.SetSelectedMeasure(currentMeasure);
         }

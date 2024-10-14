@@ -54,16 +54,16 @@ public class MoneyManager : MonoBehaviour
         if (value >= 1000000)
         {
             float shortenedValue = value / 1000000f;
-            return shortenedValue.ToString("0.00") + "M€";
+            return shortenedValue.ToString("0.00") + "M €";
         }
         else if (value >= 1000)
         {
             float shortenedValue = value / 1000f;
-            return shortenedValue.ToString("0.00") + "T€";
+            return shortenedValue.ToString("0.00") + "T €";
         }
         else
         {
-            return value.ToString() + "€";
+            return value.ToString() + " €";
         }
     }
 }
