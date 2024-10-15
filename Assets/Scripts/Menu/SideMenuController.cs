@@ -68,6 +68,11 @@ public class SideMenuController : MonoBehaviour
         isMenuOpen = !isMenuOpen;
     }
 
+    public bool IsMenuOpen()
+    {
+        return isMenuOpen;
+    }
+
     public void OpenMenuWithBuildingName(string buildingName)
     {
         HideAllPreviews();

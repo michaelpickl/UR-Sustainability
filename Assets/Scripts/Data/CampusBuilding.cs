@@ -49,21 +49,24 @@ public class CampusBuilding : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0) && !constructionMode) //Building not clickable when in construction mode!
         {
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            RaycastHit hit;
-
-            if (Physics.Raycast(ray, out hit))
+            if(!sideMenuController.IsMenuOpen()) //can only click building when side menu is closed
             {
-                GameObject clickedObject = hit.transform.gameObject;
-                if(clickedObject.name == gameObject.name)
-                {
-                    Vector3 targetPosition = CalculateTargetPosition();
-                    cameraTarget.transform.position = targetPosition;
-                    camManager.SetTarget(cameraTarget.transform);
-                    Debug.Log("Clicked on: " + clickedObject.name);
+                Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+                RaycastHit hit;
 
-                    if(sideMenuController != null)
-                    sideMenuController.OpenMenuWithBuildingName(buildingName);
+                if (Physics.Raycast(ray, out hit))
+                {
+                    GameObject clickedObject = hit.transform.gameObject;
+                    if(clickedObject.name == gameObject.name)
+                    {
+                        Vector3 targetPosition = CalculateTargetPosition();
+                        cameraTarget.transform.position = targetPosition;
+                        camManager.SetTarget(cameraTarget.transform);
+                        Debug.Log("Clicked on: " + clickedObject.name);
+
+                        if(sideMenuController != null)
+                        sideMenuController.OpenMenuWithBuildingName(buildingName);
+                    }
                 }
             }
         }
