@@ -6,9 +6,9 @@ using UnityEngine.UI;
 
 public class ButtonController : MonoBehaviour
 {
-    public Button myButton; 
-    public SVGImage buttonImage; 
-    public Color clickedColor = Color.red; 
+    public Button myButton;
+    public SVGImage buttonImage;
+    public Color clickedColor = Color.red;
     public GameObject panel;
     public GameObject fill1;
     public GameObject fill2;
@@ -16,12 +16,12 @@ public class ButtonController : MonoBehaviour
 
     public TextMeshProUGUI headingText;
     public TextMeshProUGUI descriptionText;
-    
+
     public TextMeshProUGUI priceText;
     public TextMeshProUGUI durationText;
-    private Sprite originalIcon; 
-    private Color originalColor; 
-    private bool isClicked = false; 
+    private Sprite originalIcon;
+    private Color originalColor;
+    private bool isClicked = false;
     private string currentBuildingName;
     private string currentMeasureName;
     private Measure currentMeasure;
@@ -34,11 +34,12 @@ public class ButtonController : MonoBehaviour
     {
         sideMenuController = GameObject.FindObjectOfType<SideMenuController>();
         moneyManager = GameObject.FindObjectOfType<MoneyManager>();
-        
+
         if (buttonImage != null)
         {
             originalColor = buttonImage.color;
-        }else
+        }
+        else
         {
             Debug.LogWarning("ButtonImage ist nicht zugewiesen!");
         }
@@ -59,7 +60,7 @@ public class ButtonController : MonoBehaviour
             HidePanel();
         }
         isClicked = !isClicked;
-        
+
         showMeasurePreview(isClicked);
     }
 
@@ -85,21 +86,21 @@ public class ButtonController : MonoBehaviour
     }
 
     public void ResetButtonState()
-{
-    // Setze die Farbe des Buttons zurück
-    if (buttonImage != null)
     {
-        buttonImage.color = originalColor;
-    }
+        // Setze die Farbe des Buttons zurück
+        if (buttonImage != null)
+        {
+            buttonImage.color = originalColor;
+        }
 
-    // Setze die UI-Elemente und den Zustand des Panels zurück
-    panel.SetActive(false);
-    fill1.SetActive(false);
-    fill2.SetActive(false);
-    
-    // Markiere den Button als nicht geklickt
-    isClicked = false;
-}
+        // Setze die UI-Elemente und den Zustand des Panels zurück
+        panel.SetActive(false);
+        fill1.SetActive(false);
+        fill2.SetActive(false);
+
+        // Markiere den Button als nicht geklickt
+        isClicked = false;
+    }
 
     private void ShowPanel()
     {
@@ -113,12 +114,22 @@ public class ButtonController : MonoBehaviour
             descriptionText.text = currentMeasure.description;
             priceText.text = moneyManager.getMoneyString(currentMeasure.cost);
             durationText.text = currentMeasure.duration + " Monate";
+
+            if (moneyManager.GetCurrentMoney() < currentMeasure.cost)
+            {
+                priceText.color = Color.red;
+            }
+            else
+            {
+                priceText.color = Color.black;
+            }
+
             sideMenuController.SetSelectedMeasure(currentMeasure);
         }
     }
 
 
-      public void HidePanel()
+    public void HidePanel()
     {
         if (buttonImage != null)
         {
@@ -148,7 +159,8 @@ public class ButtonController : MonoBehaviour
         }
     }
 
-    void showMeasurePreview(bool show = true){
+    void showMeasurePreview(bool show = true)
+    {
         // Suche das Gebäudeobjekt anhand des Namens
         GameObject buildingObject = GameObject.Find(currentBuildingName);
 
@@ -160,7 +172,7 @@ public class ButtonController : MonoBehaviour
             if (campusBuilding != null)
             {
                 // Rufe die ShowMeasure-Methode auf
-                if(show)
+                if (show)
                 {
                     campusBuilding.ShowMeasure(currentMeasureName);
                 }
@@ -179,4 +191,5 @@ public class ButtonController : MonoBehaviour
             Debug.LogError($"Gebäude mit dem Namen '{currentBuildingName}' nicht gefunden.");
         }
     }
+
 }
