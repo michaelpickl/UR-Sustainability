@@ -13,6 +13,10 @@ public class SideMenuController : MonoBehaviour
     public float animationSpeed = 3f;
     public TextMeshProUGUI buildingNameText;
     public TextMeshProUGUI buildingLevel;
+    public TextMeshProUGUI buildingElectricityConsumption;
+    public TextMeshProUGUI buildingWarmthConsumption;
+    public TextMeshProUGUI buildingColdConsumption;
+
     public SVGImage buildingIcon;
     public Button buyButton;
     public Button closeButton;
@@ -101,6 +105,7 @@ public class SideMenuController : MonoBehaviour
         buildingNameText.text = buildingName;
         ShowBuildingLevel();
         SetBuildingIcon();
+        ShowBuildingConsumption();
     }
 
     private void ShowBuildingLevel()
@@ -120,6 +125,108 @@ public class SideMenuController : MonoBehaviour
             Debug.LogWarning("Kein Icon für das Gebäude gefunden.");
         }
     }
+
+    private void ShowBuildingConsumption()
+    {
+        buildingElectricityConsumption.text = GetMonthlyValueForType(currentBuilding, "Strom") + " kg CO2";
+        buildingWarmthConsumption.text = GetMonthlyValueForType(currentBuilding, "Wärme") + " kg CO2";
+        buildingColdConsumption.text = GetMonthlyValueForType(currentBuilding, "Kälte") + " kg CO2";
+    }
+
+    string GetMonthlyValueForType(Building building, string consumerType)
+    {
+        foreach (Consumer consumer in building.consumers)
+        {
+            if (consumer.type == consumerType)
+            {
+                if (consumer.monthly_values.Length > 0)
+                {
+                    float firstMonthValue = consumer.monthly_values[0];
+                    string valueString = firstMonthValue.ToString();
+                    return valueString;
+                }
+                else
+                {
+                    Debug.LogWarning("Keine monthly_values für den " + consumerType + "-Consumer gefunden.");
+                    return "N/A";
+                }
+            }
+        }
+        return "N/A";
+    }
+
+/*        foreach (Consumer consumer in currentBuilding.consumers)
+        {
+            if (consumer.type == "Strom")
+            {
+                // Greife auf das monthly_value des ersten Monats zu (Index 0)
+                if (consumer.monthly_values.Length > 0)
+                {
+                    float month1ValueElectricity = consumer.monthly_values[0];
+                    // Konvertiere den Wert in einen String
+                    string month1ValueElectricityString = month1ValueElectricity.ToString();
+                    
+                    buildingElectricityConsumption.text = month1ValueElectricityString + " kg CO2";
+                    
+                    // Zeige den Wert an (zum Beispiel in der Konsole)
+                    Debug.Log("Monat 1 Stromverbrauch: " + month1ValueElectricityString);
+                }
+                else
+                {
+                    Debug.LogWarning("Keine monthly_values für den Strom-Consumer gefunden.");
+                }
+                    // Consumer mit "Strom" wurde gefunden, also können wir abbrechen
+            }
+
+            if (consumer.type == "Wärme")
+            {
+                // Greife auf das monthly_value des ersten Monats zu (Index 0)
+                if (consumer.monthly_values.Length > 0)
+                {
+                    float month1ValueWarmth = consumer.monthly_values[0];
+                    // Konvertiere den Wert in einen String
+                    string month1ValueWarmthString = month1ValueWarmth.ToString();
+                    
+                    buildingWarmthConsumption.text = month1ValueWarmthString + " kg CO2";
+                    
+                    // Zeige den Wert an (zum Beispiel in der Konsole)
+                    Debug.Log("Monat 1 Wärmeverbrauch: " + month1ValueWarmthString);
+                }
+                else
+                {
+                    Debug.LogWarning("Keine monthly_values für den Wärme-Consumer gefunden.");
+                }
+            }
+
+            if (consumer.type == "Kälte")
+            {
+                // Greife auf das monthly_value des ersten Monats zu (Index 0)
+                if (consumer.monthly_values.Length > 0)
+                {
+                    float month1ValueCold = consumer.monthly_values[0];
+                    // Konvertiere den Wert in einen String
+                    string month1ValueColdString = month1ValueCold.ToString();
+
+                    if(month1ValueColdString == "0")
+                    {
+                        buildingColdConsumption.text = "-";
+                    }
+                    else
+                    {
+                        buildingColdConsumption.text = month1ValueColdString + " kg CO2";
+                    } 
+                    
+                    
+                    // Zeige den Wert an (zum Beispiel in der Konsole)
+                    Debug.Log("Monat 1 Kälteverbrauch: " + month1ValueColdString);
+                }
+                else
+                {
+                    Debug.LogWarning("Keine monthly_values für den Kälte-Consumer gefunden.");
+                }
+            }
+        }
+    }*/
 
     public void ShowMeasures()
     {

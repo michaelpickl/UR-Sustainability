@@ -12,6 +12,11 @@ public class ButtonController : MonoBehaviour
     public GameObject panel;
     public GameObject fill1;
     public GameObject fill2;
+    public GameObject fill3;
+
+    public TextMeshProUGUI electricitySliderText;
+    public TextMeshProUGUI warmthSliderText;
+    public TextMeshProUGUI coldSliderText;
 
 
     public TextMeshProUGUI headingText;
