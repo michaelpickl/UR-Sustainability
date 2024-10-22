@@ -13,14 +13,6 @@ public class ButtonController : MonoBehaviour
     public GameObject fill1;
     public GameObject fill2;
     public GameObject fill3;
-<<<<<<< Updated upstream
-=======
-
-    public TextMeshProUGUI electricitySliderText;
-    public TextMeshProUGUI warmthSliderText;
-    public TextMeshProUGUI coldSliderText;
-
->>>>>>> Stashed changes
 
     public TextMeshProUGUI headingText;
     public TextMeshProUGUI descriptionText;
