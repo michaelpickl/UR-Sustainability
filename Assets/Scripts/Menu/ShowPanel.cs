@@ -14,11 +14,6 @@ public class ButtonController : MonoBehaviour
     public GameObject fill2;
     public GameObject fill3;
 
-    public TextMeshProUGUI electricitySliderText;
-    public TextMeshProUGUI warmthSliderText;
-    public TextMeshProUGUI coldSliderText;
-
-
     public TextMeshProUGUI headingText;
     public TextMeshProUGUI descriptionText;
 
@@ -33,6 +28,10 @@ public class ButtonController : MonoBehaviour
     private SideMenuController sideMenuController;
     private static List<ButtonController> allButtonControllers = new List<ButtonController>();
     private MoneyManager moneyManager;
+
+    // consumption slider fill
+    private TimeProgress timeProgress;
+    private float currentYear;
 
 
     void Start()
@@ -50,7 +49,21 @@ public class ButtonController : MonoBehaviour
         }
         allButtonControllers.Add(this);
         myButton.onClick.AddListener(OnButtonClick);
+
+        //consumption slider fill
+        timeProgress = GameObject.Find("TimeSlider").GetComponent<TimeProgress>();
     }
+
+    // consumption slider fill
+    void Update()
+    {
+        if (timeProgress != null)
+        {
+            currentYear = timeProgress.GetYearsUntil2050();
+            Debug.Log("Current Year from TimeProgress: " + currentYear);
+        }
+    }
+    // consumption slider fill
 
     void OnButtonClick()
     {

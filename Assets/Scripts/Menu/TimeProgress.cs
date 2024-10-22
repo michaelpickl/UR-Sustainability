@@ -1,5 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
+using System;
+using UnityEngine.SceneManagement; //neu
 
 public class TimeProgress : MonoBehaviour
 {
@@ -24,6 +26,13 @@ public class TimeProgress : MonoBehaviour
 
         timeSlider.value = Mathf.Clamp(currentTime, startTime, endTime);
 
+        //Debug.Log("Current Time: " + currentTime);
+
+        if (GetCurrentTime() >= endTime)
+        {
+            SceneManager.LoadScene("End");
+        }
+
         // Reset (optional)
         if (currentTime >= endTime)
         {
@@ -36,15 +45,40 @@ public class TimeProgress : MonoBehaviour
         return currentTime;
     }
 
-    public string GetCurrentMonth()
+    /*public string GetCurrentMonth()
     {
         //TODO: calculate Month
         return "JAN";
+    }*/
+
+    public string GetCurrentMonth()
+    {
+        float totalMonths = (endTime - startTime) / 12;
+        float currentMonthIndex = (currentTime / (endTime - startTime)) * totalMonths;
+        
+        int monthIndex = Mathf.FloorToInt(currentMonthIndex) % 12;
+        
+        string[] months = new string[] 
+        {
+            "JAN", "FEB", "MAR", "APR", "MAY", "JUN",
+            "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"
+        };
+        
+        return months[monthIndex];
     }
+
 
     public int GetCurrentYear()
     {
-        //TODO: calculate year
-        return 2025;
+        int currentYear = (int)(currentTime / (endTime - startTime) * (2050 - 2024)) + 2024;
+        return currentYear;
+    }
+
+    public int GetYearsUntil2050()
+    {
+        int currentYear = GetCurrentYear();
+        int yearsUntil2050 = 2050 - currentYear;
+
+        return Mathf.Max(0, yearsUntil2050);
     }
 }
