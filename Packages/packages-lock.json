@@ -7,6 +7,20 @@
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
+    "com.citrion.settings-menu-creator": {
+      "version": "file:com.citrion.settings-menu-creator",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {
+        "com.unity.textmeshpro": "3.0.6",
+        "com.citrion.common": "1.2.0",
+        "com.citrion.ui": "1.0.3",
+        "com.citrion.ui.panels": "1.0.3",
+        "com.citrion.ui.images": "1.0.1",
+        "com.citrion.ui.components": "1.0.4",
+        "com.citrion.styleprofile": "1.1.1"
+      }
+    },
     "com.unity.2d.sprite": {
       "version": "1.0.0",
       "depth": 1,
