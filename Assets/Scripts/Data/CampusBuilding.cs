@@ -181,7 +181,7 @@ public class CampusBuilding : MonoBehaviour
         float durationValue;
         if (float.TryParse(duration, out durationValue))
         {
-            yield return new WaitForSeconds(durationValue * 10);
+            yield return new WaitForSeconds(durationValue * 2.5f);
         }
         else
         {
@@ -199,7 +199,7 @@ public class CampusBuilding : MonoBehaviour
 
     public IEnumerator StartCollectingMoney(String measureName)
     {
-        yield return new WaitForSeconds(120); //1 year!
+        yield return new WaitForSeconds(30); //1 year!
         Transform child = transform.Find("MoneyCollection");
         if (child != null)
         {
