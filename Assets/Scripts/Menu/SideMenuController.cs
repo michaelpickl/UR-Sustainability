@@ -128,9 +128,9 @@ public class SideMenuController : MonoBehaviour
 
     private void ShowBuildingConsumption()
     {
-        buildingElectricityConsumption.text = GetMonthlyValueForType(currentBuilding, "Strom") + " kg CO2";
-        buildingWarmthConsumption.text = GetMonthlyValueForType(currentBuilding, "Wärme") + " kg CO2";
-        buildingColdConsumption.text = GetMonthlyValueForType(currentBuilding, "Kälte") + " kg CO2";
+        buildingElectricityConsumption.text = GetMonthlyValueForType(currentBuilding, "Strom") + " t CO2e";
+        buildingWarmthConsumption.text = GetMonthlyValueForType(currentBuilding, "Wärme") + " t CO2e";
+        buildingColdConsumption.text = GetMonthlyValueForType(currentBuilding, "Kälte") + " t CO2e";
     }
 
     string GetMonthlyValueForType(Building building, string consumerType)

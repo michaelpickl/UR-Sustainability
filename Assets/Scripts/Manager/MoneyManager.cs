@@ -41,7 +41,7 @@ public class MoneyManager : MonoBehaviour
     {
         if (moneyText != null)
         {
-            moneyText.text = $"{getMoneyString(currentMoney)}/{getMoneyString(maxMoney)}";
+            moneyText.text = $"{getMoneyString(currentMoney)}";
         }
         else
         {
