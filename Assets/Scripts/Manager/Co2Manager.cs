@@ -7,7 +7,7 @@ public class Co2Manager : MonoBehaviour
 
     public Slider co2Slider;
     public TextMeshProUGUI co2Text; 
-    public float maxCo2 = 337399.05f;
+    public float maxCo2 = 49637.15f;
     private float currentCo2;
 
     
