@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Linq;
+using System;
 
 public class Converter : MonoBehaviour
 {
@@ -26,6 +27,20 @@ public class Converter : MonoBehaviour
         {
             float kWhSum = consumer.monthly_values.Sum();
             yearlytCO2e += ToCO2e(consumer.type, kWhSum);
+        }
+        return yearlytCO2e;
+    }
+
+    public float getBuildingYearlytCO2eByType(Building building, String type)
+    {
+        float yearlytCO2e = 0f;
+        foreach(Consumer consumer in building.consumers)
+        {
+            if(consumer.type == type)
+            {
+                float kWhSum = consumer.monthly_values.Sum();
+                yearlytCO2e += ToCO2e(consumer.type, kWhSum);
+            }
         }
         return yearlytCO2e;
     }
