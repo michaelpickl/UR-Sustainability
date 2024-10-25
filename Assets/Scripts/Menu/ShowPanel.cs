@@ -60,7 +60,7 @@ public class ButtonController : MonoBehaviour
         if (timeProgress != null)
         {
             currentYear = timeProgress.GetYearsUntil2050();
-            Debug.Log("Current Year from TimeProgress: " + currentYear);
+            //Debug.Log("Current Year from TimeProgress: " + currentYear);
         }
     }
     // consumption slider fill

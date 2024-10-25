@@ -21,6 +21,9 @@ public class CampusBuilding : MonoBehaviour
     public Material renovationMaterial;  //renovationmaterial
     public Material oldMaterial;
     private bool constructionMode;
+
+    public Material renovationMaterial_glowing; 
+    public Material oldMaterial_glowing;
     
 
     void Start()
@@ -218,7 +221,7 @@ public class CampusBuilding : MonoBehaviour
         //all renderer for the buildings in the gameobject
         Renderer[] allRenderers = GetComponentsInChildren<Renderer>();
 
-        //check if material is asigned
+        //check if material is assigned
         if (material != null)
         {
             //set material
@@ -226,16 +229,70 @@ public class CampusBuilding : MonoBehaviour
             {
                 if (renderer.gameObject.CompareTag("beton"))  // object must be tagged as "beton"
                 {
-                    Debug.Log("Applying material to: " + renderer.gameObject.name);
                     renderer.sharedMaterial = material;
                 }
             }
-            Debug.Log("Renovation material applied successfully to all buildings in the tract!");
         }
         else
         {
             Debug.LogError("Renovation material not assigned!");
         }
+    }
+
+    void OnMouseOver()
+    {
+        foreach(Measure measure in building.measures)
+        {
+            if(measure.name == "Energetische Gebäudesanierung")
+            {
+                if(measure.done)
+                {
+                    ApplyRenovationMaterial(renovationMaterial_glowing);
+                    return;
+                }
+                else
+                {
+                    ApplyRenovationMaterial(oldMaterial_glowing);
+                    return;
+                }
+            }
+        }
+        ApplyRenovationMaterial(renovationMaterial_glowing);
+    }
+
+    void OnMouseExit()
+    {
+        foreach(Measure measure in building.measures)
+        {
+            if(measure.name == "Energetische Gebäudesanierung")
+            {
+                if(measure.done)
+                {
+                    ApplyRenovationMaterial(renovationMaterial);
+                    return;
+                }
+                else
+                {
+                    ApplyRenovationMaterial(oldMaterial);
+                    return;
+                }
+            }
+        }
+        ApplyRenovationMaterial(renovationMaterial);
+    }
+
+    public Material GetCurrentMaterial()
+    {
+        Renderer[] allRenderers = GetComponentsInChildren<Renderer>();
+
+        foreach (Renderer renderer in allRenderers)
+        {
+            if (renderer.gameObject.CompareTag("beton"))
+            {
+                return renderer.sharedMaterial;
+            }
+        }
+        return null;
     }
 
 }
