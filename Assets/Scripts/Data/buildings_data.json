@@ -69,7 +69,7 @@
         {
           "name": "Energetische Gebäudesanierung",
           "description": "Das Dach und die Fassaden werden gedämmt, die Fenster werden ausgetauscht und die Heizungsanlage wird erneuert.",
-          "cost": "5612818,483",
+          "cost": "5458950",
           "duration": "58",
           "co2_savings": "1816,692",
           "cost_savings": "719986,3493",
@@ -141,7 +141,7 @@
         {
           "name": "Energetische Gebäudesanierung",
           "description": "Das Dach und die Fassaden werden gedämmt, die Fenster werden ausgetauscht und die Heizungsanlage wird erneuert.",
-          "cost": "832313,0931",
+          "cost": "1039136",
           "duration": "8",
           "co2_savings": "35,214",
           "cost_savings": "13956,4119",
@@ -213,7 +213,7 @@
         {
           "name": "Energetische Gebäudesanierung",
           "description": "Bei Gebäudeteilen, die in den 70er Jahren gebaut wurden, werden das Dach und die Fassaden gedämmt, die Fenster ausgetauscht und die Heizungsanlage wird erneuert.",
-          "cost": "5012781,991",
+          "cost": "6340550",
           "duration": "31",
           "co2_savings": "0,31",
           "cost_savings": "123,4003629",
@@ -302,7 +302,7 @@
         {
           "name": "Energetische Gebäudesanierung",
           "description": "Das Dach und die Fassaden werden gedämmt, die Fenster werden ausgetauscht und die Heizungsanlage wird erneuert.",
-          "cost": "3855854",
+          "cost": "4890409",
           "duration": "40",
           "co2_savings": "470,292",
           "cost_savings": "186383,9",
@@ -391,7 +391,7 @@
         {
           "name": "Energetische Gebäudesanierung",
           "description": "Das Dach und die Fassaden werden gedämmt, die Fenster werden ausgetauscht und die Heizungsanlage wird erneuert.",
-          "cost": "2628348",
+          "cost": "3374202",
           "duration": "27",
           "co2_savings": "470,292",
           "cost_savings": "186383,9",
@@ -417,18 +417,18 @@
         {
           "type": "Wärme",
           "monthly_values": [
-            "166053996,146433",
-            "135919371,610077",
-            "119409480,889028",
-            "75756295,7773225",
-            "25732517,5730279",
-            "999000",
+            "173268,215",
+            "149223,004",
+            "109230,498",
+            "71427,58",
+            "14617,088",
             "0",
             "0",
-            "4460802",
-            "73068404,6332349",
-            "121146186,278136",
-            "141951506,789511"
+            "0",
+            "29043,555",
+            "79202,467",
+            "114494,928",
+            "127619,831"
           ]
         },
         {
@@ -463,10 +463,10 @@
         {
           "name": "Energetische Gebäudesanierung",
           "description": "Das Dach und die Fassaden werden gedämmt, die Fenster werden ausgetauscht und die Heizungsanlage wird erneuert.",
-          "cost": "2572969",
+          "cost": "3243268",
           "duration": "26",
-          "co2_savings": "114402",
-          "cost_savings": "45339586",
+          "co2_savings": "115,662",
+          "cost_savings": "45837,12",
           "type": "Wärme",
           "done": false
         },
@@ -535,7 +535,7 @@
         {
           "name": "Energetische Gebäudesanierung",
           "description": "Das Dach und die Fassaden werden gedämmt, die Fenster werden ausgetauscht und die Heizungsanlage wird erneuert.",
-          "cost": "1976265",
+          "cost": "2442696",
           "duration": "20",
           "co2_savings": "232,56",
           "cost_savings": "92167,05",
@@ -607,7 +607,7 @@
         {
           "name": "Energetische Gebäudesanierung",
           "description": "Das Dach und die Fassaden werden gedämmt, die Fenster werden ausgetauscht und die Heizungsanlage wird erneuert.",
-          "cost": "1800726,789",
+          "cost": "2302360",
           "duration": "19",
           "co2_savings": "66,342",
           "cost_savings": "26291,32044",
@@ -706,7 +706,7 @@
         {
           "name": "Energetische Gebäudesanierung",
           "description": "Das Dach und die Fassaden werden gedämmt, die Fenster werden ausgetauscht und die Heizungsanlage wird erneuert.",
-          "cost": "931197,7295",
+          "cost": "1152314",
           "duration": "9",
           "co2_savings": "51,816",
           "cost_savings": "20535,21677",
@@ -778,7 +778,7 @@
         {
           "name": "Energetische Gebäudesanierung",
           "description": "Das Dach und die Fassaden werden gedämmt, die Fenster werden ausgetauscht und die Heizungsanlage wird erneuert.",
-          "cost": "968665,0884",
+          "cost": "1199613",
           "duration": "10",
           "co2_savings": "100,086",
           "cost_savings": "39666,8335",
@@ -1002,47 +1002,6 @@
       "abbreviation": "WNDE"
     },
     {
-      "name": "Zentrales Bibiliotheksgebäude",
-      "consumers": [
-        {
-          "type": "Wärme",
-          "monthly_values": [
-            "380400,588294072",
-            "294157,615881485",
-            "246020,924588242",
-            "133537,363578517",
-            "45304,2342283712",
-            "554",
-            "668",
-            "21867",
-            "12177",
-            "144433,285922843",
-            "280481,693663516",
-            "343516,909849371"
-          ]
-        },
-        {
-          "type": "Strom",
-          "monthly_values": [
-            "96687,0773453192",
-            "90454,9218753875",
-            "98820,238",
-            "84098,863",
-            "87648,506",
-            "84659,067",
-            "86840,697",
-            "87076,14",
-            "86363,793",
-            "94119,884",
-            "96946,688",
-            "95118,845"
-          ]
-        }
-      ],
-      "measures": [],
-      "abbreviation": "ZB"
-    },
-    {
       "name": "Zentrales Hörsaalgebäude",
       "consumers": [
         {
@@ -1111,7 +1070,7 @@
         {
           "name": "Energetische Gebäudesanierung",
           "description": "Das Dach und die Fassaden werden gedämmt, die Fenster werden ausgetauscht und die Heizungsanlage wird erneuert.",
-          "cost": "2550481,767",
+          "cost": "3214466",
           "duration": "26",
           "co2_savings": "231,426",
           "cost_savings": "91718,41114",
@@ -1183,7 +1142,7 @@
         {
           "name": "Energetische Gebäudesanierung",
           "description": "Das Dach und die Fassaden werden gedämmt, die Fenster werden ausgetauscht und die Heizungsanlage wird erneuert.",
-          "cost": "744734,1366",
+          "cost": "940927,3",
           "duration": "8",
           "co2_savings": "177,39",
           "cost_savings": "70301,02041",
@@ -1262,7 +1221,7 @@
         {
           "name": "Energetische Gebäudesanierung",
           "description": "Das Dach und die Fassaden werden gedämmt, die Fenster werden ausgetauscht und die Heizungsanlage wird erneuert.",
-          "cost": "1069045,201",
+          "cost": "1371178",
           "duration": "11",
           "co2_savings": "152,55",
           "cost_savings": "60457,17053",
@@ -1362,7 +1321,7 @@
         {
           "name": "Energetische Gebäudesanierung",
           "description": "Das Dach und die Fassaden werden gedämmt, die Fenster werden ausgetauscht und die Heizungsanlage wird erneuert.",
-          "cost": "241938,814",
+          "cost": "299616,1",
           "duration": "2",
           "co2_savings": "25,626",
           "cost_savings": "10156,80465",
@@ -1384,7 +1343,42 @@
     },
     {
       "name": "Zentrales Bibliotheksgebäude",
-      "consumers": [],
+      "consumers": [
+        {
+          "type": "Wärme",
+          "monthly_values": [
+            "380400,588294072",
+            "294157,615881485",
+            "246020,924588242",
+            "133537,363578517",
+            "45304,2342283712",
+            "554",
+            "668",
+            "21867",
+            "12177",
+            "144433,285922843",
+            "280481,693663516",
+            "343516,909849371"
+          ]
+        },
+        {
+          "type": "Strom",
+          "monthly_values": [
+            "96687,0773453192",
+            "90454,9218753875",
+            "98820,238",
+            "84098,863",
+            "87648,506",
+            "84659,067",
+            "86840,697",
+            "87076,14",
+            "86363,793",
+            "94119,884",
+            "96946,688",
+            "95118,845"
+          ]
+        }
+      ],
       "measures": [
         {
           "name": "PV-Anlage Installation",
@@ -1399,7 +1393,7 @@
         {
           "name": "Energetische Gebäudesanierung",
           "description": "Das Dach und die Fassaden werden gedämmt, die Fenster werden ausgetauscht und die Heizungsanlage wird erneuert.",
-          "cost": "2183073,783",
+          "cost": "2797199",
           "duration": "23",
           "co2_savings": "253,542",
           "cost_savings": "100484,6631",
@@ -1463,7 +1457,7 @@
         {
           "name": "Energetische Gebäudesanierung",
           "description": "Das Dach und die Fassaden werden gedämmt, die Fenster werden ausgetauscht und die Heizungsanlage wird erneuert.",
-          "cost": "238901,3372",
+          "cost": "295780,7",
           "duration": "2",
           "co2_savings": "20,994",
           "cost_savings": "8321,751708",
@@ -1472,12 +1466,6 @@
         }
       ],
       "abbreviation": "ENZE"
-    },
-    {
-      "name": "Zentrtales Bibliotheksgebäude",
-      "consumers": [],
-      "measures": [],
-      "abbreviation": "ZB"
     },
     {
       "name": "Biologie",

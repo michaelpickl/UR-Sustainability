@@ -10,7 +10,7 @@ public class TimeProgress : MonoBehaviour
     public float endTime = 100f;
     public float timeSpeed = 1f;
     public MoneyManager moneyManager;
-    public float yearlyIncome = 100000;
+    public float yearlyIncome = 2000000;
     private int lastYear;
 
     private float currentTime;
