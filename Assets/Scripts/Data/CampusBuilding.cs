@@ -235,7 +235,7 @@ public class CampusBuilding : MonoBehaviour
         }
         else
         {
-            Debug.LogError("Renovation material not assigned!");
+            Debug.LogError("Renovation material not assigned!" + building.name);
         }
     }
 
