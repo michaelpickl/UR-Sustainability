@@ -86,9 +86,10 @@ public class LoggingSystem : MonoBehaviour {
 		{
 			if(File.Exists(this.logFile))
 			{
-				TextWriter tw = new StreamWriter(this.logFile, true);
-				tw.WriteLine(message);
-				tw.Close(); 
+				using (TextWriter tw = new StreamWriter(this.logFile, true))
+				{
+					tw.WriteLine(message);
+				}
 			}
 		}
 	}

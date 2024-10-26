@@ -5,8 +5,6 @@ public class MoneyManager : MonoBehaviour
 {
     public TextMeshProUGUI moneyText;
     private float currentMoney = 10000000;
-    private float maxMoney = 1000000000; 
-
 
     void Start()
     {

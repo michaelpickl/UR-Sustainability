@@ -208,7 +208,7 @@
           "co2_savings": "63,39",
           "cost_savings": "0",
           "type": "Strom",
-          "done": false
+          "done": true
         },
         {
           "name": "Energetische Gebäudesanierung",

@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
 using RTS_Cam;
-using Palmmedia.ReportGenerator.Core.Parser.Analysis;
 using System;
 
 public class CampusBuilding : MonoBehaviour
@@ -125,6 +124,15 @@ public class CampusBuilding : MonoBehaviour
             case "Energetische Gebäudesanierung":
                 ApplyRenovationMaterial(renovationMaterial);
                 break;
+            case "LED-Lampen":
+                foreach (Transform ch in transform.GetComponentsInChildren<Transform>(true))
+                {
+                    if (ch.name == "LED-Lampen")
+                    {
+                        ch.gameObject.SetActive(true);
+                    }
+                }
+                break;
             default: break;
         }
     }
@@ -148,6 +156,15 @@ public class CampusBuilding : MonoBehaviour
                 break;
             case "Energetische Gebäudesanierung":
                 ApplyRenovationMaterial(oldMaterial);
+                break;
+            case "LED-Lampen":
+                foreach (Transform ch in transform.GetComponentsInChildren<Transform>(true))
+                {
+                    if (ch.name == "LED-Lampen")
+                    {
+                        ch.gameObject.SetActive(false);
+                    }
+                }
                 break;
             default: break;
         }
