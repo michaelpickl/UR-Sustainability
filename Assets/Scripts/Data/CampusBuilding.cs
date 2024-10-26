@@ -226,11 +226,12 @@ public class CampusBuilding : MonoBehaviour
             //child.gameObject.SetActive(true);
             MoneyCollectionButton moneyCollectionButton = child.GetComponent<MoneyCollectionButton>();
             moneyCollectionButton.ShowButton(buildingName, measureName);
+            print("SHOW COLLECTION BUTTON on " + building.name);
         }
         else{
             print("MoneyCollection nicht gefunden!");
         }
-        StartCoroutine(StartCollectingMoney(name));
+        StartCoroutine(StartCollectingMoney(measureName));
     }
 
     public void ApplyRenovationMaterial(Material material)
