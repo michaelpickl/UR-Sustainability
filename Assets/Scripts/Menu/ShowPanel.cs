@@ -19,6 +19,9 @@ public class ButtonController : MonoBehaviour
 
     public TextMeshProUGUI priceText;
     public TextMeshProUGUI durationText;
+
+    public TextMeshProUGUI costSavingsText;
+    public TextMeshProUGUI CO2SavingsText;
     private Sprite originalIcon;
     private Color originalColor;
     private bool isClicked = false;
@@ -132,6 +135,9 @@ public class ButtonController : MonoBehaviour
             descriptionText.text = currentMeasure.description;
             priceText.text = moneyManager.getMoneyString(currentMeasure.cost);
             durationText.text = currentMeasure.duration + " Monate";
+            costSavingsText.text = "" + currentMeasure.cost_savings;
+            CO2SavingsText.text = "" + currentMeasure.co2_savings;
+
 
             if (moneyManager.GetCurrentMoney() < currentMeasure.cost)
             {
