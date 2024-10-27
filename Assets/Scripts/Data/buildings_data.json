@@ -1470,7 +1470,18 @@
     {
       "name": "Biologie",
       "consumers": [],
-      "measures": [],
+      "measures": [
+        {
+          "name": "Pelletheizung Botanischer Garten",
+          "description": "Umstellung der Wärmeverversorgung des Gewächshauses des Botanischen Gartens auf Pelletheizung",
+          "cost": "17500",
+          "duration": "0,007",
+          "co2_savings": "70,12",
+          "cost_savings": "0",
+          "type": "Wärme",
+          "done": false
+        }
+      ],
       "abbreviation": "Biologie"
     }
   ]
