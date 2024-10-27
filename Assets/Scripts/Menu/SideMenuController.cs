@@ -16,7 +16,10 @@ public class SideMenuController : MonoBehaviour
     public TextMeshProUGUI buildingElectricityConsumption;
     public TextMeshProUGUI buildingWarmthConsumption;
     public TextMeshProUGUI buildingColdConsumption;
-
+    public Slider electricityConsumptionSlider;
+    public Slider warmthConsumptionSlider;
+    public Slider coldConsumptionSlider;
+    
     public SVGImage buildingIcon;
     public Button buyButton;
     public Button closeButton;
@@ -126,13 +129,6 @@ public class SideMenuController : MonoBehaviour
         }
     }
 
-    private void ShowBuildingConsumption()
-    {
-        buildingElectricityConsumption.text = GetMonthlyValueForType(currentBuilding, "Strom") + " t CO2e";
-        buildingWarmthConsumption.text = GetMonthlyValueForType(currentBuilding, "Wärme") + " t CO2e";
-        buildingColdConsumption.text = GetMonthlyValueForType(currentBuilding, "Kälte") + " t CO2e";
-    }
-
     string GetMonthlyValueForType(Building building, string consumerType)
     {
         foreach (Consumer consumer in building.consumers)
@@ -147,12 +143,41 @@ public class SideMenuController : MonoBehaviour
                 }
                 else
                 {
-                    Debug.LogWarning("No monthly_values found for consumer " + consumerType);
+                    //Debug.LogWarning("No monthly_values found for consumer " + consumerType);
                     return "N/A";
                 }
             }
         }
         return "N/A";
+    }
+
+    private void ShowBuildingConsumption()
+    {
+        string electricityConsumptionText = GetMonthlyValueForType(currentBuilding, "Strom");
+        string warmthConsumptionText = GetMonthlyValueForType(currentBuilding, "Wärme");
+        string coldConsumptionText = GetMonthlyValueForType(currentBuilding, "Kälte");
+
+        CheckForConsumptionValue(buildingElectricityConsumption, electricityConsumptionText, electricityConsumptionSlider);
+        CheckForConsumptionValue(buildingWarmthConsumption, warmthConsumptionText, warmthConsumptionSlider);
+        CheckForConsumptionValue(buildingColdConsumption, coldConsumptionText, coldConsumptionSlider);
+
+        // No check for "0" and "N/A"
+        //buildingElectricityConsumption.text = GetMonthlyValueForType(currentBuilding, "Strom") + " t CO2e";
+        //buildingWarmthConsumption.text = GetMonthlyValueForType(currentBuilding, "Wärme") + " t CO2e";
+        //buildingColdConsumption.text = GetMonthlyValueForType(currentBuilding, "Kälte") + " t CO2e";
+    }
+
+    private void CheckForConsumptionValue(TextMeshProUGUI consumptionText, string consumptionValue, Slider consumptionSlider)
+    {
+        if(consumptionValue != "0" && consumptionValue != "N/A")
+        {
+            consumptionSlider.gameObject.SetActive(true);
+            consumptionText.text = consumptionValue + " t CO2e";
+        }
+        else
+        {
+            consumptionSlider.gameObject.SetActive(false);
+        } 
     }
 
     public void ShowMeasures()
