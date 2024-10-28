@@ -200,36 +200,6 @@
         }
       ],
       "measures": [
-        {
-          "name": "PV-Anlage Installation",
-          "description": "Installation einer Photovoltaik-Anlage auf dem Dach",
-          "cost": "9182176",
-          "duration": "51",
-          "co2_savings": "63,39",
-          "cost_savings": "0",
-          "type": "Strom",
-          "done": true
-        },
-        {
-          "name": "Energetische Gebäudesanierung",
-          "description": "Bei Gebäudeteilen, die in den 70er Jahren gebaut wurden, werden das Dach und die Fassaden gedämmt, die Fenster ausgetauscht und die Heizungsanlage wird erneuert.",
-          "cost": "6340550",
-          "duration": "31",
-          "co2_savings": "0,31",
-          "cost_savings": "123,4003629",
-          "type": "Wärme",
-          "done": false
-        },
-        {
-          "name": "LED-Lampen",
-          "description": "Alle alten Lampen werden mit LED-Lampen ausgetauscht.",
-          "cost": "163709,612",
-          "duration": "2,3",
-          "co2_savings": "61,01",
-          "cost_savings": "89807,26365",
-          "type": "Strom",
-          "done": false
-        }
       ],
       "abbreviation": "OTH"
     },

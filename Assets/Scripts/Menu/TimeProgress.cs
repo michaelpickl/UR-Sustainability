@@ -12,6 +12,8 @@ public class TimeProgress : MonoBehaviour
     public MoneyManager moneyManager;
     public float yearlyIncome = 2000000;
     private int lastYear;
+    private DataGetter dataGetter;
+    private Co2Manager co2Manager;
 
     private float currentTime;
 
@@ -22,6 +24,8 @@ public class TimeProgress : MonoBehaviour
         timeSlider.maxValue = endTime;
         timeSlider.value = currentTime;
         moneyManager = GameObject.FindObjectOfType<MoneyManager>();
+        dataGetter = GameObject.Find("DataGetter").GetComponent<DataGetter>();
+        co2Manager = GameObject.Find("Co2Manager").GetComponent<Co2Manager>();
         lastYear = GetCurrentYear();
     }
 
@@ -37,6 +41,10 @@ public class TimeProgress : MonoBehaviour
 
         if (GetCurrentTime() >= endTime)
         {
+            PlayerPrefs.SetInt("MeasuresAll", dataGetter.GetNumberOfAllMeasures());
+            PlayerPrefs.SetInt("MeasuresDone", dataGetter.GetNumberOfDoneMeasures());
+            PlayerPrefs.SetInt("CO2%Saved", (int)(((co2Manager.maxCo2 - co2Manager.GetCurrentCo2()) / (float)co2Manager.maxCo2) * 100));
+            PlayerPrefs.Save();
             SceneManager.LoadScene("End");
         }
 

@@ -72,6 +72,35 @@ public class DataGetter : MonoBehaviour
         }
         return campus.buildings;
     }
+
+    public int GetNumberOfAllMeasures()
+    {
+        int counter = 0;
+        foreach (Building building in campus.buildings)
+        {
+            foreach(Measure measure in building.measures)
+            {
+                counter++;
+            }
+        }
+        return counter;
+    }
+
+    public int GetNumberOfDoneMeasures()
+    {
+        int counter = 0;
+        foreach (Building building in campus.buildings)
+        {
+            foreach(Measure measure in building.measures)
+            {
+                if(measure.done)
+                {
+                    counter++;
+                }
+            }
+        }
+        return counter;
+    }
 }
 
 [System.Serializable]
