@@ -40,6 +40,7 @@ public class SideMenuController : MonoBehaviour
     private Co2Manager co2Manager;
     private MoneyManager moneyManager;
     private LoggingSystem loggingSystem;
+    private Converter converter;
 
     void Start()
     {
@@ -52,6 +53,7 @@ public class SideMenuController : MonoBehaviour
         moneyManager = GameObject.Find("MoneyManager").GetComponent<MoneyManager>();
         loggingSystem = GameObject.Find("LoggingSystem").GetComponent<LoggingSystem>();
         camManager = GameObject.Find("RTS_Camera").GetComponent<RTS_Camera>();
+        converter = GameObject.Find("Converter").GetComponent<Converter>();
         buyButton.onClick.AddListener(OnBuyButtonClicked);
         closeButton.onClick.AddListener(CloseSideMenu);
     }
@@ -140,7 +142,7 @@ public class SideMenuController : MonoBehaviour
             {
                 if (consumer.monthly_values.Length > 0)
                 {
-                    float firstMonthValue = consumer.monthly_values[0];
+                    float firstMonthValue = converter.getBuildingYearlytCO2eByType(building, consumerType);
                     slider.maxValue = firstMonthValue;
                     Debug.Log("Slider MaxValue set");
                     string valueString = firstMonthValue.ToString();
