@@ -173,11 +173,9 @@ public class ButtonController : MonoBehaviour
 
             //Debug.Log("Current Slider value set");
 
-           float fillWidth = 50;
-
-            RectTransform fillRect = electricitySlider.fillRect.GetComponent<RectTransform>();
-            
-            fillRect.sizeDelta = new Vector2(fillWidth, fillRect.sizeDelta.y);
+            //    float fillWidth = 50;
+            //     RectTransform fillRect = electricitySlider.fillRect.GetComponent<RectTransform>();
+            //     fillRect.sizeDelta = new Vector2(fillWidth, fillRect.sizeDelta.y);
 
             fillElectricity.SetActive(true);
         }
