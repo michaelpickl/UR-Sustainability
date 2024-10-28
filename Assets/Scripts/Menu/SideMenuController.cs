@@ -161,10 +161,12 @@ public class SideMenuController : MonoBehaviour
         CheckForConsumptionValue(buildingWarmthConsumption, warmthConsumptionText, warmthConsumptionSlider);
         CheckForConsumptionValue(buildingColdConsumption, coldConsumptionText, coldConsumptionSlider);
 
-        // No check for "0" and "N/A"
+        /*
+        No check for "0" and "N/A"
         //buildingElectricityConsumption.text = GetMonthlyValueForType(currentBuilding, "Strom") + " t CO2e";
         //buildingWarmthConsumption.text = GetMonthlyValueForType(currentBuilding, "Wärme") + " t CO2e";
-        //buildingColdConsumption.text = GetMonthlyValueForType(currentBuilding, "Kälte") + " t CO2e";
+        buildingColdConsumption.text = GetMonthlyValueForType(currentBuilding, "Kälte") + " t CO2e";
+        */
     }
 
     private void CheckForConsumptionValue(TextMeshProUGUI consumptionText, string consumptionValue, Slider consumptionSlider)

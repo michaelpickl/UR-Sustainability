@@ -10,9 +10,9 @@ public class ButtonController : MonoBehaviour
     public SVGImage buttonImage;
     public Color clickedColor = Color.red;
     public GameObject panel;
-    public GameObject fill1;
-    public GameObject fill2;
-    public GameObject fill3;
+    public GameObject fillElectricity;
+    public GameObject fillWarmth;
+    public GameObject fillCold;
 
     public TextMeshProUGUI headingText;
     public TextMeshProUGUI descriptionText;
@@ -116,8 +116,9 @@ public class ButtonController : MonoBehaviour
 
         // Setze die UI-Elemente und den Zustand des Panels zurück
         panel.SetActive(false);
-        fill1.SetActive(false);
-        fill2.SetActive(false);
+        fillElectricity.SetActive(false);
+        fillWarmth.SetActive(false);
+        fillCold.SetActive(false);
 
         // Markiere den Button als nicht geklickt
         isClicked = false;
@@ -126,8 +127,11 @@ public class ButtonController : MonoBehaviour
     private void ShowPanel()
     {
         panel.SetActive(true);
-        fill1.SetActive(true);
-        fill2.SetActive(true);
+        // fillElectricity.SetActive(true);
+        // fillWarmth.SetActive(true);
+        // fillCold.SetActive(true);
+
+        showConsumptionSavings(currentMeasure.type);
 
         if (currentMeasure != null)
         {
@@ -152,6 +156,22 @@ public class ButtonController : MonoBehaviour
         }
     }
 
+    private void showConsumptionSavings(string type)
+    {
+        if (type == "Strom")
+        {
+            fillElectricity.SetActive(true);
+        }
+        else if (type == "Wärme")
+        {
+            fillWarmth.SetActive(true);
+        }
+        else if (type == "Kälte")
+        {
+            fillCold.SetActive(true);
+        }
+        //Debug.Log("Type der Maßnahme: " + currentMeasure.type);
+    }
 
     public void HidePanel()
     {
@@ -160,8 +180,9 @@ public class ButtonController : MonoBehaviour
             buttonImage.color = originalColor;
         }
         panel.SetActive(false);
-        fill1.SetActive(false);
-        fill2.SetActive(false);
+        fillElectricity.SetActive(false);
+        fillWarmth.SetActive(false);
+        fillCold.SetActive(false);
     }
 
 
