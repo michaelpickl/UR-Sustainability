@@ -13,6 +13,9 @@ public class SideMenuController : MonoBehaviour
     public float animationSpeed = 3f;
     public TextMeshProUGUI buildingNameText;
     public TextMeshProUGUI buildingLevel;
+    public Slider electricitySlider;
+    public Slider warmthSlider;
+    public Slider coldSlider;
     public TextMeshProUGUI buildingElectricityConsumption;
     public TextMeshProUGUI buildingWarmthConsumption;
     public TextMeshProUGUI buildingColdConsumption;
@@ -129,7 +132,7 @@ public class SideMenuController : MonoBehaviour
         }
     }
 
-    string GetMonthlyValueForType(Building building, string consumerType)
+    string GetMonthlyValueForType(Building building, string consumerType, Slider slider)
     {
         foreach (Consumer consumer in building.consumers)
         {
@@ -138,6 +141,8 @@ public class SideMenuController : MonoBehaviour
                 if (consumer.monthly_values.Length > 0)
                 {
                     float firstMonthValue = consumer.monthly_values[0];
+                    slider.maxValue = firstMonthValue;
+                    Debug.Log("Slider MaxValue set");
                     string valueString = firstMonthValue.ToString();
                     return valueString;
                 }
@@ -153,9 +158,9 @@ public class SideMenuController : MonoBehaviour
 
     private void ShowBuildingConsumption()
     {
-        string electricityConsumptionText = GetMonthlyValueForType(currentBuilding, "Strom");
-        string warmthConsumptionText = GetMonthlyValueForType(currentBuilding, "Wärme");
-        string coldConsumptionText = GetMonthlyValueForType(currentBuilding, "Kälte");
+        string electricityConsumptionText = GetMonthlyValueForType(currentBuilding, "Strom", electricitySlider);
+        string warmthConsumptionText = GetMonthlyValueForType(currentBuilding, "Wärme", warmthSlider);
+        string coldConsumptionText = GetMonthlyValueForType(currentBuilding, "Kälte", coldSlider);
 
         CheckForConsumptionValue(buildingElectricityConsumption, electricityConsumptionText, electricityConsumptionSlider);
         CheckForConsumptionValue(buildingWarmthConsumption, warmthConsumptionText, warmthConsumptionSlider);

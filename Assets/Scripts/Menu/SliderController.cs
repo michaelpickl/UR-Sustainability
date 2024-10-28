@@ -1,14 +1,22 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class CustomRightToLeftSlider : MonoBehaviour
+public class SliderController : MonoBehaviour
 {
-    public Slider slider; 
-    public RectTransform fillRect;
+    public Slider slider;
+    private float maxSliderValue;  // Der Maximalwert des Sliders
+    private float currentValue;    // Der aktuelle Wert, den der Slider anzeigen soll
 
-    void Update()
+    void Start()
     {
-        float width = slider.GetComponent<RectTransform>().rect.width;
-        fillRect.sizeDelta = new Vector2(width * slider.normalizedValue, fillRect.sizeDelta.y);
+        // Setze den maximalen Wert des Sliders auf den gewünschten Maximalwert
+        slider.maxValue = maxSliderValue;
+        UpdateSliderFill();
+    }
+
+    public void UpdateSliderFill()
+    {
+        // Berechne den Füllstand basierend auf dem aktuellen Wert relativ zum Maximalwert
+        slider.value = currentValue;
     }
 }

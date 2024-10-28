@@ -10,6 +10,12 @@ public class ButtonController : MonoBehaviour
     public SVGImage buttonImage;
     public Color clickedColor = Color.red;
     public GameObject panel;
+    public Slider electricitySlider;
+    public Slider warmthSlider;
+    public Slider coldSlider;
+    public TextMeshProUGUI buildingElectricityConsumption;
+    private float maxSliderValue;
+    private float currentSliderValue; 
     public GameObject fillElectricity;
     public GameObject fillWarmth;
     public GameObject fillCold;
@@ -131,7 +137,7 @@ public class ButtonController : MonoBehaviour
         // fillWarmth.SetActive(true);
         // fillCold.SetActive(true);
 
-        showConsumptionSavings(currentMeasure.type);
+        showConsumptionSavings(currentMeasure);
 
         if (currentMeasure != null)
         {
@@ -156,18 +162,35 @@ public class ButtonController : MonoBehaviour
         }
     }
 
-    private void showConsumptionSavings(string type)
+    private void showConsumptionSavings(Measure measure)
     {
-        if (type == "Strom")
+        if (measure.type == "Strom")
         {
+            float maxValue = electricitySlider.maxValue;
+            Debug.Log("Max Value des Sliders: " + maxValue);
+            currentSliderValue = measure.co2_savings;
+            electricitySlider.value = currentSliderValue;
+
+            //Debug.Log("Current Slider value set");
+
+           float fillWidth = 50;
+
+            RectTransform fillRect = electricitySlider.fillRect.GetComponent<RectTransform>();
+            
+            fillRect.sizeDelta = new Vector2(fillWidth, fillRect.sizeDelta.y);
+
             fillElectricity.SetActive(true);
         }
-        else if (type == "Wärme")
+        else if (measure.type == "Wärme")
         {
+            currentSliderValue = measure.co2_savings;
+            warmthSlider.value = currentSliderValue;
             fillWarmth.SetActive(true);
         }
-        else if (type == "Kälte")
+        else if (measure.type == "Kälte")
         {
+            currentSliderValue = measure.co2_savings;
+            coldSlider.value = currentSliderValue;
             fillCold.SetActive(true);
         }
         //Debug.Log("Type der Maßnahme: " + currentMeasure.type);
