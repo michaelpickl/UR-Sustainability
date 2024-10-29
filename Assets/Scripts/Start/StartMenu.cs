@@ -5,7 +5,8 @@ using TMPro;
 
 public class StartMenu : MonoBehaviour
 {
-    public TMP_Text textHeading;
+    public TMP_Text textHeadingIntro;
+    public TMP_Text textHeadingControl;
     public TMP_Text textIntro;
     public TMP_Text textControl;
 
@@ -20,10 +21,11 @@ public class StartMenu : MonoBehaviour
 
     public void ShowIntro()
     {
-        textHeading.gameObject.SetActive(true);
+        textHeadingIntro.gameObject.SetActive(true);
         textIntro.gameObject.SetActive(true);
         buttonNext.gameObject.SetActive(true);
 
+        textHeadingControl.gameObject.SetActive(false);
         textControl.gameObject.SetActive(false);
         buttonBack.gameObject.SetActive(false);
         buttonStart.gameObject.SetActive(false);
@@ -31,8 +33,9 @@ public class StartMenu : MonoBehaviour
 
     public void ShowControls()
     {
-        textHeading.gameObject.SetActive(false);
+        textHeadingIntro.gameObject.SetActive(false);
         textIntro.gameObject.SetActive(false);
+        textHeadingControl.gameObject.SetActive(true);
         textControl.gameObject.SetActive(true);
         buttonBack.gameObject.SetActive(true);
         buttonStart.gameObject.SetActive(true);
