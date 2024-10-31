@@ -64,7 +64,7 @@ public class CampusBuilding : MonoBehaviour
                         Vector3 targetPosition = CalculateTargetPosition();
                         cameraTarget.transform.position = targetPosition;
                         camManager.SetTarget(cameraTarget.transform);
-                        Debug.Log("Clicked on: " + clickedObject.name);
+                        //Debug.Log("Clicked on: " + clickedObject.name);
 
                         if(sideMenuController != null)
                         sideMenuController.OpenMenuWithBuildingName(buildingName);
@@ -96,7 +96,6 @@ public class CampusBuilding : MonoBehaviour
 
             Vector3 direction = rts_camera.transform.forward;
             Vector3 targetPosition = boundsCenter - (direction * distance);
-            //print(targetPosition + " TARGET POSITION");
             return targetPosition;
         }
 
@@ -217,7 +216,6 @@ public class CampusBuilding : MonoBehaviour
             //child.gameObject.SetActive(true);
             MoneyCollectionButton moneyCollectionButton = child.GetComponent<MoneyCollectionButton>();
             moneyCollectionButton.ShowButton(buildingName, measureName);
-            print("SHOW COLLECTION BUTTON on " + building.name);
         }
         else{
             print("MoneyCollection nicht gefunden!");

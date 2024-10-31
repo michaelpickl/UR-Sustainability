@@ -97,36 +97,31 @@ public class ButtonController : MonoBehaviour
         {
             if (controller != this && controller.isClicked)
             {
-                controller.HidePanel(); // Verstecke das Panel
-                sideMenuController.HideAllPreviews(); // Verstecke alle Previews im SideMenu
+                controller.HidePanel(); 
+                sideMenuController.HideAllPreviews(); 
             }
 
-            // Setze die Farbe der anderen Buttons auf die Originalfarbe zurück
             if (controller.buttonImage != null && controller.isClicked)
             {
                 controller.buttonImage.color = controller.originalColor;
             }
 
-            // Markiere andere Buttons als nicht geklickt
             controller.isClicked = false;
         }
     }
 
     public void ResetButtonState()
     {
-        // Setze die Farbe des Buttons zurück
         if (buttonImage != null)
         {
             buttonImage.color = originalColor;
         }
 
-        // Setze die UI-Elemente und den Zustand des Panels zurück
         panel.SetActive(false);
         fillElectricity.SetActive(false);
         fillWarmth.SetActive(false);
         fillCold.SetActive(false);
 
-        // Markiere den Button als nicht geklickt
         isClicked = false;
     }
 
@@ -181,7 +176,7 @@ public class ButtonController : MonoBehaviour
         if (measure.type == "Strom")
         {
             float maxValue = electricitySlider.maxValue;
-            Debug.Log("Max Value des Sliders: " + maxValue);
+            //Debug.Log("Max Value des Sliders: " + maxValue);
             currentSliderValue = measure.co2_savings;
             electricitySlider.value = currentSliderValue;
 
@@ -241,17 +236,14 @@ public class ButtonController : MonoBehaviour
 
     void showMeasurePreview(bool show = true)
     {
-        // Suche das Gebäudeobjekt anhand des Namens
         GameObject buildingObject = GameObject.Find(currentBuildingName);
 
         if (buildingObject != null)
         {
-            // Hole das Script "CampusBuilding" vom Gebäudeobjekt
             CampusBuilding campusBuilding = buildingObject.GetComponent<CampusBuilding>();
 
             if (campusBuilding != null)
             {
-                // Rufe die ShowMeasure-Methode auf
                 if (show)
                 {
                     campusBuilding.ShowMeasure(currentMeasureName);

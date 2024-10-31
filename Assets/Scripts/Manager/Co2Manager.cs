@@ -17,9 +17,7 @@ public class Co2Manager : MonoBehaviour
         currentCo2 = maxCo2;
         co2Slider.value = currentCo2;
         UpdateCo2Text();
-        
-        //OnMeasureCompleted wird aufgerufen, wenn das Ereignis in der CampusBuilding Klasse ausgelöst wird
-        //muss noch angepasst werden auf das SideMenu
+
         //CampusBuilding.OnMeasureCompleted += OnMeasureCompleted;
     }
 
@@ -40,7 +38,7 @@ public class Co2Manager : MonoBehaviour
         // Slider aktualisieren
         co2Slider.value = currentCo2;
         UpdateCo2Text();
-        Debug.Log("Reduzierter CO2-Wert: " + currentCo2);
+        //Debug.Log("Reduzierter CO2-Wert: " + currentCo2);
     }
 
     private void UpdateCo2Text()

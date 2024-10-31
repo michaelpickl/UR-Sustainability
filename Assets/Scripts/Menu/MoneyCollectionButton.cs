@@ -35,7 +35,6 @@ public class MoneyCollectionButton : MonoBehaviour
 
     public void ShowButton(string buildingNameNew, string measureNameNew)
     {
-        print("show collection " + buildingNameNew + "" + measureNameNew);
         buildingName = buildingNameNew;
         measureName = measureNameNew;
         if(dataGetter == null)
@@ -45,7 +44,6 @@ public class MoneyCollectionButton : MonoBehaviour
         Building building = dataGetter.GetBuilding(buildingName);
         if(building != null)
         {
-            print("Collection 1 - " + buildingNameNew);
             float costSavings = 0f;
             foreach(Measure measure in building.measures)
             {
@@ -54,19 +52,14 @@ public class MoneyCollectionButton : MonoBehaviour
                     costSavings = measure.cost_savings;
                 }
             }
-            print("collection costsavings: " + costSavings);
             if(gameObject.activeSelf)
             {
-                print("Collection 2 - " + buildingNameNew);
                 moneyCount += costSavings;
             }
             else{
-                print("Collection 3 - " + buildingNameNew);
                 moneyCount = costSavings;
-                print("collection moneycount: " + moneyCount);
                 if(moneyCount > 0)
                 {
-                    print("Collection 1 - " + buildingNameNew);
                     gameObject.SetActive(true);
                 }
             }
@@ -76,8 +69,7 @@ public class MoneyCollectionButton : MonoBehaviour
 
     void UpdateCountView()
     {
-        print("CHANGE MONEY TEXT TO: " + moneyCount);
-        moneyText.text = "" + moneyCount;
+        moneyText.text = "" +  Mathf.Round(moneyCount);
     }
 
     void HideButton()

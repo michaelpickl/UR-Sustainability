@@ -16,7 +16,7 @@ public class StartMenu : MonoBehaviour
 
     private void Start()
     {
-        ShowIntro(); // Startet mit dem Intro-Text
+        ShowIntro(); 
     }
 
     public void ShowIntro()

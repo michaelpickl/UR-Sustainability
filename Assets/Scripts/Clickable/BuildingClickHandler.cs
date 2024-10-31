@@ -14,7 +14,7 @@ public class BuildingClickHandler : MonoBehaviour
             if (Physics.Raycast(ray, out hit))
             {
                 GameObject clickedObject = hit.transform.gameObject;
-                Debug.Log("Clicked on: " + clickedObject.name);
+                // Debug.Log("Clicked on: " + clickedObject.name);
             }
         }
     }

@@ -23,7 +23,6 @@ public class EndMenu : MonoBehaviour
 
     public void ShowCredits()
     {
-        print("CREDITS");
         endPanel.SetActive(false);
         creditsPanel.SetActive(true);
         buttonCredits.gameObject.SetActive(false);
@@ -40,7 +39,6 @@ public class EndMenu : MonoBehaviour
 
     public void RestartGame()
     {
-        print("Restart");
         SceneManager.LoadScene("Start");
     }
 }

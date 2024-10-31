@@ -144,7 +144,7 @@ public class SideMenuController : MonoBehaviour
                 {
                     float firstMonthValue = converter.getBuildingYearlytCO2eByType(building, consumerType);
                     slider.maxValue = firstMonthValue;
-                    Debug.Log("Slider MaxValue set");
+                    //Debug.Log("Slider MaxValue set");
                     string valueString = firstMonthValue.ToString("0.000");
                     return valueString;
                 }
@@ -229,7 +229,6 @@ public class SideMenuController : MonoBehaviour
             button.interactable = !measure.done;
         }
 
-        // Setzt den Text
         Transform upgradeNameTransform = buttonObject.transform.Find("UpgradeName");
         if (upgradeNameTransform != null)
         {
@@ -240,14 +239,13 @@ public class SideMenuController : MonoBehaviour
             }
         }
 
-        //Setzt das Icon
         Transform imageTransform = buttonObject.transform.Find("Image");
         if (imageTransform != null)
         {
             SVGImage upgradeImage = imageTransform.GetComponent<SVGImage>();
             if (upgradeImage != null && measure.icon != null)
             {
-                Debug.Log("Icon gefunden " + upgradeImage);
+                //Debug.Log("Icon gefunden " + upgradeImage);
                 upgradeImage.sprite = measure.icon;
             }
             else
@@ -256,13 +254,12 @@ public class SideMenuController : MonoBehaviour
             }
         }
 
-        // Zeige den Haken, wenn die Maßnahme abgeschlossen ist
-        Transform checkmarkTransform = buttonObject.transform.Find("Checkmark"); // Name des Haken-Bildes im Prefab
+        Transform checkmarkTransform = buttonObject.transform.Find("Checkmark"); 
         if (checkmarkTransform != null)
         {
             SVGImage checkmarkImage = checkmarkTransform.GetComponent<SVGImage>();
             checkmarkImage.enabled = measure.done;
-            Debug.Log("Checkmark is enabled:  " + checkmarkImage.enabled);
+            //Debug.Log("Checkmark is enabled:  " + checkmarkImage.enabled);
         }
 
         currentButtonController = buttonObject.GetComponent<ButtonController>();
@@ -298,7 +295,7 @@ public class SideMenuController : MonoBehaviour
                 currentButtonController.HidePanel();
                 CloseSideMenu();
                 loggingSystem.addToLog(currentBuilding.name, selectedMeasure.name);
-                Debug.Log($"Maßnahme {selectedMeasure.name} gekauft!");
+                //Debug.Log($"Maßnahme {selectedMeasure.name} gekauft!");
             }
         }
     }
@@ -313,7 +310,6 @@ public class SideMenuController : MonoBehaviour
 
             if (buildingObject != null)
             {
-                // Hole das Script "CampusBuilding" vom Gebäudeobjekt
                 CampusBuilding campusBuilding = buildingObject.GetComponent<CampusBuilding>();
                 if (campusBuilding != null)
                 {
@@ -328,7 +324,6 @@ public class SideMenuController : MonoBehaviour
         }
     }
 
-    //TODO: Don`t forget to Hide the Previews when closing the menu!
     void CloseSideMenu()
     {
         HideAllPreviews();

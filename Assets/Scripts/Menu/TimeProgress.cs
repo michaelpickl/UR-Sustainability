@@ -48,7 +48,6 @@ public class TimeProgress : MonoBehaviour
             SceneManager.LoadScene("End");
         }
 
-        // Reset (optional)
         if (currentTime >= endTime)
         {
             currentTime = endTime;
@@ -57,8 +56,8 @@ public class TimeProgress : MonoBehaviour
         
         if (currentYear > lastYear)
         {
-            moneyManager.AddMoney(yearlyIncome); // Jährliches Einkommen hinzufügen
-            lastYear = currentYear; // Aktualisiere das letzte Jahr
+            moneyManager.AddMoney(yearlyIncome);
+            lastYear = currentYear; 
         }
     }
 
@@ -67,11 +66,6 @@ public class TimeProgress : MonoBehaviour
         return currentTime;
     }
 
-    /*public string GetCurrentMonth()
-    {
-        //TODO: calculate Month
-        return "JAN";
-    }*/
 
     public string GetCurrentMonth()
     {

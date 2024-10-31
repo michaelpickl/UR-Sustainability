@@ -3,6 +3,8 @@ In diesem Projekt wird Gamification genutzt, um Studierenden und Mitarbeitern de
 
 Die Datengrundlage basiert auf den CSV-Datein im Ordner [DATA](DATA). Um diese in eine JSON Datei umzuwandeln, kann dieser Converter verwendet werden: https://colab.research.google.com/drive/1H3fwflaiIs_Msh7ZFz9ieTWhzGkrDvNA?usp=sharing .
 
+In dem Ordner [BUILDS](BUILDS) befinden sich die gebuildeten Spiele für die Plattformen Windows und MacOS, sowie eine Webseite. 
+
 # Credits
 <b>Kartenmaterial:</b> Open Street Map (https://www.openstreetmap.org/)
 

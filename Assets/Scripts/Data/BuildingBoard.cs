@@ -20,12 +20,11 @@ public class BuildingBoard : MonoBehaviour
         
         buildings = buildings.OrderByDescending(building => converter.getBuildingYearlytCO2e(building)).ToArray();
         
-        Debug.Log("Gesamter jährlicher CO2-Ausstoß aller Gebäude: " + totalCO2);
+        //Debug.Log("Gesamter jährlicher CO2-Ausstoß aller Gebäude: " + totalCO2);
 
-        // Optional: print result
         foreach (Building building in buildings)
         {
-            Debug.Log($"Building: {building.name}, CO2: {converter.getBuildingYearlytCO2e(building)}");
+            //Debug.Log($"Building: {building.name}, CO2: {converter.getBuildingYearlytCO2e(building)}");
         }
     }
 }
