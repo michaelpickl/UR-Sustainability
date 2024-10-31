@@ -6,52 +6,52 @@
         {
           "type": "Wärme",
           "monthly_values": [
-            "2731326,59412382",
-            "2238908,49144079",
-            "1873023,38926135",
-            "1096399,27613881",
-            "298049,601986018",
-            "35487",
-            "71846",
-            "73705",
-            "36409",
-            "792546,212055747",
-            "1895103,17201162",
-            "2493301,33637116"
+            2731326.59412382,
+            2238908.49144079,
+            1873023.38926135,
+            1096399.27613881,
+            298049.601986018,
+            35487,
+            71846,
+            73705,
+            36409,
+            792546.212055747,
+            1895103.17201162,
+            2493301.33637116
           ]
         },
         {
           "type": "Kälte",
           "monthly_values": [
-            "15603,800069032",
-            "14153,0997587242",
-            "16907,231602079",
-            "13698,542294202",
-            "21708,0622962011",
-            "45891",
-            "50784",
-            "42837",
-            "31036",
-            "23036,6995005846",
-            "14359,9521477167",
-            "14448,8379863142"
+            15603.800069032,
+            14153.0997587242,
+            16907.231602079,
+            13698.542294202,
+            21708.0622962011,
+            45891,
+            50784,
+            42837,
+            31036,
+            23036.6995005846,
+            14359.9521477167,
+            14448.8379863142
           ]
         },
         {
           "type": "Strom",
           "monthly_values": [
-            "735973,43",
-            "704600,30",
-            "757631,83",
-            "731584,75",
-            "724082,11",
-            "666248,45",
-            "677040,19",
-            "640866,66",
-            "648894,30",
-            "720185,39",
-            "767777,27",
-            "760748,44"
+            735973.43,
+            704600.3,
+            757631.83,
+            731584.75,
+            724082.11,
+            666248.45,
+            677040.19,
+            640866.66,
+            648894.3,
+            720185.39,
+            767777.27,
+            760748.44
           ]
         }
       ],
@@ -59,30 +59,30 @@
         {
           "name": "PV-Anlage Installation",
           "description": "Installation einer Photovoltaik-Anlage auf dem Dach",
-          "cost": "5656512",
-          "duration": "35",
-          "co2_savings": "39,08",
-          "cost_savings": "0",
+          "cost": 5656512,
+          "duration": 35,
+          "co2_savings": 39.08,
+          "cost_savings": 0,
           "type": "Strom",
           "done": false
         },
         {
           "name": "Energetische Gebäudesanierung",
           "description": "Das Dach und die Fassaden werden gedämmt, die Fenster werden ausgetauscht und die Heizungsanlage wird erneuert.",
-          "cost": "5458950",
-          "duration": "58",
-          "co2_savings": "1816,692",
-          "cost_savings": "719986,3493",
+          "cost": 5458950,
+          "duration": 58,
+          "co2_savings": 1816.692,
+          "cost_savings": 719986.3493,
           "type": "Wärme",
           "done": false
         },
         {
           "name": "LED-Lampen",
           "description": "Alle alten Lampen werden mit LED-Lampen ausgetauscht.",
-          "cost": "268934,1857",
-          "duration": "3,8",
-          "co2_savings": "97,82675",
-          "cost_savings": "143996,1307",
+          "cost": 268934.1857,
+          "duration": 3.8,
+          "co2_savings": 97.82675,
+          "cost_savings": 143996.1307,
           "type": "Strom",
           "done": false
         }
@@ -95,35 +95,35 @@
         {
           "type": "Wärme",
           "monthly_values": [
-            "93102,4555888556",
-            "46345,3412509266",
-            "22033,9737826563",
-            "13133,5344084992",
-            "2340,78918981327",
-            "573",
-            "6",
-            "0",
-            "520",
-            "15126,4504484567",
-            "40842,4944949601",
-            "30301,9434815458"
+            93102.4555888556,
+            46345.3412509266,
+            22033.9737826563,
+            13133.5344084992,
+            2340.78918981327,
+            573,
+            6,
+            0,
+            520,
+            15126.4504484567,
+            40842.4944949601,
+            30301.9434815458
           ]
         },
         {
           "type": "Strom",
           "monthly_values": [
-            "16813,45",
-            "14298,71",
-            "13451,32",
-            "12731,69",
-            "14319,29",
-            "13513,77",
-            "14923,36",
-            "12057,71",
-            "12685,42",
-            "16142,62",
-            "16665,78",
-            "14453,61"
+            16813.45,
+            14298.71,
+            13451.32,
+            12731.69,
+            14319.29,
+            13513.77,
+            14923.36,
+            12057.71,
+            12685.42,
+            16142.62,
+            16665.78,
+            14453.61
           ]
         }
       ],
@@ -131,30 +131,30 @@
         {
           "name": "PV-Anlage Installation",
           "description": "Installation einer Photovoltaik-Anlage auf dem Dach",
-          "cost": "635120",
-          "duration": "4",
-          "co2_savings": "4,39",
-          "cost_savings": "11236,72",
+          "cost": 635120,
+          "duration": 4,
+          "co2_savings": 4.39,
+          "cost_savings": 11236.72,
           "type": "Strom",
           "done": false
         },
         {
           "name": "Energetische Gebäudesanierung",
           "description": "Das Dach und die Fassaden werden gedämmt, die Fenster werden ausgetauscht und die Heizungsanlage wird erneuert.",
-          "cost": "1039136",
-          "duration": "8",
-          "co2_savings": "35,214",
-          "cost_savings": "13956,4119",
+          "cost": 1039136,
+          "duration": 8,
+          "co2_savings": 35.214,
+          "cost_savings": 13956.4119,
           "type": "Wärme",
           "done": false
         },
         {
           "name": "LED-Lampen",
           "description": "Alle alten Lampen werden mit LED-Lampen ausgetauscht.",
-          "cost": "15098,12761",
-          "duration": "0,2",
-          "co2_savings": "1,96875",
-          "cost_savings": "2902,597035",
+          "cost": 15098.12761,
+          "duration": 0.2,
+          "co2_savings": 1.96875,
+          "cost_savings": 2902.597035,
           "type": "Strom",
           "done": false
         }
@@ -167,40 +167,39 @@
         {
           "type": "Wärme",
           "monthly_values": [
-            "756,307117286876",
-            "646,87645623158",
-            "516,075641441223",
-            "321,454892558419",
-            "185,393123735259",
-            "154",
-            "154",
-            "159",
-            "161",
-            "322,74357886574",
-            "529,969921932383",
-            "767,435433721194"
+            756.307117286876,
+            646.87645623158,
+            516.075641441223,
+            321.454892558419,
+            185.393123735259,
+            154,
+            154,
+            159,
+            161,
+            322.74357886574,
+            529.969921932383,
+            767.435433721194
           ]
         },
         {
           "type": "Strom",
           "monthly_values": [
-            "355722,50",
-            "322543,77",
-            "354319,13",
-            "328931,65",
-            "336210,05",
-            "338950,72",
-            "343803,74",
-            "277143,85",
-            "268004,14",
-            "347703,06",
-            "360262,49",
-            "354650,94"
+            355722.5,
+            322543.77,
+            354319.13,
+            328931.65,
+            336210.05,
+            338950.72,
+            343803.74,
+            277143.85,
+            268004.14,
+            347703.06,
+            360262.49,
+            354650.94
           ]
         }
       ],
-      "measures": [
-      ],
+      "measures": [],
       "abbreviation": "OTH"
     },
     {
@@ -209,52 +208,52 @@
         {
           "type": "Wärme",
           "monthly_values": [
-            "692557,962142102",
-            "518474,832970252",
-            "450108,945129336",
-            "274097,252881274",
-            "125689,546182146",
-            "0",
-            "0",
-            "16096",
-            "33560",
-            "194995,746480316",
-            "232160,916700079",
-            "295598,905870007"
+            692557.962142102,
+            518474.832970252,
+            450108.945129336,
+            274097.252881274,
+            125689.546182146,
+            0,
+            0,
+            16096,
+            33560,
+            194995.746480316,
+            232160.916700079,
+            295598.905870007
           ]
         },
         {
           "type": "Kälte",
           "monthly_values": [
-            "46,2219167763477",
-            "232,963001883845",
-            "91,1665912577134",
-            "54,4487064678535",
-            "29,2280645863255",
-            "22328",
-            "54802",
-            "46688",
-            "37079",
-            "9664,6758113796",
-            "1,22887139107612",
-            "25,3311850032416"
+            46.2219167763477,
+            232.963001883845,
+            91.1665912577134,
+            54.4487064678535,
+            29.2280645863255,
+            22328,
+            54802,
+            46688,
+            37079,
+            9664.6758113796,
+            1.22887139107612,
+            25.3311850032416
           ]
         },
         {
           "type": "Strom",
           "monthly_values": [
-            "221718,75",
-            "213276,98",
-            "221176,52",
-            "195340,52",
-            "203844,65",
-            "199946,08",
-            "207950,37",
-            "198542,79",
-            "193604,04",
-            "213645,6",
-            "228478,86",
-            "223933,66"
+            221718.75,
+            213276.98,
+            221176.52,
+            195340.52,
+            203844.65,
+            199946.08,
+            207950.37,
+            198542.79,
+            193604.04,
+            213645.6,
+            228478.86,
+            223933.66
           ]
         }
       ],
@@ -262,30 +261,30 @@
         {
           "name": "PV-Anlage Installation",
           "description": "Installation einer Photovoltaik-Anlage auf dem Dach",
-          "cost": "3654864",
-          "duration": "22",
-          "co2_savings": "25,24",
-          "cost_savings": "64662,87",
+          "cost": 3654864,
+          "duration": 22,
+          "co2_savings": 25.24,
+          "cost_savings": 64662.87,
           "type": "Strom",
           "done": false
         },
         {
           "name": "Energetische Gebäudesanierung",
           "description": "Das Dach und die Fassaden werden gedämmt, die Fenster werden ausgetauscht und die Heizungsanlage wird erneuert.",
-          "cost": "4890409",
-          "duration": "40",
-          "co2_savings": "470,292",
-          "cost_savings": "186383,9",
+          "cost": 4890409,
+          "duration": 40,
+          "co2_savings": 470.292,
+          "cost_savings": 186383.9,
           "type": "Wärme",
           "done": false
         },
         {
           "name": "LED-Lampen",
           "description": "Alle alten Lampen werden mit LED-Lampen ausgetauscht.",
-          "cost": "108604,6792",
-          "duration": "1,5",
-          "co2_savings": "28,8995",
-          "cost_savings": "42537,01029",
+          "cost": 108604.6792,
+          "duration": 1.5,
+          "co2_savings": 28.8995,
+          "cost_savings": 42537.01029,
           "type": "Strom",
           "done": false
         }
@@ -298,52 +297,52 @@
         {
           "type": "Wärme",
           "monthly_values": [
-            "592809,808778401",
-            "495676,746574741",
-            "430967,911481529",
-            "288152,052208265",
-            "113263,238456998",
-            "53433",
-            "49917",
-            "65702",
-            "69594",
-            "273739,276363264",
-            "460512,746846822",
-            "636230,65936712"
+            592809.808778401,
+            495676.746574741,
+            430967.911481529,
+            288152.052208265,
+            113263.238456998,
+            53433,
+            49917,
+            65702,
+            69594,
+            273739.276363264,
+            460512.746846822,
+            636230.65936712
           ]
         },
         {
           "type": "Kälte",
           "monthly_values": [
-            "178328,60289819",
-            "174996,145564361",
-            "202795,165996753",
-            "181937,722120571",
-            "153171,835545549",
-            "154959",
-            "153329",
-            "141524",
-            "134116",
-            "151285,944072858",
-            "179347,885740538",
-            "181359,990342745"
+            178328.60289819,
+            174996.145564361,
+            202795.165996753,
+            181937.722120571,
+            153171.835545549,
+            154959,
+            153329,
+            141524,
+            134116,
+            151285.944072858,
+            179347.885740538,
+            181359.990342745
           ]
         },
         {
           "type": "Strom",
           "monthly_values": [
-            "288494,83",
-            "289587,5",
-            "315567,92",
-            "302772,61",
-            "329340,45",
-            "325923,71",
-            "342683,34",
-            "330824",
-            "327387,34",
-            "327408,92",
-            "321878,17",
-            "305068,38"
+            288494.83,
+            289587.5,
+            315567.92,
+            302772.61,
+            329340.45,
+            325923.71,
+            342683.34,
+            330824,
+            327387.34,
+            327408.92,
+            321878.17,
+            305068.38
           ]
         }
       ],
@@ -351,30 +350,30 @@
         {
           "name": "PV-Anlage Installation",
           "description": "Installation einer Photovoltaik-Anlage auf dem Dach",
-          "cost": "2870416",
-          "duration": "18",
-          "co2_savings": "19,82",
-          "cost_savings": "50784,2",
+          "cost": 2870416,
+          "duration": 18,
+          "co2_savings": 19.82,
+          "cost_savings": 50784.2,
           "type": "Strom",
           "done": false
         },
         {
           "name": "Energetische Gebäudesanierung",
           "description": "Das Dach und die Fassaden werden gedämmt, die Fenster werden ausgetauscht und die Heizungsanlage wird erneuert.",
-          "cost": "3374202",
-          "duration": "27",
-          "co2_savings": "470,292",
-          "cost_savings": "186383,9",
+          "cost": 3374202,
+          "duration": 27,
+          "co2_savings": 470.292,
+          "cost_savings": 186383.9,
           "type": "Wärme",
           "done": false
         },
         {
           "name": "LED-Lampen",
           "description": "Alle alten Lampen werden mit LED-Lampen ausgetauscht.",
-          "cost": "85294,722",
-          "duration": "1,2",
-          "co2_savings": "43,6275",
-          "cost_savings": "64223,03006",
+          "cost": 85294.722,
+          "duration": 1.2,
+          "co2_savings": 43.6275,
+          "cost_savings": 64223.03006,
           "type": "Strom",
           "done": false
         }
@@ -387,35 +386,35 @@
         {
           "type": "Wärme",
           "monthly_values": [
-            "173268,215",
-            "149223,004",
-            "109230,498",
-            "71427,58",
-            "14617,088",
-            "0",
-            "0",
-            "0",
-            "29043,555",
-            "79202,467",
-            "114494,928",
-            "127619,831"
+            166053996.146433,
+            135919371.610077,
+            119409480.889028,
+            75756295.7773225,
+            25732517.5730279,
+            999000,
+            0,
+            0,
+            4460802,
+            73068404.6332349,
+            121146186.278136,
+            141951506.789511
           ]
         },
         {
           "type": "Strom",
           "monthly_values": [
-            "119710,94",
-            "118163,50",
-            "122361,74",
-            "100230,96",
-            "100424,10",
-            "103278,11",
-            "109713,03",
-            "99266,89",
-            "93331,30",
-            "111620,91",
-            "120954,58",
-            "105496,23"
+            119710.94,
+            118163.5,
+            122361.74,
+            100230.96,
+            100424.1,
+            103278.11,
+            109713.03,
+            99266.89,
+            93331.3,
+            111620.91,
+            120954.58,
+            105496.23
           ]
         }
       ],
@@ -423,30 +422,30 @@
         {
           "name": "PV-Anlage Installation",
           "description": "Installation einer Photovoltaik-Anlage auf dem Dach",
-          "cost": "2251888",
-          "duration": "14",
-          "co2_savings": "15,55",
-          "cost_savings": "39841,03",
+          "cost": 2251888,
+          "duration": 14,
+          "co2_savings": 15.55,
+          "cost_savings": 39841.03,
           "type": "Strom",
           "done": false
         },
         {
           "name": "Energetische Gebäudesanierung",
           "description": "Das Dach und die Fassaden werden gedämmt, die Fenster werden ausgetauscht und die Heizungsanlage wird erneuert.",
-          "cost": "3243268",
-          "duration": "26",
-          "co2_savings": "115,662",
-          "cost_savings": "45837,12",
+          "cost": 3243268,
+          "duration": 26,
+          "co2_savings": 115.662,
+          "cost_savings": 45837.12,
           "type": "Wärme",
           "done": false
         },
         {
           "name": "LED-Lampen",
           "description": "Alle alten Lampen werden mit LED-Lampen ausgetauscht.",
-          "cost": "107064,1529",
-          "duration": "1,5",
-          "co2_savings": "14,951125",
-          "cost_savings": "22007,79713",
+          "cost": 107064.1529,
+          "duration": 1.5,
+          "co2_savings": 14.951125,
+          "cost_savings": 22007.79713,
           "type": "Strom",
           "done": false
         }
@@ -459,35 +458,35 @@
         {
           "type": "Wärme",
           "monthly_values": [
-            "305350,989707633",
-            "260602,825773001",
-            "239327,326207937",
-            "156694,229048385",
-            "69629,53198992",
-            "5980",
-            "0",
-            "0",
-            "3274",
-            "138396,778527614",
-            "242970,120938792",
-            "323362,242326481"
+            305350.989707633,
+            260602.825773001,
+            239327.326207937,
+            156694.229048385,
+            69629.53198992,
+            5980,
+            0,
+            0,
+            3274,
+            138396.778527614,
+            242970.120938792,
+            323362.242326481
           ]
         },
         {
           "type": "Strom",
           "monthly_values": [
-            "31628,203",
-            "30007,103",
-            "32656,194",
-            "31607,694",
-            "32764,486",
-            "31266,01",
-            "32591,553",
-            "30346,319",
-            "30173,614",
-            "32282,428",
-            "32009,241",
-            "30064,477"
+            31628.203,
+            30007.103,
+            32656.194,
+            31607.694,
+            32764.486,
+            31266.01,
+            32591.553,
+            30346.319,
+            30173.614,
+            32282.428,
+            32009.241,
+            30064.477
           ]
         }
       ],
@@ -495,30 +494,30 @@
         {
           "name": "PV-Anlage Installation",
           "description": "Installation einer Photovoltaik-Anlage auf dem Dach",
-          "cost": "1278128",
-          "duration": "8",
-          "co2_savings": "8,87",
-          "cost_savings": "22612,99",
+          "cost": 1278128,
+          "duration": 8,
+          "co2_savings": 8.87,
+          "cost_savings": 22612.99,
           "type": "Strom",
           "done": false
         },
         {
           "name": "Energetische Gebäudesanierung",
           "description": "Das Dach und die Fassaden werden gedämmt, die Fenster werden ausgetauscht und die Heizungsanlage wird erneuert.",
-          "cost": "2442696",
-          "duration": "20",
-          "co2_savings": "232,56",
-          "cost_savings": "92167,05",
+          "cost": 2442696,
+          "duration": 20,
+          "co2_savings": 232.56,
+          "cost_savings": 92167.05,
           "type": "Wärme",
           "done": false
         },
         {
           "name": "LED-Lampen",
           "description": "Alle alten Lampen werden mit LED-Lampen ausgetauscht.",
-          "cost": "60767,53889",
-          "duration": "0,8",
-          "co2_savings": "4,32425",
-          "cost_savings": "6366,692822",
+          "cost": 60767.53889,
+          "duration": 0.8,
+          "co2_savings": 4.32425,
+          "cost_savings": 6366.692822,
           "type": "Strom",
           "done": false
         }
@@ -531,35 +530,35 @@
         {
           "type": "Wärme",
           "monthly_values": [
-            "53745,7687515997",
-            "27169,5857918775",
-            "24667,3208640176",
-            "48322,1556749136",
-            "67854,5010820769",
-            "40482",
-            "31591",
-            "23962",
-            "48363",
-            "84448,4447893382",
-            "37252,8825108314",
-            "10083,0153986918"
+            53745.7687515997,
+            27169.5857918775,
+            24667.3208640176,
+            48322.1556749136,
+            67854.5010820769,
+            40482,
+            31591,
+            23962,
+            48363,
+            84448.4447893382,
+            37252.8825108314,
+            10083.0153986918
           ]
         },
         {
           "type": "Strom",
           "monthly_values": [
-            "44080,51",
-            "39398,69",
-            "39364,47",
-            "38870,81",
-            "40259,36",
-            "39341,97",
-            "38727,55",
-            "21927,89",
-            "28893,11",
-            "40991,78",
-            "45222,79",
-            "42473,01"
+            44080.51,
+            39398.69,
+            39364.47,
+            38870.81,
+            40259.36,
+            39341.97,
+            38727.55,
+            21927.89,
+            28893.11,
+            40991.78,
+            45222.79,
+            42473.01
           ]
         }
       ],
@@ -567,40 +566,40 @@
         {
           "name": "PV-Anlage Installation",
           "description": "Installation einer Photovoltaik-Anlage auf dem Dach",
-          "cost": "1879248",
-          "duration": "12",
-          "co2_savings": "3,99",
-          "cost_savings": "33248,12",
+          "cost": 1879248,
+          "duration": 12,
+          "co2_savings": 3.99,
+          "cost_savings": 33248.12,
           "type": "Strom",
           "done": false
         },
         {
           "name": "Energetische Gebäudesanierung",
           "description": "Das Dach und die Fassaden werden gedämmt, die Fenster werden ausgetauscht und die Heizungsanlage wird erneuert.",
-          "cost": "2302360",
-          "duration": "19",
-          "co2_savings": "66,342",
-          "cost_savings": "26291,32044",
+          "cost": 1800726.789,
+          "duration": 19,
+          "co2_savings": 66.342,
+          "cost_savings": 26291.32044,
           "type": "Wärme",
           "done": false
         },
         {
           "name": "Solarthermie für Warmwasser",
           "description": "Das Schwimmbecken wird mit Solarthermie erwärmt statt mit Gas.",
-          "cost": "254320",
-          "duration": "1",
-          "co2_savings": "0,697",
-          "cost_savings": "36748,8",
+          "cost": 2302360,
+          "duration": 1,
+          "co2_savings": 0.697,
+          "cost_savings": 36748.8,
           "type": "Wärme",
           "done": false
         },
         {
           "name": "LED-Lampen",
           "description": "Alle alten Lampen werden mit LED-Lampen ausgetauscht.",
-          "cost": "33505,23459",
-          "duration": "0,5",
-          "co2_savings": "5,266625",
-          "cost_savings": "7752,641228",
+          "cost": 33505.23459,
+          "duration": 0.5,
+          "co2_savings": 5.266625,
+          "cost_savings": 7752.641228,
           "type": "Strom",
           "done": false
         }
@@ -613,52 +612,52 @@
         {
           "type": "Wärme",
           "monthly_values": [
-            "70554,412865078",
-            "59457,3848699974",
-            "53380,4808066795",
-            "34820,1599261335",
-            "14784,3653736791",
-            "5305",
-            "5958",
-            "6696",
-            "1829",
-            "24396,1141491167",
-            "43518,0344829028",
-            "68225,607476563"
+            70554.412865078,
+            59457.3848699974,
+            53380.4808066795,
+            34820.1599261335,
+            14784.3653736791,
+            5305,
+            5958,
+            6696,
+            1829,
+            24396.1141491167,
+            43518.0344829028,
+            68225.607476563
           ]
         },
         {
           "type": "Kälte",
           "monthly_values": [
-            "0",
-            "0",
-            "0",
-            "0",
-            "0",
-            "0",
-            "0",
-            "0",
-            "0",
-            "0",
-            "0",
-            "0"
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
           ]
         },
         {
           "type": "Strom",
           "monthly_values": [
-            "18156,63",
-            "18916,57",
-            "17086,42",
-            "18322,59",
-            "19158,92",
-            "16611,54",
-            "19267,63",
-            "15104,04",
-            "15135,36",
-            "19907,48",
-            "19072,6",
-            "18353,49"
+            18156.63,
+            18916.57,
+            17086.42,
+            18322.59,
+            19158.92,
+            16611.54,
+            19267.63,
+            15104.04,
+            15135.36,
+            19907.48,
+            19072.6,
+            18353.49
           ]
         }
       ],
@@ -666,30 +665,30 @@
         {
           "name": "PV-Anlage Installation",
           "description": "Installation einer Photovoltaik-Anlage auf dem Dach",
-          "cost": "614720",
-          "duration": "4",
-          "co2_savings": "4,26",
-          "cost_savings": "10875,8",
+          "cost": 614720,
+          "duration": 4,
+          "co2_savings": 4.26,
+          "cost_savings": 10875.8,
           "type": "Strom",
           "done": false
         },
         {
           "name": "Energetische Gebäudesanierung",
           "description": "Das Dach und die Fassaden werden gedämmt, die Fenster werden ausgetauscht und die Heizungsanlage wird erneuert.",
-          "cost": "1152314",
-          "duration": "9",
-          "co2_savings": "51,816",
-          "cost_savings": "20535,21677",
+          "cost": 1152314,
+          "duration": 9,
+          "co2_savings": 51.816,
+          "cost_savings": 20535.21677,
           "type": "Wärme",
           "done": false
         },
         {
           "name": "LED-Lampen",
           "description": "Alle alten Lampen werden mit LED-Lampen ausgetauscht.",
-          "cost": "25573,05983",
-          "duration": "0,4",
-          "co2_savings": "2,45875",
-          "cost_savings": "3628,623465",
+          "cost": 25573.05983,
+          "duration": 0.4,
+          "co2_savings": 2.45875,
+          "cost_savings": 3628.623465,
           "type": "Strom",
           "done": false
         }
@@ -702,35 +701,35 @@
         {
           "type": "Wärme",
           "monthly_values": [
-            "137706,718324089",
-            "114399,561955814",
-            "91868,4003206066",
-            "54462,129802637",
-            "15269,6247333032",
-            "20",
-            "49",
-            "126",
-            "3656",
-            "67289,8520685382",
-            "119611,886979409",
-            "146806,611359387"
+            137706.718324089,
+            114399.561955814,
+            91868.4003206066,
+            54462.129802637,
+            15269.6247333032,
+            20,
+            49,
+            126,
+            3656,
+            67289.8520685382,
+            119611.886979409,
+            146806.611359387
           ]
         },
         {
           "type": "Strom",
           "monthly_values": [
-            "14583,62",
-            "12565,86",
-            "13316,12",
-            "10988,74",
-            "9628,52",
-            "8949,11",
-            "11745,86",
-            "13480,04",
-            "13502,83",
-            "16117,59",
-            "14087,68",
-            "14183,53"
+            14583.62,
+            12565.86,
+            13316.12,
+            10988.74,
+            9628.52,
+            8949.11,
+            11745.86,
+            13480.04,
+            13502.83,
+            16117.59,
+            14087.68,
+            14183.53
           ]
         }
       ],
@@ -738,45 +737,44 @@
         {
           "name": "PV-Anlage Installation",
           "description": "Installation einer Photovoltaik-Anlage auf dem Dach",
-          "cost": "0",
-          "duration": "0",
-          "co2_savings": "0",
-          "cost_savings": "0",
+          "cost": 0,
+          "duration": 0,
+          "co2_savings": 0,
+          "cost_savings": 0,
           "type": "Strom",
           "done": true
         },
         {
           "name": "Energetische Gebäudesanierung",
           "description": "Das Dach und die Fassaden werden gedämmt, die Fenster werden ausgetauscht und die Heizungsanlage wird erneuert.",
-          "cost": "1199613",
-          "duration": "10",
-          "co2_savings": "100,086",
-          "cost_savings": "39666,8335",
+          "cost": 1199613,
+          "duration": 10,
+          "co2_savings": 100.086,
+          "cost_savings": 39666.8335,
           "type": "Wärme",
           "done": false
         },
         {
           "name": "Papierkonzept verbessern",
           "description": "Alle Prüfungen und Papierverbrauch in Büros werden digitalisiert.",
-          "cost": "0",
-          "duration": "0",
-          "co2_savings": "23,91",
-          "cost_savings": "0",
+          "cost": 0,
+          "duration": 0,
+          "co2_savings": 23.91,
+          "cost_savings": 0,
           "type": "Waren",
           "done": false
         },
         {
           "name": "LED-Lampen",
           "description": "Alle alten Lampen werden mit LED-Lampen ausgetauscht.",
-          "cost": "19260,43541",
-          "duration": "0,3",
-          "co2_savings": "1,442",
-          "cost_savings": "2583,632065",
+          "cost": 19260.43541,
+          "duration": 0.3,
+          "co2_savings": 1.442,
+          "cost_savings": 2583.632065,
           "type": "Strom",
           "done": false
         }
-      ],
-      "abbreviation": "VW"
+      ]
     },
     {
       "name": "Vielberthgebäude",
@@ -784,52 +782,52 @@
         {
           "type": "Wärme",
           "monthly_values": [
-            "65043,5092250261",
-            "56414,4945375206",
-            "48587,0197271553",
-            "26727,4602596282",
-            "8508,80328689537",
-            "0",
-            "0",
-            "0",
-            "940",
-            "22614,0701442805",
-            "49393,6374041887",
-            "62898,5659611666"
+            65043.5092250261,
+            56414.4945375206,
+            48587.0197271553,
+            26727.4602596282,
+            8508.80328689537,
+            0,
+            0,
+            0,
+            940,
+            22614.0701442805,
+            49393.6374041887,
+            62898.5659611666
           ]
         },
         {
           "type": "Kälte",
           "monthly_values": [
-            "4651,76651354158",
-            "3873,87345600337",
-            "4572,14348759613",
-            "3753,98538047356",
-            "4156,6888285884",
-            "9049",
-            "14222",
-            "15087",
-            "8190",
-            "6163,65402417574",
-            "4454,92216288141",
-            "4336,67230097207"
+            4651.76651354158,
+            3873.87345600337,
+            4572.14348759613,
+            3753.98538047356,
+            4156.6888285884,
+            9049,
+            14222,
+            15087,
+            8190,
+            6163.65402417574,
+            4454.92216288141,
+            4336.67230097207
           ]
         },
         {
           "type": "Strom",
           "monthly_values": [
-            "33769,71",
-            "27112,04",
-            "26443,17",
-            "23427,99",
-            "25260,9",
-            "25715,29",
-            "28087,14",
-            "22586,63",
-            "19661,45",
-            "34533,02",
-            "38624,66",
-            "35977,91"
+            33769.71,
+            27112.04,
+            26443.17,
+            23427.99,
+            25260.9,
+            25715.29,
+            28087.14,
+            22586.63,
+            19661.45,
+            34533.02,
+            38624.66,
+            35977.91
           ]
         }
       ],
@@ -837,20 +835,20 @@
         {
           "name": "PV-Anlage Installation",
           "description": "Installation einer Photovoltaik-Anlage auf dem Dach",
-          "cost": "0",
-          "duration": "0",
-          "co2_savings": "0",
-          "cost_savings": "10781,38",
+          "cost": 0,
+          "duration": 0,
+          "co2_savings": 0,
+          "cost_savings": 10781.38,
           "type": "Strom",
           "done": true
         },
         {
           "name": "LED-Lampen",
           "description": "Alle alten Lampen werden mit LED-Lampen ausgetauscht.",
-          "cost": "13332,90755",
-          "duration": "0,2",
-          "co2_savings": "3,91125",
-          "cost_savings": "5756,042482",
+          "cost": 13332.90755,
+          "duration": 0.2,
+          "co2_savings": 3.91125,
+          "cost_savings": 5756.042482,
           "type": "Strom",
           "done": false
         }
@@ -863,35 +861,35 @@
         {
           "type": "Wärme",
           "monthly_values": [
-            "1223594,37022523",
-            "1058606,932122510",
-            "938643,901773510",
-            "645956,447258815",
-            "343252,350502332",
-            "110995",
-            "128250",
-            "117931",
-            "140117",
-            "521439,419527432",
-            "930793,619478256",
-            "1187017,604204020"
+            1223594.37022523,
+            1058606.93212251,
+            938643.90177351,
+            645956.447258815,
+            343252.350502332,
+            110995,
+            128250,
+            117931,
+            140117,
+            521439.419527432,
+            930793.619478256,
+            1187017.60420402
           ]
         },
         {
           "type": "Strom",
           "monthly_values": [
-            "259024,53",
-            "237267,92",
-            "247871,32",
-            "221246,92",
-            "218758,79",
-            "207381,73",
-            "216876,72",
-            "209889,73",
-            "202863,81",
-            "223232,55",
-            "228841,49",
-            "233064,93"
+            259024.53,
+            237267.92,
+            247871.32,
+            221246.92,
+            218758.79,
+            207381.73,
+            216876.72,
+            209889.73,
+            202863.81,
+            223232.55,
+            228841.49,
+            233064.93
           ]
         }
       ],
@@ -899,20 +897,20 @@
         {
           "name": "PV-Anlage Installation",
           "description": "Installation einer Photovoltaik-Anlage auf dem Dach",
-          "cost": "2371568",
-          "duration": "15",
-          "co2_savings": "16,39",
-          "cost_savings": "41958,43984",
+          "cost": 2371568,
+          "duration": 15,
+          "co2_savings": 16.39,
+          "cost_savings": 41958.43984,
           "type": "Strom",
           "done": false
         },
         {
           "name": "LED-Lampen",
           "description": "Alle alten Lampen werden mit LED-Lampen ausgetauscht.",
-          "cost": "56377,11977",
-          "duration": "0,8",
-          "co2_savings": "31,01875",
-          "cost_savings": "45655,62582",
+          "cost": 56377.11977,
+          "duration": 0.8,
+          "co2_savings": 31.01875,
+          "cost_savings": 45655.62582,
           "type": "Strom",
           "done": false
         }
@@ -925,35 +923,35 @@
         {
           "type": "Wärme",
           "monthly_values": [
-            "382440,577014592",
-            "312269,616545558",
-            "245972,132344522",
-            "141288,502482571",
-            "50247,3546040179",
-            "39489",
-            "41763",
-            "67206",
-            "80532",
-            "127036,927356554",
-            "251036,272167912",
-            "355003,99073533"
+            382440.577014592,
+            312269.616545558,
+            245972.132344522,
+            141288.502482571,
+            50247.3546040179,
+            39489,
+            41763,
+            67206,
+            80532,
+            127036.927356554,
+            251036.272167912,
+            355003.99073533
           ]
         },
         {
           "type": "Kälte",
           "monthly_values": [
-            "229098,174141559",
-            "202118,435205694",
-            "226241,66626815",
-            "187882,579075474",
-            "216498,956733937",
-            "320196",
-            "361894",
-            "380296",
-            "311212",
-            "270875,122629831",
-            "207474,943081935",
-            "221738,722129723"
+            229098.174141559,
+            202118.435205694,
+            226241.66626815,
+            187882.579075474,
+            216498.956733937,
+            320196,
+            361894,
+            380296,
+            311212,
+            270875.122629831,
+            207474.943081935,
+            221738.722129723
           ]
         }
       ],
@@ -961,10 +959,10 @@
         {
           "name": "PV-Anlage Installation",
           "description": "Installation einer Photovoltaik-Anlage auf dem Dach",
-          "cost": "0",
-          "duration": "0",
-          "co2_savings": "0",
-          "cost_savings": "0",
+          "cost": 0,
+          "duration": 0,
+          "co2_savings": 0,
+          "cost_savings": 0,
           "type": "Strom",
           "done": true
         }
@@ -972,57 +970,97 @@
       "abbreviation": "WNDE"
     },
     {
-      "name": "Zentrales Hörsaalgebäude",
+      "name": "Zentrales Bibiliotheksgebäude",
       "consumers": [
         {
           "type": "Wärme",
           "monthly_values": [
-            "336886,586672316",
-            "292861,507314399",
-            "238855,522317191",
-            "148263,63830848",
-            "38344,9861624563",
-            "0",
-            "0",
-            "0",
-            "7630",
-            "100263,283904955",
-            "237189,473799918",
-            "336796,118650955"
-          ]
-        },
-        {
-          "type": "Kälte",
-          "monthly_values": [
-            "0",
-            "0",
-            "0",
-            "0",
-            "0",
-            "2",
-            "7",
-            "0",
-            "0",
-            "0",
-            "0",
-            "0"
+            380400.588294072,
+            294157.615881485,
+            246020.924588242,
+            133537.363578517,
+            45304.2342283712,
+            554,
+            668,
+            21867,
+            12177,
+            144433.285922843,
+            280481.693663516,
+            343516.909849371
           ]
         },
         {
           "type": "Strom",
           "monthly_values": [
-            "59667,31",
-            "57439,88",
-            "55200,76",
-            "62105,35",
-            "62430,77",
-            "60158,87",
-            "66388,3",
-            "47210,6",
-            "54469,05",
-            "66417,42",
-            "66767,59",
-            "61611,92"
+            96687.0773453192,
+            90454.9218753875,
+            98820.238,
+            84098.863,
+            87648.506,
+            84659.067,
+            86840.697,
+            87076.14,
+            86363.793,
+            94119.884,
+            96946.688,
+            95118.845
+          ]
+        }
+      ],
+      "measures": []
+    },
+    {
+      "name": "Zentrales Hörsaalgebäude",
+      "consumers": [
+        {
+          "type": "Wärme",
+          "monthly_values": [
+            336886.586672316,
+            292861.507314399,
+            238855.522317191,
+            148263.63830848,
+            38344.9861624563,
+            0,
+            0,
+            0,
+            7630,
+            100263.283904955,
+            237189.473799918,
+            336796.118650955
+          ]
+        },
+        {
+          "type": "Kälte",
+          "monthly_values": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            7,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "Strom",
+          "monthly_values": [
+            59667.31,
+            57439.88,
+            55200.76,
+            62105.35,
+            62430.77,
+            60158.87,
+            66388.3,
+            47210.6,
+            54469.05,
+            66417.42,
+            66767.59,
+            61611.92
           ]
         }
       ],
@@ -1030,35 +1068,34 @@
         {
           "name": "PV-Anlage Installation",
           "description": "Installation einer Photovoltaik-Anlage auf dem Dach",
-          "cost": "2227952",
-          "duration": "14",
-          "co2_savings": "15,39",
-          "cost_savings": "39417,55",
+          "cost": 2227952,
+          "duration": 14,
+          "co2_savings": 15.39,
+          "cost_savings": 39417.55,
           "type": "Strom",
           "done": false
         },
         {
           "name": "Energetische Gebäudesanierung",
           "description": "Das Dach und die Fassaden werden gedämmt, die Fenster werden ausgetauscht und die Heizungsanlage wird erneuert.",
-          "cost": "3214466",
-          "duration": "26",
-          "co2_savings": "231,426",
-          "cost_savings": "91718,41114",
+          "cost": 3214466,
+          "duration": 26,
+          "co2_savings": 231.426,
+          "cost_savings": 91718.41114,
           "type": "Wärme",
           "done": false
         },
         {
           "name": "LED-Lampen",
           "description": "Alle alten Lampen werden mit LED-Lampen ausgetauscht.",
-          "cost": "79444,60168",
-          "duration": "1,1",
-          "co2_savings": "8,25125",
-          "cost_savings": "12144,17012",
+          "cost": 79444.60168,
+          "duration": 1.1,
+          "co2_savings": 8.25125,
+          "cost_savings": 12144.17012,
           "type": "Strom",
           "done": false
         }
-      ],
-      "abbreviation": "ZH"
+      ]
     },
     {
       "name": "Rechenzentrum",
@@ -1066,35 +1103,35 @@
         {
           "type": "Kälte",
           "monthly_values": [
-            "8751,48830009791",
-            "15740,6084654632",
-            "29977,3032067761",
-            "45173,3574098035",
-            "112550,262927118",
-            "179630",
-            "207423",
-            "220919",
-            "206696",
-            "159908,968598016",
-            "21316,0518267931",
-            "22618,4069230129"
+            8751.48830009791,
+            15740.6084654632,
+            29977.3032067761,
+            45173.3574098035,
+            112550.262927118,
+            179630,
+            207423,
+            220919,
+            206696,
+            159908.968598016,
+            21316.0518267931,
+            22618.4069230129
           ]
         },
         {
           "type": "Strom",
           "monthly_values": [
-            "224971,8",
-            "213281,96",
-            "216489,16",
-            "226873,34",
-            "237717,15",
-            "231071",
-            "245031,07",
-            "217967,99",
-            "229238,99",
-            "230947,42",
-            "229777,76",
-            "234449,29"
+            224971.8,
+            213281.96,
+            216489.16,
+            226873.34,
+            237717.15,
+            231071,
+            245031.07,
+            217967.99,
+            229238.99,
+            230947.42,
+            229777.76,
+            234449.29
           ]
         }
       ],
@@ -1102,30 +1139,30 @@
         {
           "name": "PV-Anlage Installation",
           "description": "Installation einer Photovoltaik-Anlage auf dem Dach",
-          "cost": "672112",
-          "duration": "4",
-          "co2_savings": "4,64",
-          "cost_savings": "11891,19",
+          "cost": 672112,
+          "duration": 4,
+          "co2_savings": 4.64,
+          "cost_savings": 11891.19,
           "type": "Strom",
           "done": false
         },
         {
           "name": "Energetische Gebäudesanierung",
           "description": "Das Dach und die Fassaden werden gedämmt, die Fenster werden ausgetauscht und die Heizungsanlage wird erneuert.",
-          "cost": "940927,3",
-          "duration": "8",
-          "co2_savings": "177,39",
-          "cost_savings": "70301,02041",
+          "cost": 940927.3,
+          "duration": 8,
+          "co2_savings": 177.39,
+          "cost_savings": 70301.02041,
           "type": "Wärme",
           "done": false
         },
         {
           "name": "LED-Lampen",
           "description": "Alle alten Lampen werden mit LED-Lampen ausgetauscht.",
-          "cost": "15977,50464",
-          "duration": "0,2",
-          "co2_savings": "31,3775",
-          "cost_savings": "46186,97161",
+          "cost": 15977.50464,
+          "duration": 0.2,
+          "co2_savings": 31.3775,
+          "cost_savings": 46186.97161,
           "type": "Strom",
           "done": false
         }
@@ -1138,23 +1175,23 @@
         {
           "type": "Strom",
           "monthly_values": [
-            "4697,47",
-            "4012,99",
-            "4573,78",
-            "3597,03",
-            "3668,21",
-            "3563,54",
-            "3656,99",
-            "3923,16",
-            "3853,21",
-            "4517,66",
-            "4765,36",
-            "4618,59"
+            4697.47,
+            4012.99,
+            4573.78,
+            3597.03,
+            3668.21,
+            3563.54,
+            3656.99,
+            3923.16,
+            3853.21,
+            4517.66,
+            4765.36,
+            4618.59
           ]
         }
       ],
       "measures": [],
-      "abbreviation": "SG1"
+      "abbreviation": "SG"
     },
     {
       "name": "Mensa",
@@ -1162,18 +1199,18 @@
         {
           "type": "Strom",
           "monthly_values": [
-            "161058,3",
-            "157207,76",
-            "146039,57",
-            "150224,91",
-            "165273,72",
-            "167955,86",
-            "177907,84",
-            "151184,92",
-            "152976,52",
-            "174476,93",
-            "170446,97",
-            "148666,44"
+            161058.3,
+            157207.76,
+            146039.57,
+            150224.91,
+            165273.72,
+            167955.86,
+            177907.84,
+            151184.92,
+            152976.52,
+            174476.93,
+            170446.97,
+            148666.44
           ]
         }
       ],
@@ -1181,30 +1218,30 @@
         {
           "name": "PV-Anlage Installation",
           "description": "Installation einer Photovoltaik-Anlage auf dem Dach",
-          "cost": "1156000",
-          "duration": "7",
-          "co2_savings": "7,99",
-          "cost_savings": "20452,27",
+          "cost": 1156000,
+          "duration": 7,
+          "co2_savings": 7.99,
+          "cost_savings": 20452.27,
           "type": "Strom",
           "done": false
         },
         {
           "name": "Energetische Gebäudesanierung",
           "description": "Das Dach und die Fassaden werden gedämmt, die Fenster werden ausgetauscht und die Heizungsanlage wird erneuert.",
-          "cost": "1371178",
-          "duration": "11",
-          "co2_savings": "152,55",
-          "cost_savings": "60457,17053",
+          "cost": 1371178,
+          "duration": 11,
+          "co2_savings": 152.55,
+          "cost_savings": 60457.17053,
           "type": "Wärme",
           "done": false
         },
         {
           "name": "LED-Lampen",
           "description": "Alle alten Lampen werden mit LED-Lampen ausgetauscht.",
-          "cost": "13740,26603",
-          "duration": "0,2",
-          "co2_savings": "22,045625",
-          "cost_savings": "32448,09101",
+          "cost": 13740.26603,
+          "duration": 0.2,
+          "co2_savings": 22.045625,
+          "cost_savings": 32448.09101,
           "type": "Strom",
           "done": false
         }
@@ -1217,18 +1254,18 @@
         {
           "type": "Strom",
           "monthly_values": [
-            "13953,11",
-            "12600,01",
-            "12543,46",
-            "11227,68",
-            "8223,73",
-            "7002,92",
-            "6005,30",
-            "5290,12",
-            "5188,41",
-            "9273,73",
-            "14622,02",
-            "14551,01"
+            13953.11,
+            12600.01,
+            12543.46,
+            11227.68,
+            8223.73,
+            7002.92,
+            6005.3,
+            5290.12,
+            5188.41,
+            9273.73,
+            14622.02,
+            14551.01
           ]
         }
       ],
@@ -1236,20 +1273,20 @@
         {
           "name": "PV-Anlage Installation",
           "description": "Installation einer Photovoltaik-Anlage auf dem Dach",
-          "cost": "1138048",
-          "duration": "7",
-          "co2_savings": "7,85",
-          "cost_savings": "20134,66",
+          "cost": 1138048,
+          "duration": 7,
+          "co2_savings": 7.85,
+          "cost_savings": 20134.66,
           "type": "Strom",
           "done": false
         },
         {
           "name": "LED-Lampen",
           "description": "Alle alten Lampen werden mit LED-Lampen ausgetauscht.",
-          "cost": "20290,33167",
-          "duration": "0,3",
-          "co2_savings": "1,381625",
-          "cost_savings": "2032,522905",
+          "cost": 20290.33167,
+          "duration": 0.3,
+          "co2_savings": 1.381625,
+          "cost_savings": 2032.522905,
           "type": "Strom",
           "done": false
         }
@@ -1262,18 +1299,18 @@
         {
           "type": "Strom",
           "monthly_values": [
-            "215122,58",
-            "203564,17",
-            "213095,89",
-            "204356,66",
-            "261394,44",
-            "364116,03",
-            "425888,26",
-            "412869,19",
-            "346200,37",
-            "260159,43",
-            "221788,05",
-            "224466,8"
+            215122.58,
+            203564.17,
+            213095.89,
+            204356.66,
+            261394.44,
+            364116.03,
+            425888.26,
+            412869.19,
+            346200.37,
+            260159.43,
+            221788.05,
+            224466.8
           ]
         }
       ],
@@ -1281,30 +1318,30 @@
         {
           "name": "PV-Anlage Installation",
           "description": "Installation einer Photovoltaik-Anlage auf dem Dach",
-          "cost": "161840",
-          "duration": "1",
-          "co2_savings": "1,11",
-          "cost_savings": "2863,32",
+          "cost": 161840,
+          "duration": 1,
+          "co2_savings": 1.11,
+          "cost_savings": 2863.32,
           "type": "Strom",
           "done": false
         },
         {
           "name": "Energetische Gebäudesanierung",
           "description": "Das Dach und die Fassaden werden gedämmt, die Fenster werden ausgetauscht und die Heizungsanlage wird erneuert.",
-          "cost": "299616,1",
-          "duration": "2",
-          "co2_savings": "25,626",
-          "cost_savings": "10156,80465",
+          "cost": 299616.1,
+          "duration": 2,
+          "co2_savings": 25.626,
+          "cost_savings": 10156.80465,
           "type": "Wärme",
           "done": false
         },
         {
           "name": "LED-Lampen",
           "description": "Alle alten Lampen werden mit LED-Lampen ausgetauscht.",
-          "cost": "2885,455866",
-          "duration": "0,04",
-          "co2_savings": "38,429125",
-          "cost_savings": "56565,47895",
+          "cost": 2885.455866,
+          "duration": 0.04,
+          "co2_savings": 38.429125,
+          "cost_savings": 56565.47895,
           "type": "Strom",
           "done": false
         }
@@ -1313,75 +1350,56 @@
     },
     {
       "name": "Zentrales Bibliotheksgebäude",
-      "consumers": [
-        {
-          "type": "Wärme",
-          "monthly_values": [
-            "380400,588294072",
-            "294157,615881485",
-            "246020,924588242",
-            "133537,363578517",
-            "45304,2342283712",
-            "554",
-            "668",
-            "21867",
-            "12177",
-            "144433,285922843",
-            "280481,693663516",
-            "343516,909849371"
-          ]
-        },
-        {
-          "type": "Strom",
-          "monthly_values": [
-            "96687,0773453192",
-            "90454,9218753875",
-            "98820,238",
-            "84098,863",
-            "87648,506",
-            "84659,067",
-            "86840,697",
-            "87076,14",
-            "86363,793",
-            "94119,884",
-            "96946,688",
-            "95118,845"
-          ]
-        }
-      ],
+      "consumers": [],
       "measures": [
         {
           "name": "PV-Anlage Installation",
           "description": "Installation einer Photovoltaik-Anlage auf dem Dach",
-          "cost": "2334032",
-          "duration": "14",
-          "co2_savings": "16,12",
-          "cost_savings": "41294,34",
+          "cost": 2334032,
+          "duration": 14,
+          "co2_savings": 16.12,
+          "cost_savings": 41294.34,
           "type": "Strom",
           "done": false
         },
         {
           "name": "Energetische Gebäudesanierung",
           "description": "Das Dach und die Fassaden werden gedämmt, die Fenster werden ausgetauscht und die Heizungsanlage wird erneuert.",
-          "cost": "2797199",
-          "duration": "23",
-          "co2_savings": "253,542",
-          "cost_savings": "100484,6631",
+          "cost": 2797199,
+          "duration": 23,
+          "co2_savings": 253.542,
+          "cost_savings": 100484.6631,
           "type": "Wärme",
           "done": false
         },
         {
           "name": "LED-Lampen",
           "description": "Alle alten Lampen werden mit LED-Lampen ausgetauscht.",
-          "cost": "110969,6215",
-          "duration": "1,5",
-          "co2_savings": "12,418875",
-          "cost_savings": "18279,75262",
+          "cost": 110969.6215,
+          "duration": 1.5,
+          "co2_savings": 12.418875,
+          "cost_savings": 18279.75262,
           "type": "Strom",
           "done": false
         }
+      ]
+    },
+    {
+      "name": "Biologie",
+      "consumers": [],
+      "measures": [
+        {
+          "name": "Pelletheizung Botanischer Garten",
+          "description": "Umstellung der Wärmeverversorgung des Gewächshauses des Botanischen Gartens auf Pelletheizung",
+          "cost": 17500,
+          "duration": 0.07,
+          "co2_savings": 70.12,
+          "cost_savings": 0,
+          "type": "Wärme",
+          "done": false
+        }
       ],
-      "abbreviation": "ZB"
+      "abbreviation": "Biologie"
     },
     {
       "name": "Fahrzeughalle",
@@ -1390,20 +1408,20 @@
         {
           "name": "PV-Anlage Installation",
           "description": "Installation einer Photovoltaik-Anlage auf dem Dach",
-          "cost": "0",
-          "duration": "0",
-          "co2_savings": "0",
-          "cost_savings": "0",
+          "cost": 0,
+          "duration": 0,
+          "co2_savings": 0,
+          "cost_savings": 0,
           "type": "Strom",
           "done": true
         },
         {
           "name": "E-Dienstfahrzeuge",
           "description": "Alle Verbrenner-Dienstfahrzeuge werden durch E-Dienstfahrzeuge ersetzt.",
-          "cost": "12000000",
-          "duration": "3",
-          "co2_savings": "31,8",
-          "cost_savings": "7386,15",
+          "cost": 12000000,
+          "duration": 3,
+          "co2_savings": 31.8,
+          "cost_savings": 7386.15,
           "type": "Mobilität",
           "done": false
         }
@@ -1417,20 +1435,20 @@
         {
           "name": "PV-Anlage Installation",
           "description": "Installation einer Photovoltaik-Anlage auf dem Dach",
-          "cost": "0",
-          "duration": "0",
-          "co2_savings": "0",
-          "cost_savings": "0",
+          "cost": 0,
+          "duration": 0,
+          "co2_savings": 0,
+          "cost_savings": 0,
           "type": "Strom",
           "done": true
         },
         {
           "name": "Energetische Gebäudesanierung",
           "description": "Das Dach und die Fassaden werden gedämmt, die Fenster werden ausgetauscht und die Heizungsanlage wird erneuert.",
-          "cost": "295780,7",
-          "duration": "2",
-          "co2_savings": "20,994",
-          "cost_savings": "8321,751708",
+          "cost": 295780.7,
+          "duration": 2,
+          "co2_savings": 20.994,
+          "cost_savings": 8321.751708,
           "type": "Wärme",
           "done": false
         }
@@ -1438,21 +1456,10 @@
       "abbreviation": "ENZE"
     },
     {
-      "name": "Biologie",
+      "name": "Zentrtales Bibliotheksgebäude",
       "consumers": [],
-      "measures": [
-        {
-          "name": "Pelletheizung Botanischer Garten",
-          "description": "Umstellung der Wärmeverversorgung des Gewächshauses des Botanischen Gartens auf Pelletheizung",
-          "cost": "17500",
-          "duration": "0,007",
-          "co2_savings": "70,12",
-          "cost_savings": "0",
-          "type": "Wärme",
-          "done": false
-        }
-      ],
-      "abbreviation": "Biologie"
+      "measures": [],
+      "abbreviation": "ZB"
     }
   ]
 }

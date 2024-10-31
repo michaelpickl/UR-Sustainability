@@ -193,20 +193,11 @@ public class CampusBuilding : MonoBehaviour
         constructionMode = false;
     }
 
-    public IEnumerator StartConstruction(string duration, string name)
+    public IEnumerator StartConstruction(float duration, string name)
     {
         ActivateConstructionMode();
         
-        // Konvertiere die String-Dauer in einen float-Wert
-        float durationValue;
-        if (float.TryParse(duration, out durationValue))
-        {
-            yield return new WaitForSeconds(durationValue * 2.5f);
-        }
-        else
-        {
-            Debug.LogError("Ungültige Dauer: " + duration);
-        }
+        yield return new WaitForSeconds(duration * 2.5f);
 
         DeactivateConstructionMode();
         ShowMeasure(name);

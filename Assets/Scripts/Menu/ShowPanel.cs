@@ -144,18 +144,16 @@ public class ButtonController : MonoBehaviour
             headingText.text = currentMeasure.name;
             descriptionText.text = currentMeasure.description;
             priceText.text = moneyManager.getMoneyString(currentMeasure.cost);
-            durationText.text = currentMeasure.duration + " Monate";
-            print("HERE " + currentMeasure.co2_savings);
-            if (currentMeasure.co2_savings < 1)
+            durationText.text = currentMeasure.duration.ToString("0.##") + " Monate";
+            if (currentMeasure.co2_savings < 10)
             {
-                print("HERE " + currentMeasure.co2_savings);
                 CO2SavingsText.text = currentMeasure.co2_savings.ToString("0.000");
             }
             else
             {
                 CO2SavingsText.text = Mathf.RoundToInt(currentMeasure.co2_savings).ToString();
             }
-            if (currentMeasure.cost_savings < 1)
+            if (currentMeasure.cost_savings < 10)
             {
                 costSavingsText.text = currentMeasure.cost_savings.ToString("0.000");
             }

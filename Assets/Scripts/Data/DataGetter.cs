@@ -129,7 +129,7 @@ public class Measure
     public string name;
     public string description;
     public int cost;
-    public string duration;
+    public float duration;
     public float co2_savings;
     public float cost_savings;
     public string type;
