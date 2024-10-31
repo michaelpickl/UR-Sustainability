@@ -1,7 +1,7 @@
 # UR-Sustainability
 In diesem Projekt wird Gamification genutzt, um Studierenden und Mitarbeitern der Universität Regensburg mögliche Maßnahmen aufzuzeigen, die nötig sind, um die Universität bis 2050 klimaneutral zu machen.
 
-Die Datengrundlage basiert auf den CSV-Datein im Ordner [CSV-DATA](CSV-DATA). Um diese in eine JSON Datei umzuwandeln, kann dieser Converter verwendet werden: https://colab.research.google.com/drive/1H3fwflaiIs_Msh7ZFz9ieTWhzGkrDvNA?usp=sharing .
+Die Datengrundlage basiert auf den CSV-Datein im Ordner [DATA](DATA). Um diese in eine JSON Datei umzuwandeln, kann dieser Converter verwendet werden: https://colab.research.google.com/drive/1H3fwflaiIs_Msh7ZFz9ieTWhzGkrDvNA?usp=sharing .
 
 # Credits
 <b>Kartenmaterial:</b> Open Street Map (https://www.openstreetmap.org/)
