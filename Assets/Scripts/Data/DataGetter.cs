@@ -19,7 +19,7 @@ public class DataGetter : MonoBehaviour
     {
         foreach (Building building in campus.buildings)
         {
-            string iconPath = "icons/gebäude/" + building.abbreviation;
+            string iconPath = "icons/gebaeude/" + building.abbreviation;
             building.icon = LoadIcon(iconPath);
         }
     }
