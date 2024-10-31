@@ -14,7 +14,7 @@ public class MoneyCollectionButton : MonoBehaviour
     private MoneyManager moneyManager;
     private DataGetter dataGetter;
 
-    private int moneyCount;
+    private float moneyCount;
 
 
 
@@ -29,7 +29,7 @@ public class MoneyCollectionButton : MonoBehaviour
     void OnButtonClick()
     {
         moneyManager.AddMoney(moneyCount);
-        moneyCount = 0;
+        moneyCount = 0f;
         HideButton();
     }
 
@@ -46,7 +46,7 @@ public class MoneyCollectionButton : MonoBehaviour
         if(building != null)
         {
             print("Collection 1 - " + buildingNameNew);
-            int costSavings = 0;
+            float costSavings = 0f;
             foreach(Measure measure in building.measures)
             {
                 if(measure.name == measureName)

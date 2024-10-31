@@ -11,9 +11,6 @@ public class DataGetter : MonoBehaviour
     void Awake()
     {
         campus = JsonUtility.FromJson<Buildings>(jsonFile.text);
-        foreach(Building building in GetBuildings()){
-            print(building.name);
-        }
         LoadIconsForBuildings();
         LoadIconsForMeasures();
     }
@@ -133,8 +130,8 @@ public class Measure
     public string description;
     public int cost;
     public string duration;
-    public int co2_savings;
-    public int cost_savings;
+    public float co2_savings;
+    public float cost_savings;
     public string type;
     public bool done;
     public Sprite icon;

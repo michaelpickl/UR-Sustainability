@@ -28,7 +28,7 @@ public class Co2Manager : MonoBehaviour
         ReduceCo2(measure.co2_savings);
     }
 
-    public void ReduceCo2(int co2_savings)
+    public void ReduceCo2(float co2_savings)
     {
         currentCo2 -= co2_savings;
 
@@ -46,7 +46,7 @@ public class Co2Manager : MonoBehaviour
     private void UpdateCo2Text()
     {
         // Den Text mit dem aktuellen CO2-Wert aktualisieren
-        co2Text.text = currentCo2.ToString("F2");
+        co2Text.text = currentCo2.ToString("F2") + " t";
     }
 
     public float GetCurrentCo2()

@@ -145,7 +145,7 @@ public class SideMenuController : MonoBehaviour
                     float firstMonthValue = converter.getBuildingYearlytCO2eByType(building, consumerType);
                     slider.maxValue = firstMonthValue;
                     Debug.Log("Slider MaxValue set");
-                    string valueString = firstMonthValue.ToString();
+                    string valueString = firstMonthValue.ToString("0.000");
                     return valueString;
                 }
                 else
