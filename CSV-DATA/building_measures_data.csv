@@ -1,0 +1,57 @@
+Gebäudename,Maßnahme Name,Maßnahme Beschreibung,Kosten (in €),Dauer (in Monaten),CO2 Einsparung (in CO2e t),Kostenersparnis (in €) (pro Jahr),Typ,Erledigt
+Philosophie und Theologie,PV-Anlage Installation,Installation einer Photovoltaik-Anlage auf dem Dach,3654864,22,"25,24","64662,87",Strom,FALSE
+Philosophie und Theologie,Energetische Gebäudesanierung,"Das Dach und die Fassaden werden gedämmt, die Fenster werden ausgetauscht und die Heizungsanlage wird erneuert.",4890409,40,"470,292","186383,9",Wärme,FALSE
+Philosophie und Theologie,LED-Lampen,Alle alten Lampen werden mit LED-Lampen ausgetauscht.,"108604,6792","1,5","28,8995","42537,01029",Strom,FALSE
+Physik,PV-Anlage Installation,Installation einer Photovoltaik-Anlage auf dem Dach,2870416,18,"19,82","50784,2",Strom,FALSE
+Physik,Energetische Gebäudesanierung,"Das Dach und die Fassaden werden gedämmt, die Fenster werden ausgetauscht und die Heizungsanlage wird erneuert.",3374202,27,"470,292","186383,9",Wärme,FALSE
+Physik,LED-Lampen,Alle alten Lampen werden mit LED-Lampen ausgetauscht.,"85294,722","1,2","43,6275","64223,03006",Strom,FALSE
+Recht und Wirtschaft,PV-Anlage Installation,Installation einer Photovoltaik-Anlage auf dem Dach,2251888,14,"15,55","39841,03",Strom,FALSE
+Recht und Wirtschaft,Energetische Gebäudesanierung,"Das Dach und die Fassaden werden gedämmt, die Fenster werden ausgetauscht und die Heizungsanlage wird erneuert.",3243268,26,"115,662","45837,12",Wärme,FALSE
+Recht und Wirtschaft,LED-Lampen,Alle alten Lampen werden mit LED-Lampen ausgetauscht.,"107064,1529","1,5","14,951125","22007,79713",Strom,FALSE
+Sammelgebäude,PV-Anlage Installation,Installation einer Photovoltaik-Anlage auf dem Dach,1278128,8,"8,87","22612,99",Strom,FALSE
+Sammelgebäude,Energetische Gebäudesanierung,"Das Dach und die Fassaden werden gedämmt, die Fenster werden ausgetauscht und die Heizungsanlage wird erneuert.",2442696,20,"232,56","92167,05",Wärme,FALSE
+Sammelgebäude,LED-Lampen,Alle alten Lampen werden mit LED-Lampen ausgetauscht.,"60767,53889","0,8","4,32425","6366,692822",Strom,FALSE
+Sportzentrum,PV-Anlage Installation,Installation einer Photovoltaik-Anlage auf dem Dach,1879248,12,"3,99","33248,12",Strom,FALSE
+Sportzentrum,Energetische Gebäudesanierung,"Das Dach und die Fassaden werden gedämmt, die Fenster werden ausgetauscht und die Heizungsanlage wird erneuert.","1800726,789",19,"66,342","26291,32044",Wärme,FALSE
+Sportzentrum,Solarthermie für Warmwasser,Das Schwimmbecken wird mit Solarthermie erwärmt statt mit Gas.,2302360,1,"0,697","36748,8",Wärme,FALSE
+Sportzentrum,LED-Lampen,Alle alten Lampen werden mit LED-Lampen ausgetauscht.,"33505,23459","0,5","5,266625","7752,641228",Strom,FALSE
+Studentenhaus,PV-Anlage Installation,Installation einer Photovoltaik-Anlage auf dem Dach,614720,4,"4,26","10875,8",Strom,FALSE
+Studentenhaus,Energetische Gebäudesanierung,"Das Dach und die Fassaden werden gedämmt, die Fenster werden ausgetauscht und die Heizungsanlage wird erneuert.",1152314,9,"51,816","20535,21677",Wärme,FALSE
+Studentenhaus,LED-Lampen,Alle alten Lampen werden mit LED-Lampen ausgetauscht.,"25573,05983","0,4","2,45875","3628,623465",Strom,FALSE
+Verwaltungsgebäude und Ladengeschäfte,PV-Anlage Installation,Installation einer Photovoltaik-Anlage auf dem Dach,0,0,0,0,Strom,TRUE
+Verwaltungsgebäude und Ladengeschäfte,Energetische Gebäudesanierung,"Das Dach und die Fassaden werden gedämmt, die Fenster werden ausgetauscht und die Heizungsanlage wird erneuert.",1199613,10,"100,086","39666,8335",Wärme,FALSE
+Verwaltungsgebäude und Ladengeschäfte,Papierkonzept verbessern,Alle Prüfungen und Papierverbrauch in Büros werden digitalisiert.,0,0,"23,91",0,Waren,FALSE
+Verwaltungsgebäude und Ladengeschäfte,LED-Lampen,Alle alten Lampen werden mit LED-Lampen ausgetauscht.,"19260,43541","0,3","1,442","2583,632065",Strom,FALSE
+Vielberthgebäude,PV-Anlage Installation,Installation einer Photovoltaik-Anlage auf dem Dach,0,0,0,"10781,38",Strom,TRUE
+Vielberthgebäude,LED-Lampen,Alle alten Lampen werden mit LED-Lampen ausgetauscht.,"13332,90755","0,2","3,91125","5756,042482",Strom,FALSE
+Vorklinikum,PV-Anlage Installation,Installation einer Photovoltaik-Anlage auf dem Dach,2371568,15,"16,39","41958,43984",Strom,FALSE
+Vorklinikum,LED-Lampen,Alle alten Lampen werden mit LED-Lampen ausgetauscht.,"56377,11977","0,8","31,01875","45655,62582",Strom,FALSE
+Westliche Naturwissenschaften,PV-Anlage Installation,Installation einer Photovoltaik-Anlage auf dem Dach,0,0,0,0,Strom,TRUE
+Zentrales Bibliotheksgebäude,PV-Anlage Installation,Installation einer Photovoltaik-Anlage auf dem Dach,2334032,14,"16,12","41294,34",Strom,FALSE
+Zentrales Bibliotheksgebäude,Energetische Gebäudesanierung,"Das Dach und die Fassaden werden gedämmt, die Fenster werden ausgetauscht und die Heizungsanlage wird erneuert.",2797199,23,"253,542","100484,6631",Wärme,FALSE
+Zentrales Bibliotheksgebäude,LED-Lampen,Alle alten Lampen werden mit LED-Lampen ausgetauscht.,"110969,6215","1,5","12,418875","18279,75262",Strom,FALSE
+Zentrales Hörsaalgebäude,PV-Anlage Installation,Installation einer Photovoltaik-Anlage auf dem Dach,2227952,14,"15,39","39417,55",Strom,FALSE
+Zentrales Hörsaalgebäude,Energetische Gebäudesanierung,"Das Dach und die Fassaden werden gedämmt, die Fenster werden ausgetauscht und die Heizungsanlage wird erneuert.",3214466,26,"231,426","91718,41114",Wärme,FALSE
+Zentrales Hörsaalgebäude,LED-Lampen,Alle alten Lampen werden mit LED-Lampen ausgetauscht.,"79444,60168","1,1","8,25125","12144,17012",Strom,FALSE
+Chemie,PV-Anlage Installation,Installation einer Photovoltaik-Anlage auf dem Dach,5656512,35,"39,08",0,Strom,FALSE
+Chemie,Energetische Gebäudesanierung,"Das Dach und die Fassaden werden gedämmt, die Fenster werden ausgetauscht und die Heizungsanlage wird erneuert.",5458950,58,"1816,692","719986,3493",Wärme,FALSE
+Chemie,LED-Lampen,Alle alten Lampen werden mit LED-Lampen ausgetauscht.,"268934,1857","3,8","97,82675","143996,1307",Strom,FALSE
+Rechenzentrum,PV-Anlage Installation,Installation einer Photovoltaik-Anlage auf dem Dach,672112,4,"4,64","11891,19",Strom,FALSE
+Rechenzentrum,Energetische Gebäudesanierung,"Das Dach und die Fassaden werden gedämmt, die Fenster werden ausgetauscht und die Heizungsanlage wird erneuert.","940927,3",8,"177,39","70301,02041",Wärme,FALSE
+Rechenzentrum,LED-Lampen,Alle alten Lampen werden mit LED-Lampen ausgetauscht.,"15977,50464","0,2","31,3775","46186,97161",Strom,FALSE
+Biologie,Pelletheizung Botanischer Garten,Umstellung der Wärmeverversorgung des Gewächshauses des Botanischen Gartens auf Pelletheizung,17500,"0,07","70,12",0,Wärme,FALSE
+Mathematik,PV-Anlage Installation,Installation einer Photovoltaik-Anlage auf dem Dach,635120,4,"4,39","11236,72",Strom,FALSE
+Mathematik,Energetische Gebäudesanierung,"Das Dach und die Fassaden werden gedämmt, die Fenster werden ausgetauscht und die Heizungsanlage wird erneuert.",1039136,8,"35,214","13956,4119",Wärme,FALSE
+Mathematik,LED-Lampen,Alle alten Lampen werden mit LED-Lampen ausgetauscht.,"15098,12761","0,2","1,96875","2902,597035",Strom,FALSE
+Mensa,PV-Anlage Installation,Installation einer Photovoltaik-Anlage auf dem Dach,1156000,7,"7,99","20452,27",Strom,FALSE
+Mensa,Energetische Gebäudesanierung,"Das Dach und die Fassaden werden gedämmt, die Fenster werden ausgetauscht und die Heizungsanlage wird erneuert.",1371178,11,"152,55","60457,17053",Wärme,FALSE
+Mensa,LED-Lampen,Alle alten Lampen werden mit LED-Lampen ausgetauscht.,"13740,26603","0,2","22,045625","32448,09101",Strom,FALSE
+Parkhaus 1 + 2 Süd,PV-Anlage Installation,Installation einer Photovoltaik-Anlage auf dem Dach,1138048,7,"7,85","20134,66",Strom,FALSE
+Parkhaus 1 + 2 Süd,LED-Lampen,Alle alten Lampen werden mit LED-Lampen ausgetauscht.,"20290,33167","0,3","1,381625","2032,522905",Strom,FALSE
+Technische Zentrale,PV-Anlage Installation,Installation einer Photovoltaik-Anlage auf dem Dach,161840,1,"1,11","2863,32",Strom,FALSE
+Technische Zentrale,Energetische Gebäudesanierung,"Das Dach und die Fassaden werden gedämmt, die Fenster werden ausgetauscht und die Heizungsanlage wird erneuert.","299616,1",2,"25,626","10156,80465",Wärme,FALSE
+Technische Zentrale,LED-Lampen,Alle alten Lampen werden mit LED-Lampen ausgetauscht.,"2885,455866","0,04","38,429125","56565,47895",Strom,FALSE
+Fahrzeughalle,PV-Anlage Installation,Installation einer Photovoltaik-Anlage auf dem Dach,0,0,0,0,Strom,TRUE
+Fahrzeughalle,E-Dienstfahrzeuge,Alle Verbrenner-Dienstfahrzeuge werden durch E-Dienstfahrzeuge ersetzt.,12000000,3,"31,8","7386,15",Mobilität,FALSE
+Entsorgungszentrum,PV-Anlage Installation,Installation einer Photovoltaik-Anlage auf dem Dach,0,0,0,0,Strom,TRUE
+Entsorgungszentrum,Energetische Gebäudesanierung,"Das Dach und die Fassaden werden gedämmt, die Fenster werden ausgetauscht und die Heizungsanlage wird erneuert.","295780,7",2,"20,994","8321,751708",Wärme,FALSE

@@ -1,9 +1,15 @@
 # UR-Sustainability
-In this project, gamification is used to show students and employees of the University of Regensburg possible measures that are needed to make the university carbon-free by 2050.
+In diesem Projekt wird Gamification genutzt, um Studierenden und Mitarbeitern der Universität Regensburg mögliche Maßnahmen aufzuzeigen, die nötig sind, um die Universität bis 2050 klimaneutral zu machen.
+
+Die Datengrundlage basiert auf den CSV-Datein im Ordner [CSV-Data](CSV-Data). Um diese in eine JSON Datei umzuwandeln, kann dieser Converter verwendet werden: https://colab.research.google.com/drive/1H3fwflaiIs_Msh7ZFz9ieTWhzGkrDvNA?usp=sharing .
 
 # Credits
 <b>Kartenmaterial:</b> Open Street Map (https://www.openstreetmap.org/)
+
 <b>Blosm-Plugin für Blender:</b> https://blender-addons.org/blosm/
+
 <b>RTS-Kamera:</b> https://assetstore.unity.com/packages/tools/camera/rts-camera-43321
+
 <b>SimplePoly City - Low Poly Assets: </b> https://assetstore.unity.com/packages/3d/environments/simplepoly-city-low-poly-assets-58899
+
 <b>Toon City Pack: </b> https://assetstore.unity.com/packages/3d/environments/urban/toon-city-pack-234785
