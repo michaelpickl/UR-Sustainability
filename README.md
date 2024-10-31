@@ -13,3 +13,8 @@ Die Datengrundlage basiert auf den CSV-Datein im Ordner [CSV-DATA](CSV-DATA). Um
 <b>SimplePoly City - Low Poly Assets: </b> https://assetstore.unity.com/packages/3d/environments/simplepoly-city-low-poly-assets-58899
 
 <b>Toon City Pack: </b> https://assetstore.unity.com/packages/3d/environments/urban/toon-city-pack-234785
+
+<b>Yughues Free Concrete Materials: </b> https://assetstore.unity.com/packages/2d/textures-materials/concrete/yughues-free-concrete-materials-12951
+
+<b>Concrete Plaster Textures - 4K: </b>
+https://assetstore.unity.com/packages/2d/textures-materials/concrete-plaster-textures-4k-179120

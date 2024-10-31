@@ -706,7 +706,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 15}
+  m_AnchoredPosition: {x: 0, y: 40}
   m_SizeDelta: {x: 1150, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &591603096
@@ -732,7 +732,9 @@ MonoBehaviour:
   m_text: "\n\n\n<b>Kartenmaterial:</b> Open Street Map (https://www.openstreetmap.org/)\n<b>Blosm-Plugin
     f\xFCr Blender:</b> https://blender-addons.org/blosm/\n<b>RTS-Kamera:</b> https://assetstore.unity.com/packages/tools/camera/rts-camera-43321\n<b>SimplePoly
     City - Low Poly Assets: </b> \nhttps://assetstore.unity.com/packages/3d/environments/simplepoly-city-low-poly-assets-58899\n<b>Toon
-    City Pack: </b> https://assetstore.unity.com/packages/3d/environments/urban/toon-city-pack-234785"
+    City Pack: </b> https://assetstore.unity.com/packages/3d/environments/urban/toon-city-pack-234785\n<b>Yughues
+    Free Concrete Materials: </b> https://assetstore.unity.com/packages/2d/textures-materials/concrete/yughues-free-concrete-materials-12951\n<b>Concrete
+    Plaster Textures - 4K: </b>\nhttps://assetstore.unity.com/packages/2d/textures-materials/concrete-plaster-textures-4k-179120\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -759,8 +761,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 28
-  m_fontSizeBase: 28
+  m_fontSize: 26
+  m_fontSizeBase: 26
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1778,7 +1780,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 26}
+  m_AnchoredPosition: {x: 0, y: 51}
   m_SizeDelta: {x: 1150, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1909894951
